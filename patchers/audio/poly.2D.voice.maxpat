@@ -114,6 +114,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 1030.0, 820.0, 35.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out 1"
 				}
 
@@ -210,10 +214,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 63.0, 226.0, 119.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "mc.out~ 1 @chans 2"
 				}
 
@@ -226,6 +226,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 63.0, 101.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -265,6 +269,29 @@
 						"gridsize" : [ 15.0, 15.0 ],
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-27",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 420.0, 526.0, 54.0, 22.0 ],
+									"text" : "pipe"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 685.0, 313.0, 453.0, 20.0 ],
+									"text" : "{soundfile} {state} {loop} {attenuation} {fade} {gain} {supersound} {start_delay}"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-25",
 									"maxclass" : "newobj",
@@ -388,12 +415,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-5",
-									"linecount" : 2,
+									"linecount" : 3,
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 475.0, 242.0, 165.0, 34.0 ],
-									"text" : "2D SOUNDS DON'T HAVE ATTENUATION"
+									"patching_rect" : [ 475.0, 230.0, 165.0, 48.0 ],
+									"text" : "2D SOUNDS DON'T HAVE ATTENUATION AND CAN'T BE SUPERSOUND"
 								}
 
 							}
@@ -736,10 +763,10 @@
 									"id" : "obj-90",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 6,
-									"outlettype" : [ "", "int", "int", "int", "int", "float" ],
-									"patching_rect" : [ 420.0, 282.0, 188.166666666666629, 22.0 ],
-									"text" : "unpack s i i i i f"
+									"numoutlets" : 8,
+									"outlettype" : [ "", "int", "int", "int", "int", "float", "int", "int" ],
+									"patching_rect" : [ 420.0, 282.0, 255.833333333333258, 22.0 ],
+									"text" : "unpack s i i i i f i i"
 								}
 
 							}
@@ -762,7 +789,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 617.0, 283.0, 191.0, 20.0 ],
+									"patching_rect" : [ 685.0, 283.0, 191.0, 20.0 ],
 									"text" : "file play loop attenuation fade gain"
 								}
 
@@ -822,8 +849,7 @@
 , 							{
 								"patchline" : 								{
 									"color" : [ 0.176470588235294, 1.0, 0.0, 1.0 ],
-									"destination" : [ "obj-76", 0 ],
-									"midpoints" : [ 429.5, 636.0, 163.5, 636.0 ],
+									"destination" : [ "obj-27", 0 ],
 									"source" : [ "obj-107", 0 ]
 								}
 
@@ -952,6 +978,15 @@
 								"patchline" : 								{
 									"destination" : [ "obj-21", 0 ],
 									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"color" : [ 0.176470588235294, 1.0, 0.0, 1.0 ],
+									"destination" : [ "obj-76", 0 ],
+									"midpoints" : [ 429.5, 636.0, 163.5, 636.0 ],
+									"source" : [ "obj-27", 0 ]
 								}
 
 							}
@@ -1113,6 +1148,14 @@
 									"destination" : [ "obj-18", 0 ],
 									"order" : 0,
 									"source" : [ "obj-90", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-27", 1 ],
+									"midpoints" : [ 666.333333333333258, 403.0, 464.5, 403.0 ],
+									"source" : [ "obj-90", 7 ]
 								}
 
 							}
