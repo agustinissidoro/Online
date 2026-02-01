@@ -6,7 +6,9 @@
 
 # Whitelist specific folders
 !/patchers/
+!/patchers/**
 !/score/
+!/score/**
 
 # Whitelist specific file
 !/ONLINE_main.maxpat
