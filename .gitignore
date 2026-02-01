@@ -1,0 +1,13 @@
+# Ignore everything by default
+*
+
+# Keep folders themselves (needed so Git can descend)
+!*/
+
+# Whitelist specific folders
+!/patchers/
+!/score/
+
+# Whitelist specific file
+!/ONLINE_main.maxpat
+!/.gitignore
