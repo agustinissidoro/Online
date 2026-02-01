@@ -104,10 +104,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 815.0, 879.0, 35.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "out 2"
 				}
 
@@ -252,6 +248,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 238.0, 582.0, 35.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "out 1"
 				}
 
@@ -263,10 +263,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 63.0, 582.0, 119.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"attr_comment" : ""
-					}
-,
 					"text" : "mc.out~ 1 @chans 6"
 				}
 
@@ -279,6 +275,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 199.0, 53.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 2"
 				}
 
@@ -291,6 +291,10 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 63.0, 53.0, 28.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"attr_comment" : ""
+					}
+,
 					"text" : "in 1"
 				}
 
@@ -410,7 +414,20 @@
 						"classnamespace" : "box",
 						"rect" : [ 35.0, 85.0, 1540.0, 912.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 420.0, 518.0, 75.0, 22.0 ],
+									"text" : "pipe"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-18",
 									"maxclass" : "newobj",
@@ -1354,10 +1371,10 @@
 									"id" : "obj-90",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 7,
-									"outlettype" : [ "", "int", "int", "int", "int", "float", "int" ],
-									"patching_rect" : [ 420.0, 282.0, 221.0, 22.0 ],
-									"text" : "unpack s i i i i f i"
+									"numoutlets" : 8,
+									"outlettype" : [ "", "int", "int", "int", "int", "float", "int", "int" ],
+									"patching_rect" : [ 420.0, 282.0, 255.833333333333258, 22.0 ],
+									"text" : "unpack s i i i i f i i"
 								}
 
 							}
@@ -1380,8 +1397,8 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 644.0, 283.0, 257.0, 20.0 ],
-									"text" : "file play loop attenuation fade gain supersound"
+									"patching_rect" : [ 693.0, 283.0, 312.0, 20.0 ],
+									"text" : "file play loop attenuation fade gain supersound startdelay"
 								}
 
 							}
@@ -1448,8 +1465,7 @@
 , 							{
 								"patchline" : 								{
 									"color" : [ 0.176470588235294, 1.0, 0.0, 1.0 ],
-									"destination" : [ "obj-50", 0 ],
-									"midpoints" : [ 429.5, 664.0, 163.5, 664.0 ],
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-107", 0 ]
 								}
 
@@ -1726,6 +1742,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"color" : [ 0.176470588235294, 1.0, 0.0, 1.0 ],
+									"destination" : [ "obj-50", 0 ],
+									"midpoints" : [ 429.5, 664.0, 163.5, 664.0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-49", 0 ],
 									"source" : [ "obj-42", 0 ]
 								}
@@ -1884,6 +1909,14 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 1 ],
+									"midpoints" : [ 666.333333333333258, 487.0, 485.5, 487.0 ],
+									"source" : [ "obj-90", 7 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-45", 0 ],
 									"source" : [ "obj-90", 4 ]
 								}
@@ -1892,7 +1925,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-50", 2 ],
-									"midpoints" : [ 631.5, 739.0, 497.166666666666629, 739.0 ],
+									"midpoints" : [ 632.5, 739.0, 497.166666666666629, 739.0 ],
 									"source" : [ "obj-90", 6 ]
 								}
 
