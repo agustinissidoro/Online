@@ -13,17 +13,6 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-74",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 262.0, 630.0, 45.0, 22.0 ],
-                    "text": "open 3"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-72",
                     "maxclass": "message",
                     "numinlets": 2,
@@ -3916,12 +3905,6 @@
                 "patchline": {
                     "destination": [ "obj-7", 0 ],
                     "source": [ "obj-72", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-1", 0 ],
-                    "source": [ "obj-74", 0 ]
                 }
             },
             {
