@@ -1,6 +1,8 @@
 # Ignore everything by default
 *
 
+.DS_Store
+
 # Keep folders themselves (needed so Git can descend)
 !*/
 
@@ -9,6 +11,7 @@
 !/patchers/**
 !/score/
 !/score/**
+!/audio/
 
 # Whitelist specific file
 !/ONLINE_main.maxpat
