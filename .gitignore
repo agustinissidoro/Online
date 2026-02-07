@@ -12,6 +12,7 @@
 !/score/
 !/score/**
 !/audio/
+!audio/**
 
 # Whitelist specific file
 !/ONLINE_main.maxpat
