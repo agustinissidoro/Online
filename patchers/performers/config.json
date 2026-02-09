@@ -6,14 +6,15 @@
                 "id": 1,
                 "data": {
                     "player": [ 0 ],
-                    "audio_ip": [ "127.0.0.1 2026" ],
-                    "unreal_ip": [ "192.168.100.2 9005" ],
+                    "audio_ip": [ "192.168.100.1 2026" ],
+                    "unreal_ip": [ "127.0.0.1 9005" ],
                     "score_size": [ 0.34 ],
                     "text_pos_x": [ 1.304 ],
                     "text_pos_y": [ 0.636 ],
                     "receiveNDI::video_pos_x": [ 1340 ],
                     "receiveNDI::video_pos_y": [ -360 ],
-                    "receiveNDI::video_scale": [ 1.3 ]
+                    "receiveNDI::video_scale": [ 1.3 ],
+                    "mouse_sensibility": [ 0.04 ]
                 }
             }
         }
