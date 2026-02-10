@@ -9,9 +9,58 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1980.0, 1062.0 ],
+        "rect": [ 34.0, 87.0, 1445.0, 1062.0 ],
         "bglocked": 1,
+        "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-84",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 828.0, -650.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 834.0, -651.0, 29.0, 20.0 ],
+                    "text": "thru"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-83",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 662.0, -651.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 673.0, -651.0, 29.0, 20.0 ],
+                    "text": "thru"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-57",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 507.0, -648.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 514.0, -651.0, 29.0, 20.0 ],
+                    "text": "thru"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-56",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 470.0, -148.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 351.0, -651.0, 29.0, 20.0 ],
+                    "text": "thru"
+                }
+            },
             {
                 "box": {
                     "id": "obj-268",
@@ -199,7 +248,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 2582.203451395035, 317.79661774635315, 86.27118825912476, 41.0 ],
+                    "patching_rect": [ 2582.203451395035, 317.79661774635315, 87.0, 41.0 ],
                     "text": "p INIT"
                 }
             },
@@ -349,7 +398,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 2156.722509543101, 508.0, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 2163.5593736171722, 487.28814721107483, 24.0, 24.0 ]
+                    "presentation_rect": [ 865.0, -653.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -362,7 +411,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 2094.91530418396, 483.8983166217804, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 2092.372931241989, 477.96611309051514, 24.0, 24.0 ]
+                    "presentation_rect": [ 703.0, -653.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -375,7 +424,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 2033.500235080719, 477.96611309051514, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 2038.1356418132782, 467.79662132263184, 24.0, 24.0 ]
+                    "presentation_rect": [ 544.0, -653.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -388,7 +437,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1971.8890978495278, 510.0, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1971.8890978495278, 510.0, 24.0, 24.0 ]
+                    "presentation_rect": [ 382.0, -653.0, 24.0, 24.0 ]
                 }
             },
             {
@@ -640,7 +689,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 34.52565252780914, 148.7179675102234, 296.0, 33.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 591.7292707562447, -693.9849007725716, 229.0, 33.0 ],
+                    "presentation_rect": [ 592.0, -698.0, 229.0, 33.0 ],
                     "text": "MIC SPATIALIZERS"
                 }
             },
@@ -666,7 +715,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 7.692308664321899, 193.58976805210114, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1154.1352358460426, -1022.556300163269, 150.0, 20.0 ]
+                    "presentation_rect": [ 1126.1352358460426, -993.2329944968224, 150.0, 20.0 ]
                 }
             },
             {
@@ -692,7 +741,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 2507.2973995804787, 1873.0, 57.96991066137946, 128.81356239318848 ],
                     "presentation": 1,
-                    "presentation_rect": [ 897.7442811727524, -431.5789090394974, 82.60869294404984, 128.6956479549408 ]
+                    "presentation_rect": [ 898.0, -441.0, 83.0, 138.0 ]
                 }
             },
             {
@@ -706,7 +755,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 2345.2973995804787, 1873.0, 57.96991066137946, 128.81356239318848 ],
                     "presentation": 1,
-                    "presentation_rect": [ 736.0901601910591, -431.5789090394974, 82.60869294404984, 128.6956479549408 ]
+                    "presentation_rect": [ 736.0, -441.0, 83.0, 138.0 ]
                 }
             },
             {
@@ -720,7 +769,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 2184.2973995804787, 1873.0, 57.96991066137946, 128.81356239318848 ],
                     "presentation": 1,
-                    "presentation_rect": [ 579.6991966366768, -431.5789090394974, 82.60869294404984, 128.6956479549408 ]
+                    "presentation_rect": [ 580.0, -441.0, 83.0, 138.0 ]
                 }
             },
             {
@@ -734,7 +783,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 2024.2973995804787, 1873.0, 57.96991066137946, 128.81356239318848 ],
                     "presentation": 1,
-                    "presentation_rect": [ 416.54131639003754, -431.5789090394974, 82.60869294404984, 128.6956479549408 ]
+                    "presentation_rect": [ 417.0, -441.0, 83.0, 138.0 ]
                 }
             },
             {
@@ -1261,7 +1310,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 579.7175843119621, 1381.0, 57.96991066137946, 128.81356239318848 ],
                     "presentation": 1,
-                    "presentation_rect": [ 927.8194664716721, -747.368354678154, 75.0, 33.0 ]
+                    "presentation_rect": [ 929.0144291371107, -746.85331761837, 75.0, 33.0 ]
                 }
             },
             {
@@ -4893,7 +4942,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1170.3390109539032, 1257.6271486282349, 355.9322118759155, 494.0678083896637 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1097.4576532840729, -901.6949367523193, 217.79661536216736, 637.2881507873535 ],
+                    "presentation_rect": [ 1097.0, -901.5036793351173, 218.0, 636.5036793351173 ],
                     "stripecolor": [ 0.34902, 0.34902, 0.34902, 0.0 ]
                 }
             },
@@ -6412,6 +6461,14 @@
             "obj-1.4::obj-17": [ "mc.live.gain~[13]", "spatial", 0 ],
             "obj-1.4::obj-27": [ "mc.live.gain~[5]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[6]", "full player", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[16]"
