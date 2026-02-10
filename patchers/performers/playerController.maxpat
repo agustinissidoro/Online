@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 1987.0, 229.0, 829.0, 896.0 ],
+        "rect": [ 1987.0, 229.0, 728.0, 896.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -97,8 +97,7 @@
                     "patching_rect": [ 41.91176390647888, 441.91175627708435, 219.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 205.1470549106598, 438.23528575897217, 180.0, 27.0 ],
-                    "text": "LIGHTS CONTROLS",
-                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                    "text": "LIGHTS CONTROLS"
                 }
             },
             {
@@ -513,6 +512,7 @@
                 "box": {
                     "checkedcolor": [ 1.0, 0.0, 0.0, 1.0 ],
                     "id": "obj-266",
+                    "ignoreclick": 1,
                     "maxclass": "toggle",
                     "numinlets": 1,
                     "numoutlets": 1,
@@ -986,8 +986,7 @@
                     "patching_rect": [ 931.092381477356, 126.89074873924255, 219.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 209.60330522060394, 334.5588171482086, 179.0, 27.0 ],
-                    "text": "SCORE CONTROLS",
-                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                    "text": "SCORE CONTROLS"
                 }
             },
             {
@@ -1001,13 +1000,11 @@
                     "patching_rect": [ 941.1764144897461, 105.04201054573059, 219.0, 27.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 213.2352900505066, 232.35293674468994, 225.0, 27.0 ],
-                    "text": "VIDEO CONTROLS",
-                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                    "text": "VIDEO CONTROLS"
                 }
             },
             {
                 "box": {
-                    "bgcolor": [ 1.0, 1.0, 1.0, 0.0 ],
                     "fontface": 1,
                     "fontsize": 18.0,
                     "id": "obj-93",
@@ -1018,8 +1015,7 @@
                     "patching_rect": [ 919.3276762962341, 66.38655066490173, 219.0, 48.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 191.64532005786896, 139.49579000473022, 225.0, 27.0 ],
-                    "text": "VIDEOGAME CONTROLS",
-                    "textcolor": [ 0.0, 0.0, 0.0, 1.0 ]
+                    "text": "VIDEOGAME CONTROLS"
                 }
             },
             {
@@ -4517,7 +4513,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 105.12048673629761, 357.03702533245087, 69.0, 22.0 ],
-                    "restore": [ 2 ],
+                    "restore": [ 0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7223,7 +7219,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 723.0, 525.0, 50.0, 35.0 ],
-                                                    "text": "360 640"
+                                                    "text": "640 477"
                                                 }
                                             },
                                             {
@@ -9343,7 +9339,7 @@
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "items": "ZOWIEBOX (ZowieBox-24006)",
+                                    "items": "<empty>",
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
