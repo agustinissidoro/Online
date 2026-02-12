@@ -9,9 +9,94 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 4.0, 90.0, 1980.0, 1062.0 ],
+        "rect": [ 1954.0, 77.0, 1012.0, 1761.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-89",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 2531.0, -367.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-46",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2507.0, -311.0, 32.0, 22.0 ],
+                    "text": "gate"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-41",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2507.0, -268.0, 55.0, 22.0 ],
+                    "text": "print udp"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-162",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1876.0, -553.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-107",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1876.0, -553.0, 50.0, 22.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-90",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1876.0, -553.0, 31.0, 22.0 ],
+                    "text": "max"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-67",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1876.0, -553.0, 31.0, 22.0 ],
+                    "text": "max"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-51",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2329.0, -108.0, 31.0, 22.0 ],
+                    "text": "ajsa"
+                }
+            },
             {
                 "box": {
                     "id": "obj-15",
@@ -576,8 +661,20 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 0.0, 0.0, 1000.0, 780.0 ],
+                        "rect": [ 1961.0, 719.0, 1000.0, 780.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "linecount": 10,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 368.0, 274.0, 29.5, 146.0 ],
+                                    "text": "soprano_about_to_change_2.wav"
+                                }
+                            },
                             {
                                 "box": {
                                     "color": [ 0.176470588235294, 1.0, 0.0, 1.0 ],
@@ -741,6 +838,13 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-2", 1 ],
+                                    "order": 0,
+                                    "source": [ "obj-227", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-238", 0 ],
                                     "source": [ "obj-227", 0 ]
                                 }
@@ -748,6 +852,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-239", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-227", 1 ]
                                 }
                             },
@@ -783,7 +888,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 2413.445234298706, 8.403360843658447, 146.0, 22.0 ],
+                    "patching_rect": [ 2413.445234298706, 112.0, 146.0, 22.0 ],
                     "text": "p receive_playercontroller"
                 }
             },
@@ -5024,7 +5129,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2413.445234298706, -274.7898995876312, 97.0, 22.0 ],
+                    "patching_rect": [ 2413.445234298706, -383.0, 97.0, 22.0 ],
                     "text": "udpreceive 2025"
                 }
             },
@@ -8688,8 +8793,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 106.0, 201.0, 1546.0, 782.0 ],
-                        "visible": 1,
+                        "rect": [ 153.0, 177.0, 1546.0, 782.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -9383,7 +9487,7 @@
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "items": "ZOWIEBOX (ZowieBox-24006)",
+                                    "items": "<empty>",
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -10722,6 +10826,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-194", 0 ],
+                    "order": 1,
+                    "source": [ "obj-215", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-46", 1 ],
+                    "order": 0,
                     "source": [ "obj-215", 0 ]
                 }
             },
@@ -10970,6 +11082,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-41", 0 ],
+                    "source": [ "obj-46", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-98", 0 ],
                     "source": [ "obj-48", 0 ]
                 }
@@ -11186,6 +11304,12 @@
                     "destination": [ "obj-102", 0 ],
                     "midpoints": [ 2034.5, 603.0, 3217.5, 603.0 ],
                     "source": [ "obj-88", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-46", 0 ],
+                    "source": [ "obj-89", 0 ]
                 }
             },
             {
