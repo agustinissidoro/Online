@@ -15,6 +15,18 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-11",
+                    "linecount": 4,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 551.3333497643471, 277.0, 310.6666502356529, 62.0 ],
+                    "text": "/audio/player1/spatial/listener sound_test.wav 0. 0.1, /audio/player2/spatial/listener sound_test.wav 0. 0.1, /audio/player3/spatial/listener sound_test.wav 0. 0.1, /audio/player4/spatial/listener sound_test.wav 0. 0.1"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-245",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -69,7 +81,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 642.0, 266.0, 24.0, 24.0 ],
+                    "patching_rect": [ 551.0, 136.53848826885223, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1295.0, 114.5, 24.0, 24.0 ]
                 }
@@ -82,8 +94,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 642.0, 321.258816242218, 334.0, 62.0 ],
-                    "text": "/audio/player1/spatial/play sound_test.wav 1 0 0 0 0 0 0, /audio/player2/spatial/play sound_test.wav 1 0 0 0 0 0 0, /audio/player3/spatial/play sound_test.wav 1 0 0 0 0 0 0, /audio/player4/spatial/play sound_test.wav 1 0 0 0 0 0 0"
+                    "patching_rect": [ 551.0, 191.53848826885223, 311.0, 62.0 ],
+                    "text": "/audio/player1/spatial/play sound_test.wav 1 1 0 0 0 0 0, /audio/player2/spatial/play sound_test.wav 1 1 0 0 0 0 0, /audio/player3/spatial/play sound_test.wav 1 1 0 0 0 0 0, /audio/player4/spatial/play sound_test.wav 1 1 0 0 0 0 0"
                 }
             },
             {
@@ -198,6 +210,17 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 29.0, 53.0, 61.0, 22.0 ],
+                                    "text": "pipe 1000"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-13",
                                     "maxclass": "comment",
                                     "numinlets": 1,
@@ -215,7 +238,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 29.0, 51.0, 100.0, 22.0 ],
+                                    "patching_rect": [ 29.0, 20.0, 100.0, 22.0 ],
                                     "text": "loadmess 1"
                                 }
                             },
@@ -376,8 +399,14 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-10", 0 ],
+                                    "destination": [ "obj-2", 0 ],
                                     "source": [ "obj-11", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-10", 0 ],
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
@@ -5643,6 +5672,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "source": [ "obj-11", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-176", 1 ],
                     "source": [ "obj-110", 0 ]
                 }
@@ -6306,7 +6341,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-7", 0 ],
-                    "midpoints": [ 651.5, 447.0, 447.0, 447.0, 447.0, 531.0, 349.5, 531.0 ],
+                    "midpoints": [ 560.5, 447.0, 447.0, 447.0, 447.0, 531.0, 349.5, 531.0 ],
                     "source": [ "obj-213", 0 ]
                 }
             },
@@ -6342,7 +6377,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-11", 0 ],
+                    "order": 0,
+                    "source": [ "obj-230", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-213", 0 ],
+                    "order": 1,
                     "source": [ "obj-230", 0 ]
                 }
             },
@@ -7055,6 +7098,14 @@
             "obj-1.4::obj-17": [ "mc.live.gain~[13]", "spatial", 0 ],
             "obj-1.4::obj-27": [ "mc.live.gain~[5]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[6]", "full player", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[16]"
