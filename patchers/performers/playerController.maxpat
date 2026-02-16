@@ -14,6 +14,51 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-178",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 578.3132743835449, 1142.1687169075012, 206.0, 22.0 ],
+                    "text": "/UI/player3/fullscreen/text/value nooo"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-139",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 622.7229167222977, 1030.0, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-103",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 632.7241314649582, 1085.0, 211.0, 22.0 ],
+                    "text": "/UI/player3/fullscreen/display/value $1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-56",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 939.0, 1006.0, 235.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "/UI/player1/fullscreen/updatetext/value jeje"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-89",
                     "maxclass": "toggle",
                     "numinlets": 1,
@@ -666,13 +711,13 @@
                             {
                                 "box": {
                                     "id": "obj-2",
-                                    "linecount": 10,
+                                    "linecount": 7,
                                     "maxclass": "message",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 368.0, 274.0, 29.5, 146.0 ],
-                                    "text": "soprano_about_to_change_2.wav"
+                                    "text": "soprano_grab_mic.wav"
                                 }
                             },
                             {
@@ -10280,6 +10325,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-47", 0 ],
+                    "source": [ "obj-103", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-102", 0 ],
                     "source": [ "obj-104", 0 ]
                 }
@@ -10466,6 +10517,12 @@
                 "patchline": {
                     "destination": [ "obj-140", 0 ],
                     "source": [ "obj-138", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-103", 0 ],
+                    "source": [ "obj-139", 0 ]
                 }
             },
             {
@@ -10693,6 +10750,12 @@
                 "patchline": {
                     "destination": [ "obj-234", 0 ],
                     "source": [ "obj-177", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-47", 0 ],
+                    "source": [ "obj-178", 0 ]
                 }
             },
             {
@@ -11133,6 +11196,12 @@
                 "patchline": {
                     "destination": [ "obj-17", 0 ],
                     "source": [ "obj-55", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-47", 0 ],
+                    "source": [ "obj-56", 0 ]
                 }
             },
             {
