@@ -285,7 +285,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 922.619039773941, 2408.642167687416, 173.0, 35.0 ],
-                    "presentation_linecount": 3,
                     "text": ";\rto_live_link /livelink/tracking $1"
                 }
             },
