@@ -14,7 +14,8 @@
                     "mouse_sensibility": [ 0.04 ],
                     "video_pos_x": [ 1340 ],
                     "video_pos_y": [ -360 ],
-                    "video_scale": [ 1.3 ]
+                    "video_scale": [ 1.3 ],
+                    "lights_port": [ "BLTH Bluetooth-Incoming-Port" ]
                 }
             }
         }

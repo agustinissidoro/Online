@@ -14,6 +14,187 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-321",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2830.0, 384.0, 72.0, 22.0 ],
+                    "text": "prepend set"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-319",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 2711.5, 395.0, 59.0, 22.0 ],
+                    "text": "route text"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-318",
+                    "linecount": 3,
+                    "maxclass": "textedit",
+                    "numinlets": 1,
+                    "numoutlets": 4,
+                    "outlettype": [ "", "int", "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 2711.5, 325.5, 100.0, 50.0 ],
+                    "text": "BLTH Bluetooth-Incoming-Port",
+                    "varname": "textedit[2]"
+                }
+            },
+            {
+                "box": {
+                    "color": [ 0.929411764705882, 0.937254901960784, 0.964705882352941, 1.0 ],
+                    "id": "obj-317",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "", "", "" ],
+                    "patching_rect": [ 2675.5, 274.0, 91.0, 22.0 ],
+                    "restore": [ "BLTH Bluetooth-Incoming-Port" ],
+                    "saved_object_attributes": {
+                        "parameter_enable": 0,
+                        "parameter_mappable": 0
+                    },
+                    "text": "pattr lights_port",
+                    "varname": "lights_port"
+                }
+            },
+            {
+                "box": {
+                    "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
+                    "id": "obj-314",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2914.5, 491.5, 63.0, 22.0 ],
+                    "text": "s to_serial"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-313",
+                    "maxclass": "button",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 2818.0, 25.5, 24.0, 24.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 171.3235261440277, 439.73528575897217, 24.0, 24.0 ]
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-311",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 2836.0, 234.0, 60.0, 22.0 ],
+                    "text": "route port"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-308",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2914.5, 452.0, 77.0, 22.0 ],
+                    "text": "prepend port"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-302",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2992.5, 151.5, 35.0, 22.0 ],
+                    "text": "clear"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-300",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "bang", "bang" ],
+                    "patching_rect": [ 2818.0, 111.0, 193.5, 22.0 ],
+                    "text": "t b b"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-298",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "patching_rect": [ 2818.0, 73.5, 58.0, 22.0 ],
+                    "text": "loadbang"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-296",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2836.0, 270.5, 96.0, 22.0 ],
+                    "text": "prepend append"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-294",
+                    "items": [ "BLTH", "Bluetooth-Incoming-Port" ],
+                    "maxclass": "umenu",
+                    "numinlets": 1,
+                    "numoutlets": 3,
+                    "outlettype": [ "int", "", "" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 2836.0, 329.0, 176.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 40.939599096775055, 440.73528575897217, 124.9721629023552, 22.0 ],
+                    "varname": "umenu[1]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-286",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 2818.0, 151.5, 32.0, 22.0 ],
+                    "text": "print"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-284",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "int", "" ],
+                    "patching_rect": [ 2818.0, 196.0, 37.0, 22.0 ],
+                    "text": "serial"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-283",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -593,7 +774,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 457.0, 226.0, 1000.0, 780.0 ],
+                        "rect": [ 578.0, 192.0, 1000.0, 780.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -626,7 +807,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 50.0, 396.79830169677734, 44.0, 22.0 ],
+                                    "patching_rect": [ 50.0, 395.0, 44.0, 22.0 ],
                                     "text": "r lights"
                                 }
                             },
@@ -4752,7 +4933,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1860.5, 101.5, 81.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 171.1864447593689, 661.0169649124146, 81.0, 20.0 ],
+                    "presentation_rect": [ 184.4784510731697, 660.4027132987976, 81.0, 20.0 ],
                     "text": "unreal IP/port"
                 }
             },
@@ -4764,7 +4945,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 1860.5, 84.5, 77.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 171.1864447593689, 634.7457778453827, 77.0, 20.0 ],
+                    "presentation_rect": [ 184.4784510731697, 633.557074546814, 77.0, 20.0 ],
                     "text": "audio IP/port"
                 }
             },
@@ -4860,7 +5041,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 665.2542531490326, 1295.1807707548141, 163.0, 33.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 28.813560009002686, 659.3220496177673, 140.0, 23.0 ],
+                    "presentation_rect": [ 41.52542471885681, 658.3892903923988, 140.0, 23.0 ],
                     "text": "127.0.0.1 9005",
                     "varname": "textedit[1]"
                 }
@@ -4893,7 +5074,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 184.33735620975494, 1300.0000480413437, 163.0, 33.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 28.813560009002686, 632.2034049034119, 140.0, 23.0 ],
+                    "presentation_rect": [ 41.52542471885681, 631.5436516404152, 140.0, 23.0 ],
                     "text": "192.168.100.1 2026",
                     "varname": "textedit"
                 }
@@ -5091,7 +5272,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 659.0, 204.0, 338.0, 595.0 ],
+                        "rect": [ 731.0, 128.0, 338.0, 595.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "enablehscroll": 0,
@@ -11444,6 +11625,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-311", 0 ],
+                    "source": [ "obj-284", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-284", 0 ],
+                    "source": [ "obj-286", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-266", 0 ],
                     "source": [ "obj-288", 0 ]
                 }
@@ -11453,6 +11646,32 @@
                     "destination": [ "obj-32", 0 ],
                     "midpoints": [ 1948.5, 582.8909274935722, 1797.5, 582.8909274935722 ],
                     "source": [ "obj-29", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-308", 0 ],
+                    "order": 0,
+                    "source": [ "obj-294", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-321", 0 ],
+                    "order": 1,
+                    "source": [ "obj-294", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-294", 0 ],
+                    "source": [ "obj-296", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-300", 0 ],
+                    "source": [ "obj-298", 0 ]
                 }
             },
             {
@@ -11470,8 +11689,69 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-286", 0 ],
+                    "source": [ "obj-300", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-302", 0 ],
+                    "source": [ "obj-300", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-294", 0 ],
+                    "source": [ "obj-302", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-314", 0 ],
+                    "source": [ "obj-308", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-32", 0 ],
                     "source": [ "obj-31", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-296", 0 ],
+                    "source": [ "obj-311", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-298", 0 ],
+                    "source": [ "obj-313", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-318", 0 ],
+                    "source": [ "obj-317", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-319", 0 ],
+                    "source": [ "obj-318", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-308", 0 ],
+                    "midpoints": [ 2721.0, 486.0, 2924.0, 486.0 ],
+                    "source": [ "obj-319", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-318", 0 ],
+                    "source": [ "obj-321", 0 ]
                 }
             },
             {
