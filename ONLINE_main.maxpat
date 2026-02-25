@@ -31,8 +31,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 1024.0, 108.0, 1000.0, 780.0 ],
-                        "visible": 1,
+                        "rect": [ 1014.0, 108.0, 1000.0, 780.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -43,7 +42,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 335.0, 407.0, 50.0, 116.0 ],
-                                    "text": "/audio/player4/spatial/play sound_test.wav 1 1 0 0 0 0 0"
+                                    "text": "/audio/player4/spatial/play sound_test.wav 0 1 0 0 0 0 0"
                                 }
                             },
                             {
@@ -322,6 +321,7 @@
                         "enablehscroll": 0,
                         "enablevscroll": 0,
                         "title": "matrix",
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -3954,7 +3954,7 @@
                     "outlettype": [ "multichannelsignal", "", "" ],
                     "patching_rect": [ 1214.4068086147308, 2522.0339584350586, 102.54237532615662, 49.0 ],
                     "saved_object_attributes": {
-                        "attack": 0.041666666666666664,
+                        "attack": 0.045351473922902494,
                         "auto": 0,
                         "bypass": 0,
                         "key": 0,
