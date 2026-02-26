@@ -14,6 +14,17 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-187",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 746.0, 448.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 746.0, 448.0, 150.0, 20.0 ]
+                }
+            },
+            {
+                "box": {
                     "id": "obj-321",
                     "maxclass": "newobj",
                     "numinlets": 1,
