@@ -777,12 +777,34 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 51.0, 371.0, 46.0, 22.0 ],
+                                    "text": "s lights"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "FullPacket" ],
+                                    "patching_rect": [ 51.0, 319.0, 95.0, 22.0 ],
+                                    "text": "o.route /fromlive"
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-279",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 93.0, 303.3613324165344, 32.0, 22.0 ],
+                                    "patching_rect": [ 93.0, 418.0, 32.0, 22.0 ],
                                     "text": "gate"
                                 }
                             },
@@ -794,7 +816,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 76.33333333333348, 429.252081155777, 61.0, 22.0 ],
+                                    "patching_rect": [ 76.0, 544.0, 61.0, 22.0 ],
                                     "text": "r to_serial"
                                 }
                             },
@@ -806,7 +828,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 50.0, 395.0, 44.0, 22.0 ],
+                                    "patching_rect": [ 50.0, 510.0, 44.0, 22.0 ],
                                     "text": "r lights"
                                 }
                             },
@@ -818,7 +840,7 @@
                                     "numinlets": 4,
                                     "numoutlets": 1,
                                     "outlettype": [ "int" ],
-                                    "patching_rect": [ 50.0, 478.8319101333618, 98.0, 22.0 ],
+                                    "patching_rect": [ 50.0, 594.0, 98.0, 22.0 ],
                                     "text": "ledstrip.manager"
                                 }
                             },
@@ -830,7 +852,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 50.0, 351.2604892253876, 259.663850069046, 22.0 ],
+                                    "patching_rect": [ 50.0, 466.0, 259.663850069046, 22.0 ],
                                     "text": "ledstrip.router"
                                 }
                             },
@@ -958,11 +980,23 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 49.99995710836811, 560.831911272583, 30.0, 30.0 ]
+                                    "patching_rect": [ 50.0, 676.0, 30.0, 30.0 ]
                                 }
                             }
                         ],
                         "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-258", 0 ],
+                                    "source": [ "obj-1", 1 ]
+                                }
+                            },
                             {
                                 "patchline": {
                                     "destination": [ "obj-233", 0 ],
@@ -971,7 +1005,7 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-258", 0 ],
+                                    "destination": [ "obj-1", 0 ],
                                     "source": [ "obj-233", 0 ]
                                 }
                             },
@@ -1167,6 +1201,7 @@
                 "box": {
                     "checkedcolor": [ 1.0, 0.0, 0.0, 1.0 ],
                     "id": "obj-266",
+                    "ignoreclick": 1,
                     "maxclass": "toggle",
                     "numinlets": 1,
                     "numoutlets": 1,
@@ -5021,7 +5056,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 632.2542531490326, 1254.216913819313, 85.0, 22.0 ],
-                    "restore": [ "192.168.100.2 9005" ],
+                    "restore": [ "127.0.0.1 9005" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5041,7 +5076,7 @@
                     "patching_rect": [ 665.2542531490326, 1295.1807707548141, 163.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 41.52542471885681, 658.3892903923988, 140.0, 23.0 ],
-                    "text": "192.168.100.2 9005",
+                    "text": "127.0.0.1 9005",
                     "varname": "textedit[1]"
                 }
             },
@@ -10047,7 +10082,7 @@
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "items": "<empty>",
+                                    "items": "ZOWIEBOX (ZowieBox-24006)",
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
