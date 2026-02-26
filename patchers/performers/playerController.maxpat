@@ -9,7 +9,11 @@
             "modernui": 1
         },
         "classnamespace": "box",
+<<<<<<< HEAD
         "rect": [ 34.0, 77.0, 1360.0, 921.0 ],
+=======
+        "rect": [ 34.0, 87.0, 1476.0, 1062.0 ],
+>>>>>>> 5e417411cc814f78dac54dc7c2c5e78cd6726dc4
         "openinpresentation": 1,
         "boxes": [
             {
@@ -5067,7 +5071,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 632.2542531490326, 1254.216913819313, 85.0, 22.0 ],
-                    "restore": [ "127.0.0.1 9005" ],
+                    "restore": [ "192.168.100.2 9005" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5087,7 +5091,7 @@
                     "patching_rect": [ 665.2542531490326, 1295.1807707548141, 163.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 41.52542471885681, 658.3892903923988, 140.0, 23.0 ],
-                    "text": "127.0.0.1 9005",
+                    "text": "192.168.100.2 9005",
                     "varname": "textedit[1]"
                 }
             },
