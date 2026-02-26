@@ -42,7 +42,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 335.0, 407.0, 50.0, 116.0 ],
-                                    "text": "/audio/player4/spatial/play sound_test.wav 0 1 0 0 0 0 0"
+                                    "text": "/audio/player4/spatial/play sound_test.wav 1 1 0 0 0 0 0"
                                 }
                             },
                             {
@@ -321,7 +321,6 @@
                         "enablehscroll": 0,
                         "enablevscroll": 0,
                         "title": "matrix",
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -7198,6 +7197,14 @@
             "obj-1.4::obj-17": [ "mc.live.gain~[13]", "spatial", 0 ],
             "obj-1.4::obj-27": [ "mc.live.gain~[5]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[6]", "full player", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[16]"
