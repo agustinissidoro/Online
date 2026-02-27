@@ -16,5 +16,6 @@
 
 # Whitelist specific file
 !/ONLINE_main.maxpat
+!/ONLINE_main_2.maxpat
 !/.gitignore
 !/.gitattributes
