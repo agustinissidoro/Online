@@ -98,6 +98,10 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1110.0, 125.0, 28.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "in 4"
                 }
             },
@@ -109,6 +113,10 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1025.0, 125.0, 28.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "in 3"
                 }
             },
@@ -120,6 +128,10 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 940.0, 125.0, 28.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "in 2"
                 }
             },
@@ -131,10 +143,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 855.0, 125.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 1"
                 }
             },
@@ -146,7 +154,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 850.0, 496.0, 139.0, 22.0 ],
+                    "patching_rect": [ 868.0, 495.0, 139.0, 22.0 ],
                     "text": "r #0_this_player_dict"
                 }
             },
@@ -157,7 +165,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 850.0, 536.0, 41.0, 22.0 ],
+                    "patching_rect": [ 868.0, 535.0, 41.0, 22.0 ],
                     "text": "set $1"
                 }
             },
@@ -168,7 +176,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 833.5, 588.0, 53.0, 22.0 ],
+                    "patching_rect": [ 852.0, 587.0, 53.0, 22.0 ],
                     "text": "prepend"
                 }
             },
@@ -179,7 +187,11 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 833.5, 630.0, 35.0, 22.0 ],
+                    "patching_rect": [ 852.0, 629.0, 35.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "out 2"
                 }
             },
@@ -281,7 +293,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 897.0, 524.0, 127.0, 22.0 ],
+                    "patching_rect": [ 936.0, 531.0, 127.0, 22.0 ],
                     "text": "s #0_spatial_array"
                 }
             },
@@ -293,6 +305,10 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1809.0, 1081.0, 35.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "out 1"
                 }
             },
@@ -303,12 +319,12 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 770.0, 1225.0, 109.0, 22.0 ],
+                    "patching_rect": [ 770.0, 1225.0, 116.0, 22.0 ],
                     "saved_object_attributes": {
                         "attr_comment": "",
                         "c": ""
                     },
-                    "text": "mc.out~ @chans 8"
+                    "text": "mc.out~ @chans 10"
                 }
             },
             {
@@ -440,7 +456,7 @@
                     "patching_rect": [ 791.0, 1019.0, 103.0, 131.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "mc.live.gain~[15]",
+                            "parameter_longname": "mc.live.gain~[8]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
@@ -475,7 +491,7 @@
                     "patching_rect": [ 998.0, 578.0, 88.0, 134.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "mc.live.gain~[9]",
+                            "parameter_longname": "mc.live.gain~[12]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
@@ -499,7 +515,7 @@
                     "patching_rect": [ 1219.0, 578.0, 88.0, 134.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "mc.live.gain~[16]",
+                            "parameter_longname": "mc.live.gain~[11]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
@@ -531,8 +547,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "multichannelsignal", "", "dictionary" ],
-                    "patching_rect": [ 770.0, 444.0, 146.0, 22.0 ],
-                    "text": "poly.spatial.player player1"
+                    "patching_rect": [ 770.0, 444.0, 185.0, 22.0 ],
+                    "text": "poly.spatial.player8chans player1"
                 }
             },
             {
@@ -977,7 +993,7 @@
                     "patching_rect": [ 792.0, 741.0, 103.0, 131.0 ],
                     "saved_attribute_attributes": {
                         "valueof": {
-                            "parameter_longname": "mc.live.gain~[14]",
+                            "parameter_longname": "mc.live.gain~[13]",
                             "parameter_mmax": 6.0,
                             "parameter_mmin": -70.0,
                             "parameter_modmode": 3,
