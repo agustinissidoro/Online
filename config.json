@@ -20,7 +20,12 @@
                     "player4_spatial_gain": [ 0.0 ],
                     "player4_2D_gain": [ 0.0 ],
                     "player4_footsteps_gain": [ 0.0 ],
-                    "player4_mic_gain": [ 0.0 ]
+                    "player4_mic_gain": [ 0.0 ],
+                    "unreal_mix_gain": [ 128 ],
+                    "mics_mix_gain": [ 128 ],
+                    "master_gain": [ 128 ],
+                    "unreal_ip": [ "192.168.100.2 9005" ],
+                    "loudspeakers_positions": [ "315 45 225 135 0 90 180 270" ]
                 }
             }
         }
