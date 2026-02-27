@@ -1,0 +1,28 @@
+{
+    "pattrstorage": {
+        "name": "config",
+        "slots": {
+            "1": {
+                "id": 1,
+                "data": {
+                    "player1_spatial_gain": [ 0.0 ],
+                    "player1_2D_gain": [ 0.0 ],
+                    "player1_footsteps_gain": [ 0.0 ],
+                    "player1_mic_gain": [ 0.0 ],
+                    "player2_spatial_gain": [ 0.0 ],
+                    "player2_2D_gain": [ 0.0 ],
+                    "player2_footsteps_gain": [ 0.0 ],
+                    "player2_mic_gain": [ 0.0 ],
+                    "player3_spatial_gain": [ 0.0 ],
+                    "player3_2D_gain": [ 0.0 ],
+                    "player3_footsteps_gain": [ 0.0 ],
+                    "player3_mic_gain": [ 0.0 ],
+                    "player4_spatial_gain": [ 0.0 ],
+                    "player4_2D_gain": [ 0.0 ],
+                    "player4_footsteps_gain": [ 0.0 ],
+                    "player4_mic_gain": [ 0.0 ]
+                }
+            }
+        }
+    }
+}
