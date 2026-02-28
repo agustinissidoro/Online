@@ -15,6 +15,50 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-188",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "patching_rect": [ 625.0, 460.0, 67.0, 22.0 ],
+                    "text": "delay 1000"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-362",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 624.9691247940063, 506.0, 39.0, 22.0 ],
+                    "text": "dump"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-358",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "bang" ],
+                    "patching_rect": [ 625.0, 422.0, 58.0, 22.0 ],
+                    "text": "loadbang"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-356",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 507.0, 459.0, 89.0, 22.0 ],
+                    "text": "loadmess clear"
+                }
+            },
+            {
+                "box": {
                     "fontface": 1,
                     "id": "obj-354",
                     "maxclass": "comment",
@@ -8050,6 +8094,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-362", 0 ],
+                    "source": [ "obj-188", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-165", 0 ],
                     "source": [ "obj-189", 1 ]
                 }
@@ -8714,9 +8764,21 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-345", 0 ],
+                    "source": [ "obj-356", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-359", 0 ],
                     "midpoints": [ 2464.5, 4279.9697565937495, 2423.626938328125, 4279.9697565937495, 2423.626938328125, 4154.766876, 2464.5, 4154.766876 ],
                     "source": [ "obj-357", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-188", 0 ],
+                    "source": [ "obj-358", 0 ]
                 }
             },
             {
@@ -8736,6 +8798,12 @@
                     "destination": [ "obj-363", 0 ],
                     "midpoints": [ 2465.5, 4125.247375531249, 2416.5085601250003, 4125.247375531249, 2416.5085601250003, 4007.674377, 2465.5, 4007.674377 ],
                     "source": [ "obj-361", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-346", 0 ],
+                    "source": [ "obj-362", 0 ]
                 }
             },
             {
@@ -9642,6 +9710,14 @@
             "obj-1.4::obj-17": [ "mc.live.gain~[5]", "spatial", 0 ],
             "obj-1.4::obj-27": [ "mc.live.gain~[7]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[9]", "full player", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[16]"
