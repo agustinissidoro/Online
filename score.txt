@@ -1,0 +1,11 @@
+CUE 0 INIT
+
+pepecito culiau
+
+CUE 1 INTRO-VIDEOS
+
+pepecito "que onda culiau"
+
+CUE 2 END 
+
+
