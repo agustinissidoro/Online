@@ -631,7 +631,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 2966.0, 3960.0, 54.0, 35.0 ],
-                    "presentation_linecount": 2,
                     "text": ";\rdsp stop"
                 }
             },
@@ -1144,8 +1143,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1842.0, 2726.0, 347.0, 49.0 ],
-                    "text": ";\raudio /audio/player4/spatial/play sound_test.wav $1 1 0 0 0 0 0;\raudio /audio/player4/spatial/listener sound_test.wav 0. 0.1,"
+                    "patching_rect": [ 1842.0, 2726.0, 369.0, 49.0 ],
+                    "text": ";\raudio /audio/player4/spatial/play spatial_test_04.wav $1 1 0 0 0 0 0;\raudio /audio/player4/spatial/listener sound_test.wav 0. 0.01,"
                 }
             },
             {
@@ -1156,8 +1155,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1842.0, 2616.6665663719177, 347.0, 49.0 ],
-                    "text": ";\raudio /audio/player3/spatial/play sound_test.wav $1 1 0 0 0 0 0;\raudio /audio/player3/spatial/listener sound_test.wav 0. 0.1,"
+                    "patching_rect": [ 1842.0, 2616.6665663719177, 369.0, 49.0 ],
+                    "text": ";\raudio /audio/player3/spatial/play spatial_test_03.wav $1 1 0 0 0 0 0;\raudio /audio/player3/spatial/listener sound_test.wav 0. 0.01,"
                 }
             },
             {
@@ -1168,8 +1167,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1842.0, 2517.708236336708, 347.0, 49.0 ],
-                    "text": ";\raudio /audio/player2/spatial/play sound_test.wav $1 1 0 0 0 0 0;\raudio /audio/player2/spatial/listener sound_test.wav 0. 0.1,"
+                    "patching_rect": [ 1842.0, 2517.708236336708, 369.0, 49.0 ],
+                    "text": ";\raudio /audio/player2/spatial/play spatial_test_02.wav $1 1 0 0 0 0 0;\raudio /audio/player2/spatial/listener sound_test.wav 0. 0.01,"
                 }
             },
             {
@@ -1180,8 +1179,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1842.0, 2409.6664534807205, 347.0, 49.0 ],
-                    "text": ";\raudio /audio/player1/spatial/play sound_test.wav $1 1 0 0 0 0 0;\raudio /audio/player1/spatial/listener sound_test.wav 0. 0.1,"
+                    "patching_rect": [ 1842.0, 2409.6664534807205, 369.0, 49.0 ],
+                    "text": ";\raudio /audio/player1/spatial/play spatial_test_01.wav $1 1 0 0 0 0 0;\raudio /audio/player1/spatial/listener sound_test.wav 0. 0.01,"
                 }
             },
             {
@@ -1662,8 +1661,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1355.208281636238, 2667.7082315683365, 347.0, 35.0 ],
-                    "text": ";\raudio /audio/player4/2D/play soprano_joined.wav $1 1 0 0 0 0 0"
+                    "patching_rect": [ 1355.208281636238, 2667.7082315683365, 329.0, 35.0 ],
+                    "text": ";\raudio /audio/player4/2D/play bass_joined.wav $1 1 0 0 0 0 0"
                 }
             },
             {
@@ -1674,8 +1673,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1355.208281636238, 2586.979067981243, 347.0, 35.0 ],
-                    "text": ";\raudio /audio/player3/2D/play soprano_joined.wav $1 1 0 0 0 0 0"
+                    "patching_rect": [ 1355.208281636238, 2586.979067981243, 331.0, 35.0 ],
+                    "text": ";\raudio /audio/player3/2D/play tenor_joined.wav $1 1 0 0 0 0 0"
                 }
             },
             {
@@ -1686,8 +1685,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1355.208281636238, 2499.9999046325684, 331.0, 35.0 ],
-                    "text": ";\raudio /audio/player2/2D/play tenor_joined.wav $1 1 0 0 0 0 0"
+                    "patching_rect": [ 1355.208281636238, 2499.9999046325684, 323.0, 35.0 ],
+                    "text": ";\raudio /audio/player2/2D/play alto_joined.wav $1 1 0 0 0 0 0"
                 }
             },
             {
@@ -9602,14 +9601,6 @@
             "obj-1.4::obj-17": [ "mc.live.gain~[5]", "spatial", 0 ],
             "obj-1.4::obj-27": [ "mc.live.gain~[7]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[9]", "full player", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[16]"
