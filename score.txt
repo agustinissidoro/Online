@@ -1,11 +1,17 @@
 CUE 0 INIT
 
-pepecito culiau
+liveSync loop 0
 
 CUE 1 INTRO-VIDEOS
 
-pepecito "que onda culiau"
 
-CUE 2 END 
+CUE 2 LIVE-START 
 
+liveSync cue pepecito
+liveSync play
 
+CUE 3 END
+
+CUE 4 NOT
+
+CUE 5 NOT2
