@@ -21,12 +21,16 @@ liveSync play
 CUE 3 END
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 CUE 4 NOT
 
 CUE 5 NOT2
 
 CUE 6 NOT3
 
+=======
+CUE 4 NOT
+>>>>>>> Stashed changes
 =======
 CUE 4 NOT
 >>>>>>> Stashed changes
