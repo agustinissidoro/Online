@@ -1,20 +1,32 @@
 CUE 0 INIT
 
+clock 0
 liveSync loop 0
+lights reset
+unreal init 
 
 CUE 1 INTRO-VIDEOS
 
+clock 0
+clock 1
 
-CUE 2 LIVE-START 
+CUE 2 LIVE-START
+
+clock 0
+clock 1
 
 liveSync cue pepecito
 liveSync play
 
 CUE 3 END
 
+<<<<<<< Updated upstream
 CUE 4 NOT
 
 CUE 5 NOT2
 
 CUE 6 NOT3
 
+=======
+CUE 4 NOT
+>>>>>>> Stashed changes
