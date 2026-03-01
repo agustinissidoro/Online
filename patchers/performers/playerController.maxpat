@@ -9,11 +9,11 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "openrect": [ 750.0, 100.0, 731.0, 868.0 ],
+        "openrect": [ 750.0, 100.0, 601.0, 713.0 ],
         "openrectmode": 0,
         "openinpresentation": 1,
         "toolbarvisible": 0,
-        "devicewidth": 731.0,
+        "devicewidth": 601.0,
         "title": "Player Controller",
         "boxes": [
             {
@@ -199,8 +199,8 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 358.2089442014694, 100.0, 46.0, 22.0 ],
-                                                    "text": "r folder"
+                                                    "patching_rect": [ 358.2089442014694, 100.0, 85.0, 22.0 ],
+                                                    "text": "r player_folder"
                                                 }
                                             },
                                             {
@@ -488,7 +488,7 @@
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 0.0, 0.0, 1000.0, 780.0 ],
+                                        "rect": [ 59.0, 106.0, 1000.0, 780.0 ],
                                         "boxes": [
                                             {
                                                 "box": {
@@ -520,8 +520,8 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 358.2089442014694, 100.0, 46.0, 22.0 ],
-                                                    "text": "r folder"
+                                                    "patching_rect": [ 358.2089442014694, 100.0, 85.0, 22.0 ],
+                                                    "text": "r player_folder"
                                                 }
                                             },
                                             {
@@ -8696,7 +8696,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 106.0, 1000.0, 780.0 ],
+                        "rect": [ 768.0, 246.0, 1000.0, 780.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -8705,8 +8705,8 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 135.5, 234.0, 48.0, 22.0 ],
-                                    "text": "s folder"
+                                    "patching_rect": [ 135.5, 234.0, 87.0, 22.0 ],
+                                    "text": "s player_folder"
                                 }
                             },
                             {
@@ -11063,7 +11063,7 @@
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "items": "<empty>",
+                                    "items": "AGUSTIN-PC (Adobe After Effects)",
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
