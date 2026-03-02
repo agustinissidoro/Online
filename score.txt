@@ -10,6 +10,29 @@ CUE 1 INTRO-VIDEOS
 clock 0
 clock 1
 
+unreal /UI/player1/video/load/value waitingvideo_soprano
+unreal /UI/player1/video/display/value 1
+unreal /UI/player1/video/play/value 0 0
+
+unreal /UI/player2/video/load/value waitingvideo_alto
+unreal /UI/player2/video/display/value 1
+unreal /UI/player2/video/play/value 0 0
+
+unreal /UI/player3/video/load/value waitingvideo_tenor
+unreal /UI/player3/video/display/value 1
+unreal /UI/player3/video/play/value 0 0
+
+unreal /UI/player4/video/load/value waitingvideo_bass
+unreal /UI/player4/video/display/value 1
+unreal /UI/player4/video/play/value 0 0
+
+// audio /audio/all/2D/play video_intro.wav 1 1 0 0 0 0 0
+audio /audio/player1/2D/play video_intro.wav 1 1 0 0 0 0 0
+audio /audio/player2/2D/play video_intro.wav 1 1 0 0 0 0 500
+audio /audio/player3/2D/play video_intro.wav 1 1 0 0 0 0 1000
+audio /audio/player4/2D/play video_intro.wav 1 1 0 0 0 0 1500
+
+
 CUE 2 LIVE-START
 
 clock 0
@@ -20,17 +43,9 @@ liveSync play
 
 CUE 3 END
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 CUE 4 NOT
 
 CUE 5 NOT2
 
 CUE 6 NOT3
 
-=======
-CUE 4 NOT
->>>>>>> Stashed changes
-=======
-CUE 4 NOT
->>>>>>> Stashed changes
