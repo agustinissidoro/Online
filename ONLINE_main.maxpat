@@ -10349,6 +10349,14 @@
             "obj-1.4::obj-17": [ "mc.live.gain~[5]", "spatial", 0 ],
             "obj-1.4::obj-27": [ "mc.live.gain~[7]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[9]", "full player", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[16]"
