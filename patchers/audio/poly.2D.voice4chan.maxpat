@@ -240,8 +240,18 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 159.0, 1852.0, 921.0 ],
+                        "rect": [ 134.0, 159.0, 1387.0, 921.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-28",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 308.0, 867.0, 78.0, 22.0 ],
+                                    "text": "print stopped"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-30",
@@ -391,7 +401,7 @@
                                     "maxclass": "newobj",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 198.0, 886.0, 123.0, 22.0 ],
+                                    "patching_rect": [ 290.0, 896.0, 123.0, 22.0 ],
                                     "text": "s #0_done_playing"
                                 }
                             },
@@ -874,6 +884,13 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-10", 0 ],
+                                    "source": [ "obj-16", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-28", 0 ],
+                                    "disabled": 1,
                                     "source": [ "obj-16", 0 ]
                                 }
                             },

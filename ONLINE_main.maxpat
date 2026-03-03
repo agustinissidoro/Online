@@ -15,6 +15,27 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-94",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 701.0, 555.0, 640.0, 22.0 ],
+                    "text": "/audio/player1/3D/play video_join_soprano.wav 1 1 0 0 0 0 0, /audio/player1/2D/play video_intro.wav 0 0 0 10000 0 0 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-115",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 512.0, 306.0, 69.0, 22.0 ],
+                    "text": "print debug"
+                }
+            },
+            {
+                "box": {
                     "bgcolor": [ 1.0, 1.0, 1.0, 1.0 ],
                     "id": "obj-60",
                     "maxclass": "comment",
@@ -133,7 +154,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2607.0, 4157.0, 123.0, 22.0 ],
-                    "restore": [ 7 ],
+                    "restore": [ 0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -164,7 +185,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-378",
-                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "Digiface Dante (24236961)", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole", ",", "Périphérique agrégé" ],
+                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -640,7 +661,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-345",
-                    "items": "<empty>",
+                    "items": [ "INIT", ",", "Soprano enter", ",", "Start. Soprano Join Video.", ",", "Soprano in room", ",", "Soprano to desk", ",", "Soprano to piano", ",", "Soprano to door", ",", "What is this shit?", ",", "Door 2", ",", "Hello...?", ",", "Tenor intro video", ",", "Tenor in room", ",", "Tenor to radio", ",", "Soprano to mic; Tenor out", ",", "UI set", ",", 1 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1442,7 +1463,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 6 ],
+                    "restore": [ 4 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1496,7 +1517,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2315.0, 3870.0, 82.0, 22.0 ],
-                    "restore": [ 2 ],
+                    "restore": [ 1 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1527,7 +1548,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-376",
-                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "Digiface Dante (24236961)", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole", ",", "Périphérique agrégé" ],
+                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1718,7 +1739,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-364",
-                    "items": [ 32000, ",", 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
+                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4532,6 +4553,7 @@
                         "enablehscroll": 0,
                         "enablevscroll": 0,
                         "title": "matrix",
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -4600,7 +4622,7 @@
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "" ],
                                     "patching_rect": [ 5.0, 196.94657850265503, 109.0, 22.0 ],
-                                    "restore": [ 0, 0, 1.0, 1, 1, 1.0, 2, 2, 1.0, 3, 3, 1.0, 4, 4, 1.0, 5, 5, 1.0, 6, 6, 1.0, 7, 7, 1.0, 8, 8, 1.0, 9, 9, 1.0, 10, 10, 1.0, 11, 11, 1.0, 12, 12, 1.0, 13, 13, 1.0, 14, 14, 1.0, 15, 15, 1.0, 16, 16, 1.0, 17, 17, 1.0, 18, 18, 1.0, 19, 19, 1.0, 20, 20, 1.0, 21, 21, 1.0, 22, 22, 1.0, 23, 23, 1.0, 24, 0, 1.0, 25, 1, 1.0, 26, 2, 1.0, 27, 3, 1.0, 28, 4, 1.0, 29, 5, 1.0, 30, 6, 1.0, 31, 7, 1.0, 32, 8, 1.0, 32, 10, 1.0, 33, 9, 1.0, 33, 11, 1.0, 34, 12, 1.0, 34, 14, 1.0, 35, 13, 1.0, 35, 15, 1.0, 36, 16, 1.0, 36, 18, 1.0, 37, 17, 1.0, 37, 19, 1.0, 38, 20, 1.0, 38, 22, 1.0, 39, 21, 1.0, 39, 23, 1.0 ],
+                                    "restore": [ 0, 0, 1.0, 1, 1, 1.0, 2, 2, 1.0, 3, 3, 1.0, 4, 4, 1.0, 5, 5, 1.0, 6, 6, 1.0, 7, 7, 1.0, 8, 0, 1.0, 8, 8, 1.0, 9, 1, 1.0, 9, 9, 1.0, 10, 10, 1.0, 11, 11, 1.0, 12, 12, 1.0, 13, 13, 1.0, 14, 14, 1.0, 15, 15, 1.0, 16, 0, 1.0, 16, 16, 1.0, 17, 1, 1.0, 17, 17, 1.0, 18, 18, 1.0, 19, 19, 1.0, 20, 20, 1.0, 21, 21, 1.0, 22, 22, 1.0, 23, 23, 1.0, 24, 0, 1.0, 25, 1, 1.0, 26, 2, 1.0, 27, 3, 1.0, 28, 4, 1.0, 29, 5, 1.0, 30, 6, 1.0, 31, 7, 1.0, 32, 8, 1.0, 32, 10, 1.0, 33, 9, 1.0, 33, 11, 1.0, 34, 12, 1.0, 34, 14, 1.0, 35, 13, 1.0, 35, 15, 1.0, 36, 16, 1.0, 36, 18, 1.0, 37, 17, 1.0, 37, 19, 1.0, 38, 20, 1.0, 38, 22, 1.0, 39, 21, 1.0, 39, 23, 1.0 ],
                                     "saved_object_attributes": {
                                         "parameter_enable": 0,
                                         "parameter_mappable": 0
@@ -10480,6 +10502,12 @@
                 "patchline": {
                     "destination": [ "obj-164", 0 ],
                     "source": [ "obj-93", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 0 ],
+                    "source": [ "obj-94", 0 ]
                 }
             },
             {
