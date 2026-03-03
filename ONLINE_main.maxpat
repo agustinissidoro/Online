@@ -133,7 +133,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2607.0, 4157.0, 123.0, 22.0 ],
-                    "restore": [ 0 ],
+                    "restore": [ 7 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -164,7 +164,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-378",
-                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
+                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "Digiface Dante (24236961)", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole", ",", "Périphérique agrégé" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -781,7 +781,7 @@
             {
                 "box": {
                     "id": "obj-458",
-                    "items": [ "RESET", ",", "INIT", ",", "INTRO-VIDEOS", ",", "LIVE-START", ",", "END", ",", "NOT", ",", "NOT2", ",", "NOT3" ],
+                    "items": [ "RESET", ",", "INIT", ",", "INTRO-VIDEOS", ",", "LIVE-START", ",", "END" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1164,7 +1164,7 @@
             {
                 "box": {
                     "id": "obj-414",
-                    "items": [ "RESET", ",", "INIT", ",", "INTRO-VIDEOS", ",", "LIVE-START", ",", "END", ",", "NOT", ",", "NOT2", ",", "NOT3" ],
+                    "items": [ "RESET", ",", "INIT", ",", "INTRO-VIDEOS", ",", "LIVE-START", ",", "END" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1208,7 +1208,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-411",
-                    "items": [ "RESET", ",", "INIT", ",", "INTRO-VIDEOS", ",", "LIVE-START", ",", "END", ",", "NOT", ",", "NOT2", ",", "NOT3" ],
+                    "items": [ "RESET", ",", "INIT", ",", "INTRO-VIDEOS", ",", "LIVE-START", ",", "END" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1442,7 +1442,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 1 ],
+                    "restore": [ 6 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1496,7 +1496,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2315.0, 3870.0, 82.0, 22.0 ],
-                    "restore": [ 1 ],
+                    "restore": [ 2 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1527,7 +1527,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-376",
-                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
+                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "Digiface Dante (24236961)", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole", ",", "Périphérique agrégé" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1718,7 +1718,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-364",
-                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+                    "items": [ 32000, ",", 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
