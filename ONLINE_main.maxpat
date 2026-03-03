@@ -15,6 +15,83 @@
         "boxes": [
             {
                 "box": {
+                    "bgcolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "id": "obj-60",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 607.0, 1029.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 607.2260087579489, 1028.0, 92.82511523365974, 20.0 ],
+                    "text": "spatial-mics",
+                    "textjustification": 1
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "id": "obj-407",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 990.0, 1006.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 991.5, 1006.0, 191.0, 20.0 ],
+                    "text": "mics-quad",
+                    "textjustification": 1
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 1.0, 1.0, 1.0, 1.0 ],
+                    "id": "obj-403",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 704.5, 1027.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 704.000020980835, 1028.0, 188.0000056028366, 20.0 ],
+                    "text": "mics-quad",
+                    "textjustification": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-401",
+                    "linecount": 6,
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1437.037151813507, 1633.5, 154.0, 87.0 ],
+                    "text": "WHEN GOING TO TRUE 4CHAN WITH MICS, THIS IS 48 48.\n\nNOW I JUST DUPLICATE MICS IN QUAD"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-262",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 996.0, 1556.0, 41.0, 22.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 954.0, 756.5, 41.0, 22.0 ],
+                    "text": "matrix"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-96",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "multichannelsignal", "" ],
+                    "patching_rect": [ 1317.0, 1662.0, 110.0, 22.0 ],
+                    "text": "mcs.matrix~ 40 48"
+                }
+            },
+            {
+                "box": {
                     "id": "obj-381",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -56,7 +133,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2607.0, 4157.0, 123.0, 22.0 ],
-                    "restore": [ 3 ],
+                    "restore": [ 0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -87,7 +164,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-378",
-                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "Digiface Dante (24236961)", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole", ",", "Périphérique agrégé" ],
+                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -563,7 +640,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-345",
-                    "items": [ "INIT", ",", "Soprano enter", ",", "Start. Soprano Join Video.", ",", "Soprano in room", ",", "Soprano to desk", ",", "Soprano to piano", ",", "Soprano to door", ",", "What is this shit?", ",", "Door 2", ",", "Hello...?", ",", "Tenor intro video", ",", "Tenor in room", ",", "Tenor to radio", ",", "Soprano to mic; Tenor out", ",", "UI set", ",", 1 ],
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1365,7 +1442,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 6 ],
+                    "restore": [ 1 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -1450,7 +1527,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-376",
-                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "Digiface Dante (24236961)", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole", ",", "Périphérique agrégé" ],
+                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1641,7 +1718,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-364",
-                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
+                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1850,7 +1927,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 140.0, 137.0, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1140.0, 786.0, 52.0, 20.0 ],
+                    "presentation_rect": [ 1324.2608256936073, 764.0, 52.0, 20.0 ],
                     "text": "click out"
                 }
             },
@@ -1865,7 +1942,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 851.1811475157738, 2448.594617843628, 80.0, 13.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1120.0, 810.0, 12.0, 190.07872885465622 ]
+                    "presentation_rect": [ 1344.3477820158005, 809.9606625437737, 12.0, 190.07872885465622 ]
                 }
             },
             {
@@ -1890,7 +1967,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 840.0, 2355.0, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1114.0, 784.0, 24.0, 24.0 ]
+                    "presentation_rect": [ 1338.2608256936073, 783.8737068772316, 24.0, 24.0 ]
                 }
             },
             {
@@ -1960,7 +2037,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 117.92309296131134, 216.74360740184784, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 464.0, 789.0, 83.0, 20.0 ],
+                    "presentation_rect": [ 581.2459070980549, 760.8695651888847, 83.0, 20.0 ],
                     "text": "speaker index"
                 }
             },
@@ -1972,7 +2049,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 115.92309296131134, 193.74360740184784, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 465.0, 762.0, 80.0, 20.0 ],
+                    "presentation_rect": [ 452.5, 761.0, 80.0, 20.0 ],
                     "text": "test speakers"
                 }
             },
@@ -1990,7 +2067,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 940.9090079069138, 2309.090705394745, 50.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 423.0, 788.0, 39.24731355905533, 22.0 ],
+                    "presentation_rect": [ 540.3763432204723, 760.0, 39.24731355905533, 22.0 ],
                     "tricolor": [ 0.501961, 0.501961, 0.501961, 0.0 ]
                 }
             },
@@ -2109,7 +2186,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 1499.0, 996.0, 115.0, 22.0 ],
+                    "patching_rect": [ 1499.1209514141083, 892.0, 115.0, 22.0 ],
                     "restore": [ 128 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -2155,7 +2232,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 1531.7472553253174, 1055.0, 58.0, 22.0 ],
+                    "patching_rect": [ 1532.1209514141083, 951.0, 58.0, 22.0 ],
                     "text": "loadbang"
                 }
             },
@@ -2392,7 +2469,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1622.0, 1850.6814124584198, 74.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1041.0, 780.0, 41.33333456516266, 24.000000715255737 ],
+                    "presentation_rect": [ 1256.666699707508, 779.5652425289154, 41.33333456516266, 24.000000715255737 ],
                     "text": "MUTE",
                     "texton": "MUTE",
                     "usebgoncolor": 1
@@ -2428,7 +2505,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 235.0, 845.0, 41.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 582.0, 829.0, 41.0, 22.0 ],
+                    "presentation_rect": [ 430.0111575126648, 828.40171200037, 41.0, 22.0 ],
                     "text": "matrix"
                 }
             },
@@ -2440,7 +2517,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 138.92309296131134, 152.74360740184784, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 642.0, 800.0, 42.0, 20.0 ],
+                    "presentation_rect": [ 490.0111555457115, 799.7060607671738, 42.0, 20.0 ],
                     "text": "mics"
                 }
             },
@@ -2452,7 +2529,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 97.92309296131134, 152.74360740184784, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 583.0, 800.0, 42.0, 20.0 ],
+                    "presentation_rect": [ 430.88072270154953, 799.7060607671738, 42.0, 20.0 ],
                     "text": "unreal"
                 }
             },
@@ -2465,7 +2542,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 232.0, 106.5, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 937.0, 1006.0, 92.82511523365974, 20.0 ],
+                    "presentation_rect": [ 894.0000265836716, 1006.0, 92.82511523365974, 20.0 ],
                     "text": "spatial-mics",
                     "textjustification": 1
                 }
@@ -2479,8 +2556,8 @@
                     "numoutlets": 0,
                     "patching_rect": [ 136.0, 105.5, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 841.0, 1006.0, 93.625, 20.0 ],
-                    "text": "2D",
+                    "presentation_rect": [ 704.000020980835, 1006.0, 188.0000056028366, 20.0 ],
+                    "text": "2D-quad",
                     "textjustification": 1
                 }
             },
@@ -2502,8 +2579,8 @@
                     "numoutlets": 0,
                     "patching_rect": [ 214.0, 154.0, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 743.0, 1006.0, 94.375, 20.0 ],
-                    "text": "spatial",
+                    "presentation_rect": [ 606.4510663747787, 1006.0, 94.375, 20.0 ],
+                    "text": "surround",
                     "textjustification": 1
                 }
             },
@@ -2605,7 +2682,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 1241.0, 1786.0, 30.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1047.0, 1005.0, 30.0, 22.0 ],
+                    "presentation_rect": [ 1262.7536560297012, 1003.9130612611771, 30.0, 22.0 ],
                     "text": "0dB"
                 }
             },
@@ -2632,7 +2709,7 @@
                     "outlettype": [ "float" ],
                     "patching_rect": [ 1405.3021928071976, 1779.4835124015808, 92.30769681930542, 167.03297519683838 ],
                     "presentation": 1,
-                    "presentation_rect": [ 739.0, 806.0, 317.5824331045151, 197.80220746994019 ]
+                    "presentation_rect": [ 602.6086758971214, 806.0869300961494, 585.3913241028786, 198.2608630657196 ]
                 }
             },
             {
@@ -2646,7 +2723,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 1317.1923716068268, 1789.011076450348, 22.0, 140.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1041.0, 810.0, 41.33330029249191, 190.00000566244125 ],
+                    "presentation_rect": [ 1256.666699707508, 810.0000241398811, 41.33330029249191, 190.00000566244125 ],
                     "varname": "gain~[2]"
                 }
             },
@@ -2663,45 +2740,12 @@
             },
             {
                 "box": {
-                    "id": "obj-115",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 1317.1923716068268, 1657.1429381370544, 314.28572964668274, 22.0 ],
-                    "text": "mc.+~"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-96",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 1683.4781012535095, 861.5385036468506, 121.0, 22.0 ],
-                    "text": "mc.sig~ 0. @chans 8"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-94",
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 1612.4781012535095, 926.3736716508865, 90.0, 22.0 ],
-                    "text": "mc.combine~ 2"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-88",
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "multichannelsignal", "multichannelsignal", "multichannelsignal" ],
-                    "patching_rect": [ 1479.1209514141083, 756.0, 285.7142996788025, 22.0 ],
+                    "patching_rect": [ 1479.0, 756.0, 343.4838056564331, 22.0 ],
                     "text": "mc.separate~ 8 8"
                 }
             },
@@ -2712,9 +2756,9 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1531.7472553253174, 1096.6043953895569, 30.0, 22.0 ],
+                    "patching_rect": [ 1532.1209514141083, 992.0, 30.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 642.0, 1010.0, 30.0, 22.0 ],
+                    "presentation_rect": [ 490.0111555457115, 1010.1408364772797, 30.0, 22.0 ],
                     "text": "0dB"
                 }
             },
@@ -2725,7 +2769,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1531.7472553253174, 1132.8681334257126, 29.5, 22.0 ],
+                    "patching_rect": [ 1532.1209514141083, 1028.0, 29.5, 22.0 ],
                     "text": "128"
                 }
             },
@@ -2738,9 +2782,9 @@
                     "numoutlets": 2,
                     "outlettype": [ "multichannelsignal", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 1479.0, 1101.0, 22.0, 140.0 ],
+                    "patching_rect": [ 1479.1209514141083, 997.0, 22.0, 140.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 641.0, 857.0, 31.858409643173218, 146.9026666879654 ],
+                    "presentation_rect": [ 489.1415903568268, 857.0973632335663, 31.858409643173218, 146.9026666879654 ],
                     "varname": "gain~[1]"
                 }
             },
@@ -2764,7 +2808,7 @@
                     "outlettype": [ "" ],
                     "patching_rect": [ 360.7472553253174, 1095.505494236946, 30.0, 22.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 588.0, 1010.0, 30.0, 22.0 ],
+                    "presentation_rect": [ 436.09811383485794, 1010.1408364772797, 30.0, 22.0 ],
                     "text": "0dB"
                 }
             },
@@ -2790,7 +2834,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 308.0, 1101.0, 22.0, 140.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 586.0, 857.0, 32.743365466594696, 146.9026666879654 ],
+                    "presentation_rect": [ 434.35898345708847, 857.0973632335663, 32.743365466594696, 146.9026666879654 ],
                     "varname": "gain~"
                 }
             },
@@ -3907,7 +3951,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 942.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 946.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1218.0, 509.0, 94.73683369159698, 89.47367626428604 ],
@@ -3932,7 +3976,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 942.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 946.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1218.0, 509.0, 94.73683369159698, 89.47367626428604 ],
@@ -3957,7 +4001,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 942.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 946.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1218.0, 509.0, 94.73683369159698, 89.47367626428604 ],
@@ -3982,7 +4026,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 942.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 946.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1218.0, 509.0, 94.73683369159698, 89.47367626428604 ],
@@ -3997,7 +4041,7 @@
                     "numinlets": 5,
                     "numoutlets": 5,
                     "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 942.5, 1225.0, 76.0, 22.0 ],
+                    "patching_rect": [ 946.5370247704642, 1235.0, 76.0, 22.0 ],
                     "text": "route 1 2 3 4"
                 }
             },
@@ -4012,7 +4056,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 942.5, 1302.3972546458244, 149.0, 148.579086 ],
+                    "patching_rect": [ 946.5370247704642, 1312.0, 149.0, 148.579086 ],
                     "presentation": 1,
                     "presentation_rect": [ 1218.0, 508.0, 94.73683369159698, 93.233074426651 ],
                     "proportion": 0.39,
@@ -4036,7 +4080,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 859.0, 1030.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 863.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 972.0, 508.0, 94.73683369159698, 89.47367626428604 ],
@@ -4061,7 +4105,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 859.0, 1030.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 863.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 972.0, 508.0, 94.73683369159698, 89.47367626428604 ],
@@ -4086,7 +4130,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 859.0, 1030.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 863.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 972.0, 508.0, 94.73683369159698, 89.47367626428604 ],
@@ -4111,7 +4155,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 859.0, 1030.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 863.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 972.0, 508.0, 94.73683369159698, 89.47367626428604 ],
@@ -4126,7 +4170,7 @@
                     "numinlets": 5,
                     "numoutlets": 5,
                     "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 859.0, 952.0, 76.0, 22.0 ],
+                    "patching_rect": [ 863.5370247704642, 962.0, 76.0, 22.0 ],
                     "text": "route 1 2 3 4"
                 }
             },
@@ -4141,7 +4185,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 859.0, 1029.3972546458244, 149.0, 148.579086 ],
+                    "patching_rect": [ 863.5370247704642, 1039.0, 149.0, 148.579086 ],
                     "presentation": 1,
                     "presentation_rect": [ 972.0, 507.0, 94.73683369159698, 93.233074426651 ],
                     "proportion": 0.39,
@@ -4165,7 +4209,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 775.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 779.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 727.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4190,7 +4234,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 775.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 779.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 727.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4215,7 +4259,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 775.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 779.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 727.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4240,7 +4284,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 775.5, 1303.7671175599098, 149.0, 145.0 ],
+                    "patching_rect": [ 779.5370247704642, 1314.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 727.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4255,7 +4299,7 @@
                     "numinlets": 5,
                     "numoutlets": 5,
                     "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 775.5, 1225.0, 76.0, 22.0 ],
+                    "patching_rect": [ 779.5370247704642, 1235.0, 76.0, 22.0 ],
                     "text": "route 1 2 3 4"
                 }
             },
@@ -4270,7 +4314,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 775.5, 1302.3972546458244, 149.0, 148.579086 ],
+                    "patching_rect": [ 779.5370247704642, 1312.0, 149.0, 148.579086 ],
                     "presentation": 1,
                     "presentation_rect": [ 727.0, 506.0, 94.73683369159698, 93.233074426651 ],
                     "proportion": 0.39,
@@ -4294,7 +4338,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 692.0, 1030.8218428492546, 149.0, 145.0 ],
+                    "patching_rect": [ 696.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 476.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4319,7 +4363,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 692.0, 1030.8218428492546, 149.0, 145.0 ],
+                    "patching_rect": [ 696.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 476.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4344,7 +4388,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 692.0, 1030.8218428492546, 149.0, 145.0 ],
+                    "patching_rect": [ 696.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 476.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4369,7 +4413,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 692.0, 1030.8218428492546, 149.0, 145.0 ],
+                    "patching_rect": [ 696.5370247704642, 1041.0, 149.0, 145.0 ],
                     "pointcolor": [ 0.317647, 0.654902, 0.976471, 1.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 476.0, 507.0, 94.73683369159698, 89.47367626428604 ],
@@ -4434,18 +4478,6 @@
             },
             {
                 "box": {
-                    "id": "obj-272",
-                    "maxclass": "comment",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 121.42309296131134, 201.0, 150.0, 20.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 1334.0, 753.0, 41.0, 20.0 ],
-                    "text": "matrix"
-                }
-            },
-            {
-                "box": {
                     "id": "obj-264",
                     "maxclass": "comment",
                     "numinlets": 1,
@@ -4456,27 +4488,12 @@
             },
             {
                 "box": {
-                    "bgcolor": [ 0.2, 0.2, 0.2, 0.0 ],
-                    "id": "obj-262",
-                    "maxclass": "button",
-                    "numinlets": 1,
-                    "numoutlets": 1,
-                    "outlettype": [ "bang" ],
-                    "outlinecolor": [ 0.42745098039215684, 0.8431372549019608, 1.0, 1.0 ],
-                    "parameter_enable": 0,
-                    "patching_rect": [ 963.736310839653, 1796.7033845186234, 24.0, 24.0 ],
-                    "presentation": 1,
-                    "presentation_rect": [ 1313.0, 751.0, 24.0, 24.0 ]
-                }
-            },
-            {
-                "box": {
                     "id": "obj-250",
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 963.736310839653, 1843.9561340808868, 35.0, 22.0 ],
+                    "patching_rect": [ 996.0, 1592.0, 35.0, 22.0 ],
                     "text": "open"
                 }
             },
@@ -4487,7 +4504,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 963.736310839653, 1878.022069811821, 51.0, 22.0 ],
+                    "patching_rect": [ 996.0, 1626.0, 51.0, 22.0 ],
                     "text": "pcontrol"
                 }
             },
@@ -4509,13 +4526,180 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 426.0, 106.0, 655.0, 694.0 ],
+                        "rect": [ 223.0, 91.0, 1167.0, 1042.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "enablehscroll": 0,
                         "enablevscroll": 0,
                         "title": "matrix",
                         "boxes": [
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-23",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 645.0, 64.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 703.0, 60.0, 210.0, 20.0 ],
+                                    "text": "SURROUND MICS"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-19",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "patching_rect": [ 731.0, 212.97711396217346, 61.0, 22.0 ],
+                                    "text": "delay 500"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-20",
+                                    "maxclass": "button",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "bang" ],
+                                    "parameter_enable": 0,
+                                    "patching_rect": [ 731.0, 177.0992488861084, 24.0, 24.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-21",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "int", "int" ],
+                                    "patching_rect": [ 715.7328233718872, 142.74810147285461, 48.0, 22.0 ],
+                                    "text": "change"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
+                                    "id": "obj-349",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 715.7328233718872, 109.16031289100647, 78.0, 22.0 ],
+                                    "text": "r audio_state"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "color": [ 1.0, 1.0, 1.0, 1.0 ],
+                                    "id": "obj-22",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 3,
+                                    "outlettype": [ "", "", "" ],
+                                    "patching_rect": [ 5.0, 196.94657850265503, 109.0, 22.0 ],
+                                    "restore": [ 0, 0, 1.0, 1, 1, 1.0, 2, 2, 1.0, 3, 3, 1.0, 4, 4, 1.0, 5, 5, 1.0, 6, 6, 1.0, 7, 7, 1.0, 8, 8, 1.0, 9, 9, 1.0, 10, 10, 1.0, 11, 11, 1.0, 12, 12, 1.0, 13, 13, 1.0, 14, 14, 1.0, 15, 15, 1.0, 16, 16, 1.0, 17, 17, 1.0, 18, 18, 1.0, 19, 19, 1.0, 20, 20, 1.0, 21, 21, 1.0, 22, 22, 1.0, 23, 23, 1.0, 24, 0, 1.0, 25, 1, 1.0, 26, 2, 1.0, 27, 3, 1.0, 28, 4, 1.0, 29, 5, 1.0, 30, 6, 1.0, 31, 7, 1.0, 32, 8, 1.0, 32, 10, 1.0, 33, 9, 1.0, 33, 11, 1.0, 34, 12, 1.0, 34, 14, 1.0, 35, 13, 1.0, 35, 15, 1.0, 36, 16, 1.0, 36, 18, 1.0, 37, 17, 1.0, 37, 19, 1.0, 38, 20, 1.0, 38, 22, 1.0, 39, 21, 1.0, 39, 23, 1.0 ],
+                                    "saved_object_attributes": {
+                                        "parameter_enable": 0,
+                                        "parameter_mappable": 0
+                                    },
+                                    "text": "pattr output_matrix",
+                                    "varname": "output_matrix"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-18",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 946.0, 60.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 1096.0, 60.0, 67.0, 20.0 ],
+                                    "text": "BASSMIC"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-17",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 844.0, 59.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 1036.0, 60.0, 54.0, 20.0 ],
+                                    "text": "TENMIC"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-16",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 743.0, 58.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 979.0, 60.0, 52.0, 20.0 ],
+                                    "text": "ALTMIC"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-15",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 642.0, 57.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 920.0, 60.0, 56.0, 20.0 ],
+                                    "text": "SOPMIC"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-14",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 543.0, 61.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 594.0, 60.0, 95.0, 20.0 ],
+                                    "text": "BAS-QUAD"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-12",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 439.0, 60.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 483.0, 60.0, 97.0, 20.0 ],
+                                    "text": "TEN-QUAD"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
+                                    "id": "obj-5",
+                                    "maxclass": "comment",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 338.0, 61.0, 150.0, 20.0 ],
+                                    "presentation": 1,
+                                    "presentation_rect": [ 373.0, 60.0, 96.0, 20.0 ],
+                                    "text": "ALT-QUAD"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-2",
@@ -4563,35 +4747,9 @@
                                     "preset_data": [
                                         {
                                             "number": 1,
-                                            "data": [ 1732, "obj-235", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 0, 16, 0.0, 0, 17, 0.0, 0, 18, 0.0, 0, 19, 0.0, 0, 20, 0.0, 0, 21, 0.0, 0, 22, 0.0, 0, 23, 0.0, 1, 0, 0.0, 1, 1, 1.0, 1, 2, 0.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 1, 16, 0.0, 1, 17, 0.0, 1, 18, 0.0, 1, 19, 0.0, 1, 20, 0.0, 1, 21, 0.0, 1, 22, 0.0, 1, 23, 0.0, 2, 0, 0.0, 2, 1, 0.0, 2, 2, 1.0, 2, 3, 0.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 2, 16, 0.0, 2, 17, 0.0, 2, 18, 0.0, 2, 19, 0.0, 2, 20, 0.0, 2, 21, 0.0, 2, 22, 0.0, 2, 23, 0.0, 3, 0, 0.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 1.0, 3, 4, 0.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 3, 16, 0.0, 3, 17, 0.0, 3, 18, 0.0, 3, 19, 0.0, 3, 20, 0.0, 3, 21, 0.0, 3, 22, 0.0, 3, 23, 0.0, 4, 0, 0.0, 4, 1, 0.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 1.0, 4, 5, 0.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 4, 16, 0.0, 4, 17, 0.0, 4, 18, 0.0, 4, 19, 0.0, 4, 20, 0.0, 4, 21, 0.0, 4, 22, 0.0, 4, 23, 0.0, 5, 0, 0.0, 5, 1, 0.0, 5, 2, 0.0, 5, 3, 0.0, 5, 4, 0.0, 5, 5, 1.0, 5, 6, 0.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 5, 16, 0.0, 5, 17, 0.0, 5, 18, 0.0, 5, 19, 0.0, 5, 20, 0.0, 5, 21, 0.0, 5, 22, 0.0, 5, 23, 0.0, 6, 0, 0.0, 6, 1, 0.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 1.0, 6, 7, 0.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 6, 16, 0.0, 6, 17, 0.0, 6, 18, 0.0, 6, 19, 0.0, 6, 20, 0.0, 6, 21, 0.0, 6, 22, 0.0, 6, 23, 0.0, 7, 0, 0.0, 7, 1, 0.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 1.0, 7, 8, 0.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 7, 16, 0.0, 7, 17, 0.0, 7, 18, 0.0, 7, 19, 0.0, 7, 20, 0.0, 7, 21, 0.0, 7, 22, 0.0, 7, 23, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 0.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 1.0, 8, 9, 0.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 8, 16, 0.0, 8, 17, 0.0, 8, 18, 0.0, 8, 19, 0.0, 8, 20, 0.0, 8, 21, 0.0, 8, 22, 0.0, 8, 23, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 0.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 1.0, 9, 10, 0.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 9, 16, 0.0, 9, 17, 0.0, 9, 18, 0.0, 9, 19, 0.0, 9, 20, 0.0, 9, 21, 0.0, 9, 22, 0.0, 9, 23, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 0.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 10, 8, 0.0, 10, 9, 0.0, 10, 10, 1.0, 10, 11, 0.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 10, 16, 0.0, 10, 17, 0.0, 10, 18, 0.0, 10, 19, 0.0, 10, 20, 0.0, 10, 21, 0.0, 10, 22, 0.0, 10, 23, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 0.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 1.0, 11, 12, 0.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 11, 16, 0.0, 11, 17, 0.0, 11, 18, 0.0, 11, 19, 0.0, 11, 20, 0.0, 11, 21, 0.0, 11, 22, 0.0, 11, 23, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 0.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 1.0, 12, 13, 0.0, 12, 14, 0.0, 12, 15, 0.0, 12, 16, 0.0, 12, 17, 0.0, 12, 18, 0.0, 12, 19, 0.0, 12, 20, 0.0, 12, 21, 0.0, 12, 22, 0.0, 12, 23, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 0.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 1.0, 13, 14, 0.0, 13, 15, 0.0, 13, 16, 0.0, 13, 17, 0.0, 13, 18, 0.0, 13, 19, 0.0, 13, 20, 0.0, 13, 21, 0.0, 13, 22, 0.0, 13, 23, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 0.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 1.0, 14, 15, 0.0, 14, 16, 0.0, 14, 17, 0.0, 14, 18, 0.0, 14, 19, 0.0, 14, 20, 0.0, 14, 21, 0.0, 14, 22, 0.0, 14, 23, 0.0, 15, 0, 0.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 0.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 1.0, 15, 16, 0.0, 15, 17, 0.0, 15, 18, 0.0, 15, 19, 0.0, 15, 20, 0.0, 15, 21, 0.0, 15, 22, 0.0, 15, 23, 0.0, 16, 0, 0.0, 16, 1, 0.0, 16, 2, 0.0, 16, 3, 0.0, 16, 4, 0.0, 16, 5, 0.0, 16, 6, 0.0, 16, 7, 0.0, 16, 8, 0.0, 16, 9, 0.0, 16, 10, 0.0, 16, 11, 0.0, 16, 12, 0.0, 16, 13, 0.0, 16, 14, 0.0, 16, 15, 0.0, 16, 16, 1.0, 16, 17, 0.0, 16, 18, 0.0, 16, 19, 0.0, 16, 20, 0.0, 16, 21, 0.0, 16, 22, 0.0, 16, 23, 0.0, 17, 0, 0.0, 17, 1, 0.0, 17, 2, 0.0, 17, 3, 0.0, 17, 4, 0.0, 17, 5, 0.0, 17, 6, 0.0, 17, 7, 0.0, 17, 8, 0.0, 17, 9, 0.0, 17, 10, 0.0, 17, 11, 0.0, 17, 12, 0.0, 17, 13, 0.0, 17, 14, 0.0, 17, 15, 0.0, 17, 16, 0.0, 17, 17, 1.0, 17, 18, 0.0, 17, 19, 0.0, 17, 20, 0.0, 17, 21, 0.0, 17, 22, 0.0, 17, 23, 0.0, 18, 0, 0.0, 18, 1, 0.0, 18, 2, 0.0, 18, 3, 0.0, 18, 4, 0.0, 18, 5, 0.0, 18, 6, 0.0, 18, 7, 0.0, 18, 8, 0.0, 18, 9, 0.0, 18, 10, 0.0, 18, 11, 0.0, 18, 12, 0.0, 18, 13, 0.0, 18, 14, 0.0, 18, 15, 0.0, 18, 16, 0.0, 18, 17, 0.0, 18, 18, 1.0, 18, 19, 0.0, 18, 20, 0.0, 18, 21, 0.0, 18, 22, 0.0, 18, 23, 0.0, 19, 0, 0.0, 19, 1, 0.0, 19, 2, 0.0, 19, 3, 0.0, 19, 4, 0.0, 19, 5, 0.0, 19, 6, 0.0, 19, 7, 0.0, 19, 8, 0.0, 19, 9, 0.0, 19, 10, 0.0, 19, 11, 0.0, 19, 12, 0.0, 19, 13, 0.0, 19, 14, 0.0, 19, 15, 0.0, 19, 16, 0.0, 19, 17, 0.0, 19, 18, 0.0, 19, 19, 1.0, 19, 20, 0.0, 19, 21, 0.0, 19, 22, 0.0, 19, 23, 0.0, 20, 0, 0.0, 20, 1, 0.0, 20, 2, 0.0, 20, 3, 0.0, 20, 4, 0.0, 20, 5, 0.0, 20, 6, 0.0, 20, 7, 0.0, 20, 8, 0.0, 20, 9, 0.0, 20, 10, 0.0, 20, 11, 0.0, 20, 12, 0.0, 20, 13, 0.0, 20, 14, 0.0, 20, 15, 0.0, 20, 16, 0.0, 20, 17, 0.0, 20, 18, 0.0, 20, 19, 0.0, 20, 20, 1.0, 20, 21, 0.0, 20, 22, 0.0, 20, 23, 0.0, 21, 0, 0.0, 21, 1, 0.0, 21, 2, 0.0, 21, 3, 0.0, 21, 4, 0.0, 21, 5, 0.0, 21, 6, 0.0, 21, 7, 0.0, 21, 8, 0.0, 21, 9, 0.0, 21, 10, 0.0, 21, 11, 0.0, 21, 12, 0.0, 21, 13, 0.0, 21, 14, 0.0, 21, 15, 0.0, 21, 16, 0.0, 21, 17, 0.0, 21, 18, 0.0, 21, 19, 0.0, 21, 20, 0.0, 21, 21, 1.0, 21, 22, 0.0, 21, 23, 0.0, 22, 0, 0.0, 22, 1, 0.0, 22, 2, 0.0, 22, 3, 0.0, 22, 4, 0.0, 22, 5, 0.0, 22, 6, 0.0, 22, 7, 0.0, 22, 8, 0.0, 22, 9, 0.0, 22, 10, 0.0, 22, 11, 0.0, 22, 12, 0.0, 22, 13, 0.0, 22, 14, 0.0, 22, 15, 0.0, 22, 16, 0.0, 22, 17, 0.0, 22, 18, 0.0, 22, 19, 0.0, 22, 20, 0.0, 22, 21, 0.0, 22, 22, 1.0, 22, 23, 0.0, 23, 0, 0.0, 23, 1, 0.0, 23, 2, 0.0, 23, 3, 0.0, 23, 4, 0.0, 23, 5, 0.0, 23, 6, 0.0, 23, 7, 0.0, 23, 8, 0.0, 23, 9, 0.0, 23, 10, 0.0, 23, 11, 0.0, 23, 12, 0.0, 23, 13, 0.0, 23, 14, 0.0, 23, 15, 0.0, 23, 16, 0.0, 23, 17, 0.0, 23, 18, 0.0, 23, 19, 0.0, 23, 20, 0.0, 23, 21, 0.0, 23, 22, 0.0, 23, 23, 1.0 ]
+                                            "data": [ 5764, "obj-235", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 0, 16, 0.0, 0, 17, 0.0, 0, 18, 0.0, 0, 19, 0.0, 0, 20, 0.0, 0, 21, 0.0, 0, 22, 0.0, 0, 23, 0.0, 0, 24, 0.0, 0, 25, 0.0, 0, 26, 0.0, 0, 27, 0.0, 0, 28, 0.0, 0, 29, 0.0, 0, 30, 0.0, 0, 31, 0.0, 0, 32, 0.0, 0, 33, 0.0, 0, 34, 0.0, 0, 35, 0.0, 0, 36, 0.0, 0, 37, 0.0, 0, 38, 0.0, 0, 39, 0.0, 0, 40, 0.0, 0, 41, 0.0, 0, 42, 0.0, 0, 43, 0.0, 0, 44, 0.0, 0, 45, 0.0, 0, 46, 0.0, 0, 47, 0.0, 1, 0, 0.0, 1, 1, 1.0, 1, 2, 0.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 1, 16, 0.0, 1, 17, 0.0, 1, 18, 0.0, 1, 19, 0.0, 1, 20, 0.0, 1, 21, 0.0, 1, 22, 0.0, 1, 23, 0.0, 1, 24, 0.0, 1, 25, 0.0, 1, 26, 0.0, 1, 27, 0.0, 1, 28, 0.0, 1, 29, 0.0, 1, 30, 0.0, 1, 31, 0.0, 1, 32, 0.0, 1, 33, 0.0, 1, 34, 0.0, 1, 35, 0.0, 1, 36, 0.0, 1, 37, 0.0, 1, 38, 0.0, 1, 39, 0.0, 1, 40, 0.0, 1, 41, 0.0, 1, 42, 0.0, 1, 43, 0.0, 1, 44, 0.0, 1, 45, 0.0, 1, 46, 0.0, 1, 47, 0.0, 2, 0, 0.0, 2, 1, 0.0, 2, 2, 1.0, 2, 3, 0.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 2, 16, 0.0, 2, 17, 0.0, 2, 18, 0.0, 2, 19, 0.0, 2, 20, 0.0, 2, 21, 0.0, 2, 22, 0.0, 2, 23, 0.0, 2, 24, 0.0, 2, 25, 0.0, 2, 26, 0.0, 2, 27, 0.0, 2, 28, 0.0, 2, 29, 0.0, 2, 30, 0.0, 2, 31, 0.0, 2, 32, 0.0, 2, 33, 0.0, 2, 34, 0.0, 2, 35, 0.0, 2, 36, 0.0, 2, 37, 0.0, 2, 38, 0.0, 2, 39, 0.0, 2, 40, 0.0, 2, 41, 0.0, 2, 42, 0.0, 2, 43, 0.0, 2, 44, 0.0, 2, 45, 0.0, 2, 46, 0.0, 2, 47, 0.0, 3, 0, 0.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 1.0, 3, 4, 0.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 3, 16, 0.0, 3, 17, 0.0, 3, 18, 0.0, 3, 19, 0.0, 3, 20, 0.0, 3, 21, 0.0, 3, 22, 0.0, 3, 23, 0.0, 3, 24, 0.0, 3, 25, 0.0, 3, 26, 0.0, 3, 27, 0.0, 3, 28, 0.0, 3, 29, 0.0, 3, 30, 0.0, 3, 31, 0.0, 3, 32, 0.0, 3, 33, 0.0, 3, 34, 0.0, 3, 35, 0.0, 3, 36, 0.0, 3, 37, 0.0, 3, 38, 0.0, 3, 39, 0.0, 3, 40, 0.0, 3, 41, 0.0, 3, 42, 0.0, 3, 43, 0.0, 3, 44, 0.0, 3, 45, 0.0, 3, 46, 0.0, 3, 47, 0.0, 4, 0, 0.0, 4, 1, 0.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 1.0, 4, 5, 0.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 4, 16, 0.0, 4, 17, 0.0, 4, 18, 0.0, 4, 19, 0.0, 4, 20, 0.0, 4, 21, 0.0, 4, 22, 0.0, 4, 23, 0.0, 4, 24, 0.0, 4, 25, 0.0, 4, 26, 0.0, 4, 27, 0.0, 4, 28, 0.0, 4, 29, 0.0, 4, 30, 0.0, 4, 31, 0.0, 4, 32, 0.0, 4, 33, 0.0, 4, 34, 0.0, 4, 35, 0.0, 4, 36, 0.0, 4, 37, 0.0, 4, 38, 0.0, 4, 39, 0.0, 4, 40, 0.0, 4, 41, 0.0, 4, 42, 0.0, 4, 43, 0.0, 4, 44, 0.0, 4, 45, 0.0, 4, 46, 0.0, 4, 47, 0.0, 5, 0, 0.0, 5, 1, 0.0, 5, 2, 0.0, 5, 3, 0.0, 5, 4, 0.0, 5, 5, 1.0, 5, 6, 0.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 5, 16, 0.0, 5, 17, 0.0, 5, 18, 0.0, 5, 19, 0.0, 5, 20, 0.0, 5, 21, 0.0, 5, 22, 0.0, 5, 23, 0.0, 5, 24, 0.0, 5, 25, 0.0, 5, 26, 0.0, 5, 27, 0.0, 5, 28, 0.0, 5, 29, 0.0, 5, 30, 0.0, 5, 31, 0.0, 5, 32, 0.0, 5, 33, 0.0, 5, 34, 0.0, 5, 35, 0.0, 5, 36, 0.0, 5, 37, 0.0, 5, 38, 0.0, 5, 39, 0.0, 5, 40, 0.0, 5, 41, 0.0, 5, 42, 0.0, 5, 43, 0.0, 5, 44, 0.0, 5, 45, 0.0, 5, 46, 0.0, 5, 47, 0.0, 6, 0, 0.0, 6, 1, 0.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 1.0, 6, 7, 0.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 6, 16, 0.0, 6, 17, 0.0, 6, 18, 0.0, 6, 19, 0.0, 6, 20, 0.0, 6, 21, 0.0, 6, 22, 0.0, 6, 23, 0.0, 6, 24, 0.0, 6, 25, 0.0, 6, 26, 0.0, 6, 27, 0.0, 6, 28, 0.0, 6, 29, 0.0, 6, 30, 0.0, 6, 31, 0.0, 6, 32, 0.0, 6, 33, 0.0, 6, 34, 0.0, 6, 35, 0.0, 6, 36, 0.0, 6, 37, 0.0, 6, 38, 0.0, 6, 39, 0.0, 6, 40, 0.0, 6, 41, 0.0, 6, 42, 0.0, 6, 43, 0.0, 6, 44, 0.0, 6, 45, 0.0, 6, 46, 0.0, 6, 47, 0.0, 7, 0, 0.0, 7, 1, 0.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 1.0, 7, 8, 0.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 7, 16, 0.0, 7, 17, 0.0, 7, 18, 0.0, 7, 19, 0.0, 7, 20, 0.0, 7, 21, 0.0, 7, 22, 0.0, 7, 23, 0.0, 7, 24, 0.0, 7, 25, 0.0, 7, 26, 0.0, 7, 27, 0.0, 7, 28, 0.0, 7, 29, 0.0, 7, 30, 0.0, 7, 31, 0.0, 7, 32, 0.0, 7, 33, 0.0, 7, 34, 0.0, 7, 35, 0.0, 7, 36, 0.0, 7, 37, 0.0, 7, 38, 0.0, 7, 39, 0.0, 7, 40, 0.0, 7, 41, 0.0, 7, 42, 0.0, 7, 43, 0.0, 7, 44, 0.0, 7, 45, 0.0, 7, 46, 0.0, 7, 47, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 0.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 1.0, 8, 9, 0.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 8, 16, 0.0, 8, 17, 0.0, 8, 18, 0.0, 8, 19, 0.0, 8, 20, 0.0, 8, 21, 0.0, 8, 22, 0.0, 8, 23, 0.0, 8, 24, 0.0, 8, 25, 0.0, 8, 26, 0.0, 8, 27, 0.0, 8, 28, 0.0, 8, 29, 0.0, 8, 30, 0.0, 8, 31, 0.0, 8, 32, 0.0, 8, 33, 0.0, 8, 34, 0.0, 8, 35, 0.0, 8, 36, 0.0, 8, 37, 0.0, 8, 38, 0.0, 8, 39, 0.0, 8, 40, 0.0, 8, 41, 0.0, 8, 42, 0.0, 8, 43, 0.0, 8, 44, 0.0, 8, 45, 0.0, 8, 46, 0.0, 8, 47, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 0.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 1.0, 9, 10, 0.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 9, 16, 0.0, 9, 17, 0.0, 9, 18, 0.0, 9, 19, 0.0, 9, 20, 0.0, 9, 21, 0.0, 9, 22, 0.0, 9, 23, 0.0, 9, 24, 0.0, 9, 25, 0.0, 9, 26, 0.0, 9, 27, 0.0, 9, 28, 0.0, 9, 29, 0.0, 9, 30, 0.0, 9, 31, 0.0, 9, 32, 0.0, 9, 33, 0.0, 9, 34, 0.0, 9, 35, 0.0, 9, 36, 0.0, 9, 37, 0.0, 9, 38, 0.0, 9, 39, 0.0, 9, 40, 0.0, 9, 41, 0.0, 9, 42, 0.0, 9, 43, 0.0, 9, 44, 0.0, 9, 45, 0.0, 9, 46, 0.0, 9, 47, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 0.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 10, 8, 0.0, 10, 9, 0.0, 10, 10, 1.0, 10, 11, 0.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 10, 16, 0.0, 10, 17, 0.0, 10, 18, 0.0, 10, 19, 0.0, 10, 20, 0.0, 10, 21, 0.0, 10, 22, 0.0, 10, 23, 0.0, 10, 24, 0.0, 10, 25, 0.0, 10, 26, 0.0, 10, 27, 0.0, 10, 28, 0.0, 10, 29, 0.0, 10, 30, 0.0, 10, 31, 0.0, 10, 32, 0.0, 10, 33, 0.0, 10, 34, 0.0, 10, 35, 0.0, 10, 36, 0.0, 10, 37, 0.0, 10, 38, 0.0, 10, 39, 0.0, 10, 40, 0.0, 10, 41, 0.0, 10, 42, 0.0, 10, 43, 0.0, 10, 44, 0.0, 10, 45, 0.0, 10, 46, 0.0, 10, 47, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 0.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 1.0, 11, 12, 0.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 11, 16, 0.0, 11, 17, 0.0, 11, 18, 0.0, 11, 19, 0.0, 11, 20, 0.0, 11, 21, 0.0, 11, 22, 0.0, 11, 23, 0.0, 11, 24, 0.0, 11, 25, 0.0, 11, 26, 0.0, 11, 27, 0.0, 11, 28, 0.0, 11, 29, 0.0, 11, 30, 0.0, 11, 31, 0.0, 11, 32, 0.0, 11, 33, 0.0, 11, 34, 0.0, 11, 35, 0.0, 11, 36, 0.0, 11, 37, 0.0, 11, 38, 0.0, 11, 39, 0.0, 11, 40, 0.0, 11, 41, 0.0, 11, 42, 0.0, 11, 43, 0.0, 11, 44, 0.0, 11, 45, 0.0, 11, 46, 0.0, 11, 47, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 0.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 1.0, 12, 13, 0.0, 12, 14, 0.0, 12, 15, 0.0, 12, 16, 0.0, 12, 17, 0.0, 12, 18, 0.0, 12, 19, 0.0, 12, 20, 0.0, 12, 21, 0.0, 12, 22, 0.0, 12, 23, 0.0, 12, 24, 0.0, 12, 25, 0.0, 12, 26, 0.0, 12, 27, 0.0, 12, 28, 0.0, 12, 29, 0.0, 12, 30, 0.0, 12, 31, 0.0, 12, 32, 0.0, 12, 33, 0.0, 12, 34, 0.0, 12, 35, 0.0, 12, 36, 0.0, 12, 37, 0.0, 12, 38, 0.0, 12, 39, 0.0, 12, 40, 0.0, 12, 41, 0.0, 12, 42, 0.0, 12, 43, 0.0, 12, 44, 0.0, 12, 45, 0.0, 12, 46, 0.0, 12, 47, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 0.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 1.0, 13, 14, 0.0, 13, 15, 0.0, 13, 16, 0.0, 13, 17, 0.0, 13, 18, 0.0, 13, 19, 0.0, 13, 20, 0.0, 13, 21, 0.0, 13, 22, 0.0, 13, 23, 0.0, 13, 24, 0.0, 13, 25, 0.0, 13, 26, 0.0, 13, 27, 0.0, 13, 28, 0.0, 13, 29, 0.0, 13, 30, 0.0, 13, 31, 0.0, 13, 32, 0.0, 13, 33, 0.0, 13, 34, 0.0, 13, 35, 0.0, 13, 36, 0.0, 13, 37, 0.0, 13, 38, 0.0, 13, 39, 0.0, 13, 40, 0.0, 13, 41, 0.0, 13, 42, 0.0, 13, 43, 0.0, 13, 44, 0.0, 13, 45, 0.0, 13, 46, 0.0, 13, 47, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 0.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 1.0, 14, 15, 0.0, 14, 16, 0.0, 14, 17, 0.0, 14, 18, 0.0, 14, 19, 0.0, 14, 20, 0.0, 14, 21, 0.0, 14, 22, 0.0, 14, 23, 0.0, 14, 24, 0.0, 14, 25, 0.0, 14, 26, 0.0, 14, 27, 0.0, 14, 28, 0.0, 14, 29, 0.0, 14, 30, 0.0, 14, 31, 0.0, 14, 32, 0.0, 14, 33, 0.0, 14, 34, 0.0, 14, 35, 0.0, 14, 36, 0.0, 14, 37, 0.0, 14, 38, 0.0, 14, 39, 0.0, 14, 40, 0.0, 14, 41, 0.0, 14, 42, 0.0, 14, 43, 0.0, 14, 44, 0.0, 14, 45, 0.0, 14, 46, 0.0, 14, 47, 0.0, 15, 0, 0.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 0.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 1.0, 15, 16, 0.0, 15, 17, 0.0, 15, 18, 0.0, 15, 19, 0.0, 15, 20, 0.0, 15, 21, 0.0, 15, 22, 0.0, 15, 23, 0.0, 15, 24, 0.0, 15, 25, 0.0, 15, 26, 0.0, 15, 27, 0.0, 15, 28, 0.0, 15, 29, 0.0, 15, 30, 0.0, 15, 31, 0.0, 15, 32, 0.0, 15, 33, 0.0, 15, 34, 0.0, 15, 35, 0.0, 15, 36, 0.0, 15, 37, 0.0, 15, 38, 0.0, 15, 39, 0.0, 15, 40, 0.0, 15, 41, 0.0, 15, 42, 0.0, 15, 43, 0.0, 15, 44, 0.0, 15, 45, 0.0, 15, 46, 0.0, 15, 47, 0.0, 16, 0, 0.0, 16, 1, 0.0, 16, 2, 0.0, 16, 3, 0.0, 16, 4, 0.0, 16, 5, 0.0, 16, 6, 0.0, 16, 7, 0.0, 16, 8, 0.0, 16, 9, 0.0, 16, 10, 0.0, 16, 11, 0.0, 16, 12, 0.0, 16, 13, 0.0, 16, 14, 0.0, 16, 15, 0.0, 16, 16, 1.0, 16, 17, 0.0, 16, 18, 0.0, 16, 19, 0.0, 16, 20, 0.0, 16, 21, 0.0, 16, 22, 0.0, 16, 23, 0.0, 16, 24, 0.0, 16, 25, 0.0, 16, 26, 0.0, 16, 27, 0.0, 16, 28, 0.0, 16, 29, 0.0, 16, 30, 0.0, 16, 31, 0.0, 16, 32, 0.0, 16, 33, 0.0, 16, 34, 0.0, 16, 35, 0.0, 16, 36, 0.0, 16, 37, 0.0, 16, 38, 0.0, 16, 39, 0.0, 16, 40, 0.0, 16, 41, 0.0, 16, 42, 0.0, 16, 43, 0.0, 16, 44, 0.0, 16, 45, 0.0, 16, 46, 0.0, 16, 47, 0.0, 17, 0, 0.0, 17, 1, 0.0, 17, 2, 0.0, 17, 3, 0.0, 17, 4, 0.0, 17, 5, 0.0, 17, 6, 0.0, 17, 7, 0.0, 17, 8, 0.0, 17, 9, 0.0, 17, 10, 0.0, 17, 11, 0.0, 17, 12, 0.0, 17, 13, 0.0, 17, 14, 0.0, 17, 15, 0.0, 17, 16, 0.0, 17, 17, 1.0, 17, 18, 0.0, 17, 19, 0.0, 17, 20, 0.0, 17, 21, 0.0, 17, 22, 0.0, 17, 23, 0.0, 17, 24, 0.0, 17, 25, 0.0, 17, 26, 0.0, 17, 27, 0.0, 17, 28, 0.0, 17, 29, 0.0, 17, 30, 0.0, 17, 31, 0.0, 17, 32, 0.0, 17, 33, 0.0, 17, 34, 0.0, 17, 35, 0.0, 17, 36, 0.0, 17, 37, 0.0, 17, 38, 0.0, 17, 39, 0.0, 17, 40, 0.0, 17, 41, 0.0, 17, 42, 0.0, 17, 43, 0.0, 17, 44, 0.0, 17, 45, 0.0, 17, 46, 0.0, 17, 47, 0.0, 18, 0, 0.0, 18, 1, 0.0, 18, 2, 0.0, 18, 3, 0.0, 18, 4, 0.0, 18, 5, 0.0, 18, 6, 0.0, 18, 7, 0.0, 18, 8, 0.0, 18, 9, 0.0, 18, 10, 0.0, 18, 11, 0.0, 18, 12, 0.0, 18, 13, 0.0, 18, 14, 0.0, 18, 15, 0.0, 18, 16, 0.0, 18, 17, 0.0, 18, 18, 1.0, 18, 19, 0.0, 18, 20, 0.0, 18, 21, 0.0, 18, 22, 0.0, 18, 23, 0.0, 18, 24, 0.0, 18, 25, 0.0, 18, 26, 0.0, 18, 27, 0.0, 18, 28, 0.0, 18, 29, 0.0, 18, 30, 0.0, 18, 31, 0.0, 18, 32, 0.0, 18, 33, 0.0, 18, 34, 0.0, 18, 35, 0.0, 18, 36, 0.0, 18, 37, 0.0, 18, 38, 0.0, 18, 39, 0.0, 18, 40, 0.0, 18, 41, 0.0, 18, 42, 0.0, 18, 43, 0.0, 18, 44, 0.0, 18, 45, 0.0, 18, 46, 0.0, 18, 47, 0.0, 19, 0, 0.0, 19, 1, 0.0, 19, 2, 0.0, 19, 3, 0.0, 19, 4, 0.0, 19, 5, 0.0, 19, 6, 0.0, 19, 7, 0.0, 19, 8, 0.0, 19, 9, 0.0, 19, 10, 0.0, 19, 11, 0.0, 19, 12, 0.0, 19, 13, 0.0, 19, 14, 0.0, 19, 15, 0.0, 19, 16, 0.0, 19, 17, 0.0, 19, 18, 0.0, 19, 19, 1.0, 19, 20, 0.0, 19, 21, 0.0, 19, 22, 0.0, 19, 23, 0.0, 19, 24, 0.0, 19, 25, 0.0, 19, 26, 0.0, 19, 27, 0.0, 19, 28, 0.0, 19, 29, 0.0, 19, 30, 0.0, 19, 31, 0.0, 19, 32, 0.0, 19, 33, 0.0, 19, 34, 0.0, 19, 35, 0.0, 19, 36, 0.0, 19, 37, 0.0, 19, 38, 0.0, 19, 39, 0.0, 19, 40, 0.0, 19, 41, 0.0, 19, 42, 0.0, 19, 43, 0.0, 19, 44, 0.0, 19, 45, 0.0, 19, 46, 0.0, 19, 47, 0.0, 20, 0, 0.0, 20, 1, 0.0, 20, 2, 0.0, 20, 3, 0.0, 20, 4, 0.0, 20, 5, 0.0, 20, 6, 0.0, 20, 7, 0.0, 20, 8, 0.0, 20, 9, 0.0, 20, 10, 0.0, 20, 11, 0.0, 20, 12, 0.0, 20, 13, 0.0, 20, 14, 0.0, 20, 15, 0.0, 20, 16, 0.0, 20, 17, 0.0, 20, 18, 0.0, 20, 19, 0.0, 20, 20, 1.0, 20, 21, 0.0, 20, 22, 0.0, 20, 23, 0.0, 20, 24, 0.0, 20, 25, 0.0, 20, 26, 0.0, 20, 27, 0.0, 20, 28, 0.0, 20, 29, 0.0, 20, 30, 0.0, 20, 31, 0.0, 20, 32, 0.0, 20, 33, 0.0, 20, 34, 0.0, 20, 35, 0.0, 20, 36, 0.0, 20, 37, 0.0, 20, 38, 0.0, 20, 39, 0.0, 20, 40, 0.0, 20, 41, 0.0, 20, 42, 0.0, 20, 43, 0.0, 20, 44, 0.0, 20, 45, 0.0, 20, 46, 0.0, 20, 47, 0.0, 21, 0, 0.0, 21, 1, 0.0, 21, 2, 0.0, 21, 3, 0.0, 21, 4, 0.0, 21, 5, 0.0, 21, 6, 0.0, 21, 7, 0.0, 21, 8, 0.0, 21, 9, 0.0, 21, 10, 0.0, 21, 11, 0.0, 21, 12, 0.0, 21, 13, 0.0, 21, 14, 0.0, 21, 15, 0.0, 21, 16, 0.0, 21, 17, 0.0, 21, 18, 0.0, 21, 19, 0.0, 21, 20, 0.0, 21, 21, 1.0, 21, 22, 0.0, 21, 23, 0.0, 21, 24, 0.0, 21, 25, 0.0, 21, 26, 0.0, 21, 27, 0.0, 21, 28, 0.0, 21, 29, 0.0, 21, 30, 0.0, 21, 31, 0.0, 21, 32, 0.0, 21, 33, 0.0, 21, 34, 0.0, 21, 35, 0.0, 21, 36, 0.0, 21, 37, 0.0, 21, 38, 0.0, 21, 39, 0.0, 21, 40, 0.0, 21, 41, 0.0, 21, 42, 0.0, 21, 43, 0.0, 21, 44, 0.0, 21, 45, 0.0, 21, 46, 0.0, 21, 47, 0.0, 22, 0, 0.0, 22, 1, 0.0, 22, 2, 0.0, 22, 3, 0.0, 22, 4, 0.0, 22, 5, 0.0, 22, 6, 0.0, 22, 7, 0.0, 22, 8, 0.0, 22, 9, 0.0, 22, 10, 0.0, 22, 11, 0.0, 22, 12, 0.0, 22, 13, 0.0, 22, 14, 0.0, 22, 15, 0.0, 22, 16, 0.0, 22, 17, 0.0, 22, 18, 0.0, 22, 19, 0.0, 22, 20, 0.0, 22, 21, 0.0, 22, 22, 1.0, 22, 23, 0.0, 22, 24, 0.0, 22, 25, 0.0, 22, 26, 0.0, 22, 27, 0.0, 22, 28, 0.0, 22, 29, 0.0, 22, 30, 0.0, 22, 31, 0.0, 22, 32, 0.0, 22, 33, 0.0, 22, 34, 0.0, 22, 35, 0.0, 22, 36, 0.0, 22, 37, 0.0, 22, 38, 0.0, 22, 39, 0.0, 22, 40, 0.0, 22, 41, 0.0, 22, 42, 0.0, 22, 43, 0.0, 22, 44, 0.0, 22, 45, 0.0, 22, 46, 0.0, 22, 47, 0.0, 23, 0, 0.0, 23, 1, 0.0, 23, 2, 0.0, 23, 3, 0.0, 23, 4, 0.0, 23, 5, 0.0, 23, 6, 0.0, 23, 7, 0.0, 23, 8, 0.0, 23, 9, 0.0, 23, 10, 0.0, 23, 11, 0.0, 23, 12, 0.0, 23, 13, 0.0, 23, 14, 0.0, 23, 15, 0.0, 23, 16, 0.0, 23, 17, 0.0, 23, 18, 0.0, 23, 19, 0.0, 23, 20, 0.0, 23, 21, 0.0, 23, 22, 0.0, 23, 23, 1.0, 23, 24, 0.0, 23, 25, 0.0, 23, 26, 0.0, 23, 27, 0.0, 23, 28, 0.0, 23, 29, 0.0, 23, 30, 0.0, 23, 31, 0.0, 23, 32, 0.0, 23, 33, 0.0, 23, 34, 0.0, 23, 35, 0.0, 23, 36, 0.0, 23, 37, 0.0, 23, 38, 0.0, 23, 39, 0.0, 23, 40, 0.0, 23, 41, 0.0, 23, 42, 0.0, 23, 43, 0.0, 23, 44, 0.0, 23, 45, 0.0, 23, 46, 0.0, 23, 47, 0.0, 24, 0, 1.0, 24, 1, 0.0, 24, 2, 0.0, 24, 3, 0.0, 24, 4, 0.0, 24, 5, 0.0, 24, 6, 0.0, 24, 7, 0.0, 24, 8, 0.0, 24, 9, 0.0, 24, 10, 0.0, 24, 11, 0.0, 24, 12, 0.0, 24, 13, 0.0, 24, 14, 0.0, 24, 15, 0.0, 24, 16, 0.0, 24, 17, 0.0, 24, 18, 0.0, 24, 19, 0.0, 24, 20, 0.0, 24, 21, 0.0, 24, 22, 0.0, 24, 23, 0.0, 24, 24, 0.0, 24, 25, 0.0, 24, 26, 0.0, 24, 27, 0.0, 24, 28, 0.0, 24, 29, 0.0, 24, 30, 0.0, 24, 31, 0.0, 24, 32, 0.0, 24, 33, 0.0, 24, 34, 0.0, 24, 35, 0.0, 24, 36, 0.0, 24, 37, 0.0, 24, 38, 0.0, 24, 39, 0.0, 24, 40, 0.0, 24, 41, 0.0, 24, 42, 0.0, 24, 43, 0.0, 24, 44, 0.0, 24, 45, 0.0, 24, 46, 0.0, 24, 47, 0.0, 25, 0, 0.0, 25, 1, 1.0, 25, 2, 0.0, 25, 3, 0.0, 25, 4, 0.0, 25, 5, 0.0, 25, 6, 0.0, 25, 7, 0.0, 25, 8, 0.0, 25, 9, 0.0, 25, 10, 0.0, 25, 11, 0.0, 25, 12, 0.0, 25, 13, 0.0, 25, 14, 0.0, 25, 15, 0.0, 25, 16, 0.0, 25, 17, 0.0, 25, 18, 0.0, 25, 19, 0.0, 25, 20, 0.0, 25, 21, 0.0, 25, 22, 0.0, 25, 23, 0.0, 25, 24, 0.0, 25, 25, 0.0, 25, 26, 0.0, 25, 27, 0.0, 25, 28, 0.0, 25, 29, 0.0, 25, 30, 0.0, 25, 31, 0.0, 25, 32, 0.0, 25, 33, 0.0, 25, 34, 0.0, 25, 35, 0.0, 25, 36, 0.0, 25, 37, 0.0, 25, 38, 0.0, 25, 39, 0.0, 25, 40, 0.0, 25, 41, 0.0, 25, 42, 0.0, 25, 43, 0.0, 25, 44, 0.0, 25, 45, 0.0, 25, 46, 0.0, 25, 47, 0.0, 26, 0, 0.0, 26, 1, 0.0, 26, 2, 1.0, 26, 3, 0.0, 26, 4, 0.0, 26, 5, 0.0, 26, 6, 0.0, 26, 7, 0.0, 26, 8, 0.0, 26, 9, 0.0, 26, 10, 0.0, 26, 11, 0.0, 26, 12, 0.0, 26, 13, 0.0, 26, 14, 0.0, 26, 15, 0.0, 26, 16, 0.0, 26, 17, 0.0, 26, 18, 0.0, 26, 19, 0.0, 26, 20, 0.0, 26, 21, 0.0, 26, 22, 0.0, 26, 23, 0.0, 26, 24, 0.0, 26, 25, 0.0, 26, 26, 0.0, 26, 27, 0.0, 26, 28, 0.0, 26, 29, 0.0, 26, 30, 0.0, 26, 31, 0.0, 26, 32, 0.0, 26, 33, 0.0, 26, 34, 0.0, 26, 35, 0.0, 26, 36, 0.0, 26, 37, 0.0, 26, 38, 0.0, 26, 39, 0.0, 26, 40, 0.0, 26, 41, 0.0, 26, 42, 0.0, 26, 43, 0.0, 26, 44, 0.0, 26, 45, 0.0, 26, 46, 0.0, 26, 47, 0.0, 27, 0, 0.0, 27, 1, 0.0, 27, 2, 0.0, 27, 3, 1.0, 27, 4, 0.0, 27, 5, 0.0, 27, 6, 0.0, 27, 7, 0.0, 27, 8, 0.0, 27, 9, 0.0, 27, 10, 0.0, 27, 11, 0.0, 27, 12, 0.0, 27, 13, 0.0, 27, 14, 0.0, 27, 15, 0.0, 27, 16, 0.0, 27, 17, 0.0, 27, 18, 0.0, 27, 19, 0.0, 27, 20, 0.0, 27, 21, 0.0, 27, 22, 0.0, 27, 23, 0.0, 27, 24, 0.0, 27, 25, 0.0, 27, 26, 0.0, 27, 27, 0.0, 27, 28, 0.0, 27, 29, 0.0, 27, 30, 0.0, 27, 31, 0.0, 27, 32, 0.0, 27, 33, 0.0, 27, 34, 0.0, 27, 35, 0.0, 27, 36, 0.0, 27, 37, 0.0, 27, 38, 0.0, 27, 39, 0.0, 27, 40, 0.0, 27, 41, 0.0, 27, 42, 0.0, 27, 43, 0.0, 27, 44, 0.0, 27, 45, 0.0, 27, 46, 0.0, 27, 47, 0.0, 28, 0, 0.0, 28, 1, 0.0, 28, 2, 0.0, 28, 3, 0.0, 28, 4, 1.0, 28, 5, 0.0, 28, 6, 0.0, 28, 7, 0.0, 28, 8, 0.0, 28, 9, 0.0, 28, 10, 0.0, 28, 11, 0.0, 28, 12, 0.0, 28, 13, 0.0, 28, 14, 0.0, 28, 15, 0.0, 28, 16, 0.0, 28, 17, 0.0, 28, 18, 0.0, 28, 19, 0.0, 28, 20, 0.0, 28, 21, 0.0, 28, 22, 0.0, 28, 23, 0.0, 28, 24, 0.0, 28, 25, 0.0, 28, 26, 0.0, 28, 27, 0.0, 28, 28, 0.0, 28, 29, 0.0, 28, 30, 0.0, 28, 31, 0.0, 28, 32, 0.0, 28, 33, 0.0, 28, 34, 0.0, 28, 35, 0.0, 28, 36, 0.0, 28, 37, 0.0, 28, 38, 0.0, 28, 39, 0.0, 28, 40, 0.0, 28, 41, 0.0, 28, 42, 0.0, 28, 43, 0.0, 28, 44, 0.0, 28, 45, 0.0, 28, 46, 0.0, 28, 47, 0.0, 29, 0, 0.0, 29, 1, 0.0, 29, 2, 0.0, 29, 3, 0.0, 29, 4, 0.0, 29, 5, 1.0, 29, 6, 0.0, 29, 7, 0.0, 29, 8, 0.0, 29, 9, 0.0, 29, 10, 0.0, 29, 11, 0.0, 29, 12, 0.0, 29, 13, 0.0, 29, 14, 0.0, 29, 15, 0.0, 29, 16, 0.0, 29, 17, 0.0, 29, 18, 0.0, 29, 19, 0.0, 29, 20, 0.0, 29, 21, 0.0, 29, 22, 0.0, 29, 23, 0.0, 29, 24, 0.0, 29, 25, 0.0, 29, 26, 0.0, 29, 27, 0.0, 29, 28, 0.0, 29, 29, 0.0, 29, 30, 0.0, 29, 31, 0.0, 29, 32, 0.0, 29, 33, 0.0, 29, 34, 0.0, 29, 35, 0.0, 29, 36, 0.0, 29, 37, 0.0, 29, 38, 0.0, 29, 39, 0.0, 29, 40, 0.0, 29, 41, 0.0, 29, 42, 0.0, 29, 43, 0.0, 29, 44, 0.0, 29, 45, 0.0, 29, 46, 0.0, 29, 47, 0.0, 30, 0, 0.0, 30, 1, 0.0, 30, 2, 0.0, 30, 3, 0.0, 30, 4, 0.0, 30, 5, 0.0, 30, 6, 1.0, 30, 7, 0.0, 30, 8, 0.0, 30, 9, 0.0, 30, 10, 0.0, 30, 11, 0.0, 30, 12, 0.0, 30, 13, 0.0, 30, 14, 0.0, 30, 15, 0.0, 30, 16, 0.0, 30, 17, 0.0, 30, 18, 0.0, 30, 19, 0.0, 30, 20, 0.0, 30, 21, 0.0, 30, 22, 0.0, 30, 23, 0.0, 30, 24, 0.0, 30, 25, 0.0, 30, 26, 0.0, 30, 27, 0.0, 30, 28, 0.0, 30, 29, 0.0, 30, 30, 0.0, 30, 31, 0.0, 30, 32, 0.0, 30, 33, 0.0, 30, 34, 0.0, 30, 35, 0.0, 30, 36, 0.0, 30, 37, 0.0, 30, 38, 0.0, 30, 39, 0.0, 30, 40, 0.0, 30, 41, 0.0, 30, 42, 0.0, 30, 43, 0.0, 30, 44, 0.0, 30, 45, 0.0, 30, 46, 0.0, 30, 47, 0.0, 31, 0, 0.0, 31, 1, 0.0, 31, 2, 0.0, 31, 3, 0.0, 31, 4, 0.0, 31, 5, 0.0, 31, 6, 0.0, 31, 7, 1.0, 31, 8, 0.0, 31, 9, 0.0, 31, 10, 0.0, 31, 11, 0.0, 31, 12, 0.0, 31, 13, 0.0, 31, 14, 0.0, 31, 15, 0.0, 31, 16, 0.0, 31, 17, 0.0, 31, 18, 0.0, 31, 19, 0.0, 31, 20, 0.0, 31, 21, 0.0, 31, 22, 0.0, 31, 23, 0.0, 31, 24, 0.0, 31, 25, 0.0, 31, 26, 0.0, 31, 27, 0.0, 31, 28, 0.0, 31, 29, 0.0, 31, 30, 0.0, 31, 31, 0.0, 31, 32, 0.0, 31, 33, 0.0, 31, 34, 0.0, 31, 35, 0.0, 31, 36, 0.0, 31, 37, 0.0, 31, 38, 0.0, 31, 39, 0.0, 31, 40, 0.0, 31, 41, 0.0, 31, 42, 0.0, 31, 43, 0.0, 31, 44, 0.0, 31, 45, 0.0, 31, 46, 0.0, 31, 47, 0.0, 32, 0, 0.0, 32, 1, 0.0, 32, 2, 0.0, 32, 3, 0.0, 32, 4, 0.0, 32, 5, 0.0, 32, 6, 0.0, 32, 7, 0.0, 32, 8, 1.0, 32, 9, 0.0, 32, 10, 1.0, 32, 11, 0.0, 32, 12, 0.0, 32, 13, 0.0, 32, 14, 0.0, 32, 15, 0.0, 32, 16, 0.0, 32, 17, 0.0, 32, 18, 0.0, 32, 19, 0.0, 32, 20, 0.0, 32, 21, 0.0, 32, 22, 0.0, 32, 23, 0.0, 32, 24, 0.0, 32, 25, 0.0, 32, 26, 0.0, 32, 27, 0.0, 32, 28, 0.0, 32, 29, 0.0, 32, 30, 0.0, 32, 31, 0.0, 32, 32, 0.0, 32, 33, 0.0, 32, 34, 0.0, 32, 35, 0.0, 32, 36, 0.0, 32, 37, 0.0, 32, 38, 0.0, 32, 39, 0.0, 32, 40, 0.0, 32, 41, 0.0, 32, 42, 0.0, 32, 43, 0.0, 32, 44, 0.0, 32, 45, 0.0, 32, 46, 0.0, 32, 47, 0.0, 33, 0, 0.0, 33, 1, 0.0, 33, 2, 0.0, 33, 3, 0.0, 33, 4, 0.0, 33, 5, 0.0, 33, 6, 0.0, 33, 7, 0.0, 33, 8, 0.0, 33, 9, 1.0, 33, 10, 0.0, 33, 11, 1.0, 33, 12, 0.0, 33, 13, 0.0, 33, 14, 0.0, 33, 15, 0.0, 33, 16, 0.0, 33, 17, 0.0, 33, 18, 0.0, 33, 19, 0.0, 33, 20, 0.0, 33, 21, 0.0, 33, 22, 0.0, 33, 23, 0.0, 33, 24, 0.0, 33, 25, 0.0, 33, 26, 0.0, 33, 27, 0.0, 33, 28, 0.0, 33, 29, 0.0, 33, 30, 0.0, 33, 31, 0.0, 33, 32, 0.0, 33, 33, 0.0, 33, 34, 0.0, 33, 35, 0.0, 33, 36, 0.0, 33, 37, 0.0, 33, 38, 0.0, 33, 39, 0.0, 33, 40, 0.0, 33, 41, 0.0, 33, 42, 0.0, 33, 43, 0.0, 33, 44, 0.0, 33, 45, 0.0, 33, 46, 0.0, 33, 47, 0.0, 34, 0, 0.0, 34, 1, 0.0, 34, 2, 0.0, 34, 3, 0.0, 34, 4, 0.0, 34, 5, 0.0, 34, 6, 0.0, 34, 7, 0.0, 34, 8, 0.0, 34, 9, 0.0, 34, 10, 0.0, 34, 11, 0.0, 34, 12, 1.0, 34, 13, 0.0, 34, 14, 1.0, 34, 15, 0.0, 34, 16, 0.0, 34, 17, 0.0, 34, 18, 0.0, 34, 19, 0.0, 34, 20, 0.0, 34, 21, 0.0, 34, 22, 0.0, 34, 23, 0.0, 34, 24, 0.0, 34, 25, 0.0, 34, 26, 0.0, 34, 27, 0.0, 34, 28, 0.0, 34, 29, 0.0, 34, 30, 0.0, 34, 31, 0.0, 34, 32, 0.0, 34, 33, 0.0, 34, 34, 0.0, 34, 35, 0.0, 34, 36, 0.0, 34, 37, 0.0, 34, 38, 0.0, 34, 39, 0.0, 34, 40, 0.0, 34, 41, 0.0, 34, 42, 0.0, 34, 43, 0.0, 34, 44, 0.0, 34, 45, 0.0, 34, 46, 0.0, 34, 47, 0.0, 35, 0, 0.0, 35, 1, 0.0, 35, 2, 0.0, 35, 3, 0.0, 35, 4, 0.0, 35, 5, 0.0, 35, 6, 0.0, 35, 7, 0.0, 35, 8, 0.0, 35, 9, 0.0, 35, 10, 0.0, 35, 11, 0.0, 35, 12, 0.0, 35, 13, 1.0, 35, 14, 0.0, 35, 15, 1.0, 35, 16, 0.0, 35, 17, 0.0, 35, 18, 0.0, 35, 19, 0.0, 35, 20, 0.0, 35, 21, 0.0, 35, 22, 0.0, 35, 23, 0.0, 35, 24, 0.0, 35, 25, 0.0, 35, 26, 0.0, 35, 27, 0.0, 35, 28, 0.0, 35, 29, 0.0, 35, 30, 0.0, 35, 31, 0.0, 35, 32, 0.0, 35, 33, 0.0, 35, 34, 0.0, 35, 35, 0.0, 35, 36, 0.0, 35, 37, 0.0, 35, 38, 0.0, 35, 39, 0.0, 35, 40, 0.0, 35, 41, 0.0, 35, 42, 0.0, 35, 43, 0.0, 35, 44, 0.0, 35, 45, 0.0, 35, 46, 0.0, 35, 47, 0.0, 36, 0, 0.0, 36, 1, 0.0, 36, 2, 0.0, 36, 3, 0.0, 36, 4, 0.0, 36, 5, 0.0, 36, 6, 0.0, 36, 7, 0.0, 36, 8, 0.0, 36, 9, 0.0, 36, 10, 0.0, 36, 11, 0.0, 36, 12, 0.0, 36, 13, 0.0, 36, 14, 0.0, 36, 15, 0.0, 36, 16, 1.0, 36, 17, 0.0, 36, 18, 1.0, 36, 19, 0.0, 36, 20, 0.0, 36, 21, 0.0, 36, 22, 0.0, 36, 23, 0.0, 36, 24, 0.0, 36, 25, 0.0, 36, 26, 0.0, 36, 27, 0.0, 36, 28, 0.0, 36, 29, 0.0, 36, 30, 0.0, 36, 31, 0.0, 36, 32, 0.0, 36, 33, 0.0, 36, 34, 0.0, 36, 35, 0.0, 36, 36, 0.0, 36, 37, 0.0, 36, 38, 0.0, 36, 39, 0.0, 36, 40, 0.0, 36, 41, 0.0, 36, 42, 0.0, 36, 43, 0.0, 36, 44, 0.0, 36, 45, 0.0, 36, 46, 0.0, 36, 47, 0.0, 37, 0, 0.0, 37, 1, 0.0, 37, 2, 0.0, 37, 3, 0.0, 37, 4, 0.0, 37, 5, 0.0, 37, 6, 0.0, 37, 7, 0.0, 37, 8, 0.0, 37, 9, 0.0, 37, 10, 0.0, 37, 11, 0.0, 37, 12, 0.0, 37, 13, 0.0, 37, 14, 0.0, 37, 15, 0.0, 37, 16, 0.0, 37, 17, 1.0, 37, 18, 0.0, 37, 19, 1.0, 37, 20, 0.0, 37, 21, 0.0, 37, 22, 0.0, 37, 23, 0.0, 37, 24, 0.0, 37, 25, 0.0, 37, 26, 0.0, 37, 27, 0.0, 37, 28, 0.0, 37, 29, 0.0, 37, 30, 0.0, 37, 31, 0.0, 37, 32, 0.0, 37, 33, 0.0, 37, 34, 0.0, 37, 35, 0.0, 37, 36, 0.0, 37, 37, 0.0, 37, 38, 0.0, 37, 39, 0.0, 37, 40, 0.0, 37, 41, 0.0, 37, 42, 0.0, 37, 43, 0.0, 37, 44, 0.0, 37, 45, 0.0, 37, 46, 0.0, 37, 47, 0.0, 38, 0, 0.0, 38, 1, 0.0, 38, 2, 0.0, 38, 3, 0.0, 38, 4, 0.0, 38, 5, 0.0, 38, 6, 0.0, 38, 7, 0.0, 38, 8, 0.0, 38, 9, 0.0, 38, 10, 0.0, 38, 11, 0.0, 38, 12, 0.0, 38, 13, 0.0, 38, 14, 0.0, 38, 15, 0.0, 38, 16, 0.0, 38, 17, 0.0, 38, 18, 0.0, 38, 19, 0.0, 38, 20, 1.0, 38, 21, 0.0, 38, 22, 1.0, 38, 23, 0.0, 38, 24, 0.0, 38, 25, 0.0, 38, 26, 0.0, 38, 27, 0.0, 38, 28, 0.0, 38, 29, 0.0, 38, 30, 0.0, 38, 31, 0.0, 38, 32, 0.0, 38, 33, 0.0, 38, 34, 0.0, 38, 35, 0.0, 38, 36, 0.0, 38, 37, 0.0, 38, 38, 0.0, 38, 39, 0.0, 38, 40, 0.0, 38, 41, 0.0, 38, 42, 0.0, 38, 43, 0.0, 38, 44, 0.0, 38, 45, 0.0, 38, 46, 0.0, 38, 47, 0.0, 39, 0, 0.0, 39, 1, 0.0, 39, 2, 0.0, 39, 3, 0.0, 39, 4, 0.0, 39, 5, 0.0, 39, 6, 0.0, 39, 7, 0.0, 39, 8, 0.0, 39, 9, 0.0, 39, 10, 0.0, 39, 11, 0.0, 39, 12, 0.0, 39, 13, 0.0, 39, 14, 0.0, 39, 15, 0.0, 39, 16, 0.0, 39, 17, 0.0, 39, 18, 0.0, 39, 19, 0.0, 39, 20, 0.0, 39, 21, 1.0, 39, 22, 0.0, 39, 23, 1.0, 39, 24, 0.0, 39, 25, 0.0, 39, 26, 0.0, 39, 27, 0.0, 39, 28, 0.0, 39, 29, 0.0, 39, 30, 0.0, 39, 31, 0.0, 39, 32, 0.0, 39, 33, 0.0, 39, 34, 0.0, 39, 35, 0.0, 39, 36, 0.0, 39, 37, 0.0, 39, 38, 0.0, 39, 39, 0.0, 39, 40, 0.0, 39, 41, 0.0, 39, 42, 0.0, 39, 43, 0.0, 39, 44, 0.0, 39, 45, 0.0, 39, 46, 0.0, 39, 47, 0.0 ]
                                         }
                                     ]
-                                }
-                            },
-                            {
-                                "box": {
-                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
-                                    "id": "obj-9",
-                                    "maxclass": "comment",
-                                    "numinlets": 1,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 501.0, 46.0, 150.0, 20.0 ],
-                                    "presentation": 1,
-                                    "presentation_rect": [ 483.0, 61.0, 150.0, 20.0 ],
-                                    "text": "player4"
-                                }
-                            },
-                            {
-                                "box": {
-                                    "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
-                                    "id": "obj-8",
-                                    "maxclass": "comment",
-                                    "numinlets": 1,
-                                    "numoutlets": 0,
-                                    "patching_rect": [ 351.0, 44.0, 150.0, 20.0 ],
-                                    "presentation": 1,
-                                    "presentation_rect": [ 337.0, 61.0, 135.0, 20.0 ],
-                                    "text": "player3"
                                 }
                             },
                             {
@@ -4603,8 +4761,8 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 199.0, 46.0, 150.0, 20.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 185.0, 61.0, 141.0, 20.0 ],
-                                    "text": "player2"
+                                    "presentation_rect": [ 263.0, 60.0, 93.0, 20.0 ],
+                                    "text": "SOP-QUAD"
                                 }
                             },
                             {
@@ -4616,8 +4774,8 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 248.0, 28.0, 150.0, 20.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 61.0, 144.0, 20.0 ],
-                                    "text": "player1"
+                                    "presentation_rect": [ 30.0, 60.0, 215.0, 20.0 ],
+                                    "text": "SURROUND"
                                 }
                             },
                             {
@@ -4667,13 +4825,13 @@
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 166.0, 101.0, 35.0, 22.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 598.0, 34.0, 35.0, 22.0 ],
+                                    "presentation_rect": [ 1107.0, 28.0, 35.0, 22.0 ],
                                     "text": "clear"
                                 }
                             },
                             {
                                 "box": {
-                                    "columns": 24,
+                                    "columns": 40,
                                     "id": "obj-235",
                                     "maxclass": "matrixctrl",
                                     "numinlets": 1,
@@ -4682,8 +4840,9 @@
                                     "parameter_enable": 0,
                                     "patching_rect": [ 166.0, 173.0, 491.0, 485.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 30.0, 84.0, 603.0, 588.0 ],
-                                    "rows": 24
+                                    "presentation_rect": [ 30.0, 84.0, 1118.0, 943.0 ],
+                                    "rows": 48,
+                                    "varname": "matrixctrl"
                                 }
                             },
                             {
@@ -4713,8 +4872,32 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-235", 0 ],
+                                    "source": [ "obj-19", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-10", 0 ],
                                     "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-19", 0 ],
+                                    "source": [ "obj-20", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-20", 0 ],
+                                    "source": [ "obj-21", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-235", 0 ],
+                                    "source": [ "obj-22", 1 ]
                                 }
                             },
                             {
@@ -4728,22 +4911,29 @@
                                     "destination": [ "obj-235", 0 ],
                                     "source": [ "obj-241", 0 ]
                                 }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-21", 0 ],
+                                    "source": [ "obj-349", 0 ]
+                                }
                             }
                         ]
                     },
-                    "patching_rect": [ 963.736310839653, 1918.6814124584198, 94.0, 22.0 ],
-                    "text": "p MATRIXCTRL"
+                    "patching_rect": [ 996.0, 1666.0, 94.0, 22.0 ],
+                    "text": "p MATRIXCTRL",
+                    "varname": "MATRIXCTRL"
                 }
             },
             {
                 "box": {
                     "id": "obj-86",
                     "maxclass": "newobj",
-                    "numinlets": 2,
+                    "numinlets": 3,
                     "numoutlets": 1,
                     "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 1317.1923716068268, 1732.9671176671982, 180.4175180196762, 22.0 ],
-                    "text": "mc.combine~ 2"
+                    "patching_rect": [ 1317.0, 1556.0, 343.24190282821655, 22.0 ],
+                    "text": "mc.combine~ 3"
                 }
             },
             {
@@ -5264,7 +5454,7 @@
                     "numoutlets": 0,
                     "patching_rect": [ 47.42309296131134, 133.0, 150.0, 20.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 764.0, 786.0, 73.0, 20.0 ],
+                    "presentation_rect": [ 627.8260663747787, 787.4782841205597, 73.0, 20.0 ],
                     "text": "binaural mix"
                 }
             },
@@ -6732,30 +6922,6 @@
             },
             {
                 "box": {
-                    "id": "obj-75",
-                    "linecount": 3,
-                    "maxclass": "newobj",
-                    "numinlets": 2,
-                    "numoutlets": 3,
-                    "outlettype": [ "multichannelsignal", "", "" ],
-                    "patching_rect": [ 597.8022270202637, 2229.67043864727, 102.54237532615662, 49.0 ],
-                    "saved_object_attributes": {
-                        "attack": 0.041666666666666664,
-                        "auto": 0,
-                        "bypass": 0,
-                        "key": 0,
-                        "lookahead": 0,
-                        "mix": 100.0,
-                        "mode": 0,
-                        "postgain": 0.0,
-                        "release": 230.0,
-                        "thresh": -1.0
-                    },
-                    "text": "mc.sn.lim~ @chans 24 @thresh -1."
-                }
-            },
-            {
-                "box": {
                     "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
                     "id": "obj-70",
                     "maxclass": "newobj",
@@ -6774,7 +6940,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 597.8022270202637, 1918.6814124584198, 70.0, 22.0 ],
-                    "text": "loadmess 1"
+                    "text": "loadmess 0"
                 }
             },
             {
@@ -6788,7 +6954,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 597.8022270202637, 1961.5385574102402, 24.0, 24.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 739.0, 783.0, 24.0, 24.0 ]
+                    "presentation_rect": [ 602.6086758971214, 784.0000233650208, 24.0, 24.0 ]
                 }
             },
             {
@@ -6969,25 +7135,10 @@
             },
             {
                 "box": {
-                    "id": "obj-60",
-                    "linecount": 3,
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 2,
-                    "outlettype": [ "multichannelsignal", "" ],
-                    "patching_rect": [ 723.0769584178925, 2229.67043864727, 406.0, 49.0 ],
-                    "saved_object_attributes": {
-                        "parameter_enable": 0
-                    },
-                    "text": "spat5.spat~ @inputs 24 @mc 1 @outputs 2 @initwith \"/panning/type binaural, /source/number 24, /source/*/reverb/mute 1, /source/*/cluster/mute 1, /source/*/early/mute 1, /source/*/air 0\" @rooms 0"
-                }
-            },
-            {
-                "box": {
                     "color": [ 0.949019607843137, 0.0, 1.0, 1.0 ],
                     "id": "obj-55",
                     "maxclass": "newobj",
-                    "numinlets": 11,
+                    "numinlets": 13,
                     "numoutlets": 1,
                     "outlettype": [ "multichannelsignal" ],
                     "patcher": {
@@ -7000,7 +7151,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 173.0, 136.0, 1211.0, 831.0 ],
+                        "rect": [ 154.0, 186.0, 1211.0, 831.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "enablehscroll": 0,
@@ -7009,12 +7160,36 @@
                         "boxes": [
                             {
                                 "box": {
+                                    "comment": "",
+                                    "id": "obj-12",
+                                    "index": 13,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "multichannelsignal" ],
+                                    "patching_rect": [ 929.0000000000001, 178.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-8",
+                                    "index": 12,
+                                    "maxclass": "inlet",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "multichannelsignal" ],
+                                    "patching_rect": [ 849.0000000000001, 178.0, 30.0, 30.0 ]
+                                }
+                            },
+                            {
+                                "box": {
                                     "id": "obj-16",
                                     "maxclass": "newobj",
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
-                                    "patching_rect": [ 1207.0, 140.0, 61.0, 22.0 ],
+                                    "patching_rect": [ 1488.0, 117.0, 61.0, 22.0 ],
                                     "text": "delay 500"
                                 }
                             },
@@ -7026,7 +7201,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "bang" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 1207.0, 104.0, 24.0, 24.0 ]
+                                    "patching_rect": [ 1488.0, 81.0, 24.0, 24.0 ]
                                 }
                             },
                             {
@@ -7036,7 +7211,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "", "int", "int" ],
-                                    "patching_rect": [ 1192.0, 70.0, 48.0, 22.0 ],
+                                    "patching_rect": [ 1473.0, 47.0, 48.0, 22.0 ],
                                     "text": "change"
                                 }
                             },
@@ -7048,7 +7223,7 @@
                                     "numinlets": 0,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 1192.0, 36.0, 78.0, 22.0 ],
+                                    "patching_rect": [ 1473.0, 13.0, 78.0, 22.0 ],
                                     "text": "r audio_state"
                                 }
                             },
@@ -7073,8 +7248,8 @@
                                     "numinlets": 1,
                                     "numoutlets": 3,
                                     "outlettype": [ "", "", "" ],
-                                    "patching_rect": [ 944.0, 60.0, 109.0, 22.0 ],
-                                    "restore": [ 0, 0, 1.0, 1, 0, 1.0, 2, 0, 1.0, 3, 0, 1.0, 4, 1, 1.0, 5, 1, 1.0, 6, 1, 1.0, 7, 1, 1.0, 8, 2, 1.0, 9, 2, 1.0, 10, 2, 1.0, 11, 2, 1.0, 12, 3, 1.0, 13, 3, 1.0, 14, 3, 1.0, 15, 3, 1.0, 16, 4, 1.0, 17, 4, 1.0, 18, 4, 1.0, 19, 4, 1.0, 20, 5, 1.0, 21, 5, 1.0, 22, 5, 1.0, 23, 5, 1.0, 24, 6, 1.0, 25, 6, 1.0, 26, 6, 1.0, 27, 6, 1.0, 28, 7, 1.0, 29, 7, 1.0, 30, 7, 1.0, 31, 7, 1.0, 32, 8, 1.0, 33, 10, 1.0, 34, 12, 1.0, 35, 14, 1.0, 36, 9, 1.0, 37, 11, 1.0, 38, 13, 1.0, 39, 15, 1.0 ],
+                                    "patching_rect": [ 1225.0, 37.0, 109.0, 22.0 ],
+                                    "restore": [ 0, 0, 1.0, 1, 0, 1.0, 2, 0, 1.0, 3, 0, 1.0, 4, 1, 1.0, 5, 1, 1.0, 6, 1, 1.0, 7, 1, 1.0, 8, 2, 1.0, 9, 2, 1.0, 10, 2, 1.0, 11, 2, 1.0, 12, 3, 1.0, 13, 3, 1.0, 14, 3, 1.0, 15, 3, 1.0, 16, 4, 1.0, 17, 4, 1.0, 18, 4, 1.0, 19, 4, 1.0, 20, 5, 1.0, 21, 5, 1.0, 22, 5, 1.0, 23, 5, 1.0, 24, 6, 1.0, 25, 6, 1.0, 26, 6, 1.0, 27, 6, 1.0, 28, 7, 1.0, 29, 7, 1.0, 30, 7, 1.0, 31, 7, 1.0, 32, 8, 1.0, 33, 12, 1.0, 34, 16, 1.0, 35, 20, 1.0, 36, 9, 1.0, 37, 13, 1.0, 38, 17, 1.0, 39, 21, 1.0, 40, 10, 1.0, 41, 14, 1.0, 42, 18, 1.0, 43, 22, 1.0, 44, 11, 1.0, 45, 15, 1.0, 46, 19, 1.0, 47, 23, 1.0 ],
                                     "saved_object_attributes": {
                                         "parameter_enable": 0,
                                         "parameter_mappable": 0
@@ -7145,7 +7320,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 978.0, 121.0, 35.0, 22.0 ],
+                                    "patching_rect": [ 1259.0, 98.0, 35.0, 22.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 1072.631617307663, 11.57894778251648, 35.0, 22.0 ],
                                     "text": "clear"
@@ -7183,7 +7358,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 809.0, 64.0, 70.0, 22.0 ],
+                                    "patching_rect": [ 1090.0, 41.0, 70.0, 22.0 ],
                                     "text": "loadmess 1"
                                 }
                             },
@@ -7194,13 +7369,13 @@
                                     "numinlets": 1,
                                     "numoutlets": 5,
                                     "outlettype": [ "preset", "int", "preset", "int", "" ],
-                                    "patching_rect": [ 809.0, 108.0, 100.0, 40.0 ],
+                                    "patching_rect": [ 1090.0, 85.0, 100.0, 40.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 1072.631617307663, 40.000001430511475, 100.0, 40.0 ],
                                     "preset_data": [
                                         {
                                             "number": 1,
-                                            "data": [ 1924, "obj-14", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 1, 0, 1.0, 1, 1, 0.0, 1, 2, 0.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 2, 0, 1.0, 2, 1, 0.0, 2, 2, 0.0, 2, 3, 0.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 3, 0, 1.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 0.0, 3, 4, 0.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 4, 0, 0.0, 4, 1, 1.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 0.0, 4, 5, 0.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 5, 0, 0.0, 5, 1, 1.0, 5, 2, 0.0, 5, 3, 0.0, 5, 4, 0.0, 5, 5, 0.0, 5, 6, 0.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 6, 0, 0.0, 6, 1, 1.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 0.0, 6, 7, 0.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 7, 0, 0.0, 7, 1, 1.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 0.0, 7, 8, 0.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 1.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 0.0, 8, 9, 0.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 1.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 0.0, 9, 10, 0.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 1.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 10, 8, 0.0, 10, 9, 0.0, 10, 10, 0.0, 10, 11, 0.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 1.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 0.0, 11, 12, 0.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 1.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 0.0, 12, 13, 0.0, 12, 14, 0.0, 12, 15, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 1.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 0.0, 13, 14, 0.0, 13, 15, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 1.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 0.0, 14, 15, 0.0, 15, 0, 0.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 1.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 0.0, 16, 0, 0.0, 16, 1, 0.0, 16, 2, 0.0, 16, 3, 0.0, 16, 4, 1.0, 16, 5, 0.0, 16, 6, 0.0, 16, 7, 0.0, 16, 8, 0.0, 16, 9, 0.0, 16, 10, 0.0, 16, 11, 0.0, 16, 12, 0.0, 16, 13, 0.0, 16, 14, 0.0, 16, 15, 0.0, 17, 0, 0.0, 17, 1, 0.0, 17, 2, 0.0, 17, 3, 0.0, 17, 4, 1.0, 17, 5, 0.0, 17, 6, 0.0, 17, 7, 0.0, 17, 8, 0.0, 17, 9, 0.0, 17, 10, 0.0, 17, 11, 0.0, 17, 12, 0.0, 17, 13, 0.0, 17, 14, 0.0, 17, 15, 0.0, 18, 0, 0.0, 18, 1, 0.0, 18, 2, 0.0, 18, 3, 0.0, 18, 4, 1.0, 18, 5, 0.0, 18, 6, 0.0, 18, 7, 0.0, 18, 8, 0.0, 18, 9, 0.0, 18, 10, 0.0, 18, 11, 0.0, 18, 12, 0.0, 18, 13, 0.0, 18, 14, 0.0, 18, 15, 0.0, 19, 0, 0.0, 19, 1, 0.0, 19, 2, 0.0, 19, 3, 0.0, 19, 4, 1.0, 19, 5, 0.0, 19, 6, 0.0, 19, 7, 0.0, 19, 8, 0.0, 19, 9, 0.0, 19, 10, 0.0, 19, 11, 0.0, 19, 12, 0.0, 19, 13, 0.0, 19, 14, 0.0, 19, 15, 0.0, 20, 0, 0.0, 20, 1, 0.0, 20, 2, 0.0, 20, 3, 0.0, 20, 4, 0.0, 20, 5, 1.0, 20, 6, 0.0, 20, 7, 0.0, 20, 8, 0.0, 20, 9, 0.0, 20, 10, 0.0, 20, 11, 0.0, 20, 12, 0.0, 20, 13, 0.0, 20, 14, 0.0, 20, 15, 0.0, 21, 0, 0.0, 21, 1, 0.0, 21, 2, 0.0, 21, 3, 0.0, 21, 4, 0.0, 21, 5, 1.0, 21, 6, 0.0, 21, 7, 0.0, 21, 8, 0.0, 21, 9, 0.0, 21, 10, 0.0, 21, 11, 0.0, 21, 12, 0.0, 21, 13, 0.0, 21, 14, 0.0, 21, 15, 0.0, 22, 0, 0.0, 22, 1, 0.0, 22, 2, 0.0, 22, 3, 0.0, 22, 4, 0.0, 22, 5, 1.0, 22, 6, 0.0, 22, 7, 0.0, 22, 8, 0.0, 22, 9, 0.0, 22, 10, 0.0, 22, 11, 0.0, 22, 12, 0.0, 22, 13, 0.0, 22, 14, 0.0, 22, 15, 0.0, 23, 0, 0.0, 23, 1, 0.0, 23, 2, 0.0, 23, 3, 0.0, 23, 4, 0.0, 23, 5, 1.0, 23, 6, 0.0, 23, 7, 0.0, 23, 8, 0.0, 23, 9, 0.0, 23, 10, 0.0, 23, 11, 0.0, 23, 12, 0.0, 23, 13, 0.0, 23, 14, 0.0, 23, 15, 0.0, 24, 0, 0.0, 24, 1, 0.0, 24, 2, 0.0, 24, 3, 0.0, 24, 4, 0.0, 24, 5, 0.0, 24, 6, 1.0, 24, 7, 0.0, 24, 8, 0.0, 24, 9, 0.0, 24, 10, 0.0, 24, 11, 0.0, 24, 12, 0.0, 24, 13, 0.0, 24, 14, 0.0, 24, 15, 0.0, 25, 0, 0.0, 25, 1, 0.0, 25, 2, 0.0, 25, 3, 0.0, 25, 4, 0.0, 25, 5, 0.0, 25, 6, 1.0, 25, 7, 0.0, 25, 8, 0.0, 25, 9, 0.0, 25, 10, 0.0, 25, 11, 0.0, 25, 12, 0.0, 25, 13, 0.0, 25, 14, 0.0, 25, 15, 0.0, 26, 0, 0.0, 26, 1, 0.0, 26, 2, 0.0, 26, 3, 0.0, 26, 4, 0.0, 26, 5, 0.0, 26, 6, 1.0, 26, 7, 0.0, 26, 8, 0.0, 26, 9, 0.0, 26, 10, 0.0, 26, 11, 0.0, 26, 12, 0.0, 26, 13, 0.0, 26, 14, 0.0, 26, 15, 0.0, 27, 0, 0.0, 27, 1, 0.0, 27, 2, 0.0, 27, 3, 0.0, 27, 4, 0.0, 27, 5, 0.0, 27, 6, 1.0, 27, 7, 0.0, 27, 8, 0.0, 27, 9, 0.0, 27, 10, 0.0, 27, 11, 0.0, 27, 12, 0.0, 27, 13, 0.0, 27, 14, 0.0, 27, 15, 0.0, 28, 0, 0.0, 28, 1, 0.0, 28, 2, 0.0, 28, 3, 0.0, 28, 4, 0.0, 28, 5, 0.0, 28, 6, 0.0, 28, 7, 1.0, 28, 8, 0.0, 28, 9, 0.0, 28, 10, 0.0, 28, 11, 0.0, 28, 12, 0.0, 28, 13, 0.0, 28, 14, 0.0, 28, 15, 0.0, 29, 0, 0.0, 29, 1, 0.0, 29, 2, 0.0, 29, 3, 0.0, 29, 4, 0.0, 29, 5, 0.0, 29, 6, 0.0, 29, 7, 1.0, 29, 8, 0.0, 29, 9, 0.0, 29, 10, 0.0, 29, 11, 0.0, 29, 12, 0.0, 29, 13, 0.0, 29, 14, 0.0, 29, 15, 0.0, 30, 0, 0.0, 30, 1, 0.0, 30, 2, 0.0, 30, 3, 0.0, 30, 4, 0.0, 30, 5, 0.0, 30, 6, 0.0, 30, 7, 1.0, 30, 8, 0.0, 30, 9, 0.0, 30, 10, 0.0, 30, 11, 0.0, 30, 12, 0.0, 30, 13, 0.0, 30, 14, 0.0, 30, 15, 0.0, 31, 0, 0.0, 31, 1, 0.0, 31, 2, 0.0, 31, 3, 0.0, 31, 4, 0.0, 31, 5, 0.0, 31, 6, 0.0, 31, 7, 1.0, 31, 8, 0.0, 31, 9, 0.0, 31, 10, 0.0, 31, 11, 0.0, 31, 12, 0.0, 31, 13, 0.0, 31, 14, 0.0, 31, 15, 0.0, 32, 0, 0.0, 32, 1, 0.0, 32, 2, 0.0, 32, 3, 0.0, 32, 4, 0.0, 32, 5, 0.0, 32, 6, 0.0, 32, 7, 0.0, 32, 8, 1.0, 32, 9, 0.0, 32, 10, 0.0, 32, 11, 0.0, 32, 12, 0.0, 32, 13, 0.0, 32, 14, 0.0, 32, 15, 0.0, 33, 0, 0.0, 33, 1, 0.0, 33, 2, 0.0, 33, 3, 0.0, 33, 4, 0.0, 33, 5, 0.0, 33, 6, 0.0, 33, 7, 0.0, 33, 8, 0.0, 33, 9, 0.0, 33, 10, 1.0, 33, 11, 0.0, 33, 12, 0.0, 33, 13, 0.0, 33, 14, 0.0, 33, 15, 0.0, 34, 0, 0.0, 34, 1, 0.0, 34, 2, 0.0, 34, 3, 0.0, 34, 4, 0.0, 34, 5, 0.0, 34, 6, 0.0, 34, 7, 0.0, 34, 8, 0.0, 34, 9, 0.0, 34, 10, 0.0, 34, 11, 0.0, 34, 12, 1.0, 34, 13, 0.0, 34, 14, 0.0, 34, 15, 0.0, 35, 0, 0.0, 35, 1, 0.0, 35, 2, 0.0, 35, 3, 0.0, 35, 4, 0.0, 35, 5, 0.0, 35, 6, 0.0, 35, 7, 0.0, 35, 8, 0.0, 35, 9, 0.0, 35, 10, 0.0, 35, 11, 0.0, 35, 12, 0.0, 35, 13, 0.0, 35, 14, 1.0, 35, 15, 0.0, 36, 0, 0.0, 36, 1, 0.0, 36, 2, 0.0, 36, 3, 0.0, 36, 4, 0.0, 36, 5, 0.0, 36, 6, 0.0, 36, 7, 0.0, 36, 8, 0.0, 36, 9, 1.0, 36, 10, 0.0, 36, 11, 0.0, 36, 12, 0.0, 36, 13, 0.0, 36, 14, 0.0, 36, 15, 0.0, 37, 0, 0.0, 37, 1, 0.0, 37, 2, 0.0, 37, 3, 0.0, 37, 4, 0.0, 37, 5, 0.0, 37, 6, 0.0, 37, 7, 0.0, 37, 8, 0.0, 37, 9, 0.0, 37, 10, 0.0, 37, 11, 1.0, 37, 12, 0.0, 37, 13, 0.0, 37, 14, 0.0, 37, 15, 0.0, 38, 0, 0.0, 38, 1, 0.0, 38, 2, 0.0, 38, 3, 0.0, 38, 4, 0.0, 38, 5, 0.0, 38, 6, 0.0, 38, 7, 0.0, 38, 8, 0.0, 38, 9, 0.0, 38, 10, 0.0, 38, 11, 0.0, 38, 12, 0.0, 38, 13, 1.0, 38, 14, 0.0, 38, 15, 0.0, 39, 0, 0.0, 39, 1, 0.0, 39, 2, 0.0, 39, 3, 0.0, 39, 4, 0.0, 39, 5, 0.0, 39, 6, 0.0, 39, 7, 0.0, 39, 8, 0.0, 39, 9, 0.0, 39, 10, 0.0, 39, 11, 0.0, 39, 12, 0.0, 39, 13, 0.0, 39, 14, 0.0, 39, 15, 1.0 ]
+                                            "data": [ 3460, "obj-14", "matrixctrl", "list", 0, 0, 1.0, 0, 1, 0.0, 0, 2, 0.0, 0, 3, 0.0, 0, 4, 0.0, 0, 5, 0.0, 0, 6, 0.0, 0, 7, 0.0, 0, 8, 0.0, 0, 9, 0.0, 0, 10, 0.0, 0, 11, 0.0, 0, 12, 0.0, 0, 13, 0.0, 0, 14, 0.0, 0, 15, 0.0, 0, 16, 0.0, 0, 17, 0.0, 0, 18, 0.0, 0, 19, 0.0, 0, 20, 0.0, 0, 21, 0.0, 0, 22, 0.0, 0, 23, 0.0, 1, 0, 1.0, 1, 1, 0.0, 1, 2, 0.0, 1, 3, 0.0, 1, 4, 0.0, 1, 5, 0.0, 1, 6, 0.0, 1, 7, 0.0, 1, 8, 0.0, 1, 9, 0.0, 1, 10, 0.0, 1, 11, 0.0, 1, 12, 0.0, 1, 13, 0.0, 1, 14, 0.0, 1, 15, 0.0, 1, 16, 0.0, 1, 17, 0.0, 1, 18, 0.0, 1, 19, 0.0, 1, 20, 0.0, 1, 21, 0.0, 1, 22, 0.0, 1, 23, 0.0, 2, 0, 1.0, 2, 1, 0.0, 2, 2, 0.0, 2, 3, 0.0, 2, 4, 0.0, 2, 5, 0.0, 2, 6, 0.0, 2, 7, 0.0, 2, 8, 0.0, 2, 9, 0.0, 2, 10, 0.0, 2, 11, 0.0, 2, 12, 0.0, 2, 13, 0.0, 2, 14, 0.0, 2, 15, 0.0, 2, 16, 0.0, 2, 17, 0.0, 2, 18, 0.0, 2, 19, 0.0, 2, 20, 0.0, 2, 21, 0.0, 2, 22, 0.0, 2, 23, 0.0, 3, 0, 1.0, 3, 1, 0.0, 3, 2, 0.0, 3, 3, 0.0, 3, 4, 0.0, 3, 5, 0.0, 3, 6, 0.0, 3, 7, 0.0, 3, 8, 0.0, 3, 9, 0.0, 3, 10, 0.0, 3, 11, 0.0, 3, 12, 0.0, 3, 13, 0.0, 3, 14, 0.0, 3, 15, 0.0, 3, 16, 0.0, 3, 17, 0.0, 3, 18, 0.0, 3, 19, 0.0, 3, 20, 0.0, 3, 21, 0.0, 3, 22, 0.0, 3, 23, 0.0, 4, 0, 0.0, 4, 1, 1.0, 4, 2, 0.0, 4, 3, 0.0, 4, 4, 0.0, 4, 5, 0.0, 4, 6, 0.0, 4, 7, 0.0, 4, 8, 0.0, 4, 9, 0.0, 4, 10, 0.0, 4, 11, 0.0, 4, 12, 0.0, 4, 13, 0.0, 4, 14, 0.0, 4, 15, 0.0, 4, 16, 0.0, 4, 17, 0.0, 4, 18, 0.0, 4, 19, 0.0, 4, 20, 0.0, 4, 21, 0.0, 4, 22, 0.0, 4, 23, 0.0, 5, 0, 0.0, 5, 1, 1.0, 5, 2, 0.0, 5, 3, 0.0, 5, 4, 0.0, 5, 5, 0.0, 5, 6, 0.0, 5, 7, 0.0, 5, 8, 0.0, 5, 9, 0.0, 5, 10, 0.0, 5, 11, 0.0, 5, 12, 0.0, 5, 13, 0.0, 5, 14, 0.0, 5, 15, 0.0, 5, 16, 0.0, 5, 17, 0.0, 5, 18, 0.0, 5, 19, 0.0, 5, 20, 0.0, 5, 21, 0.0, 5, 22, 0.0, 5, 23, 0.0, 6, 0, 0.0, 6, 1, 1.0, 6, 2, 0.0, 6, 3, 0.0, 6, 4, 0.0, 6, 5, 0.0, 6, 6, 0.0, 6, 7, 0.0, 6, 8, 0.0, 6, 9, 0.0, 6, 10, 0.0, 6, 11, 0.0, 6, 12, 0.0, 6, 13, 0.0, 6, 14, 0.0, 6, 15, 0.0, 6, 16, 0.0, 6, 17, 0.0, 6, 18, 0.0, 6, 19, 0.0, 6, 20, 0.0, 6, 21, 0.0, 6, 22, 0.0, 6, 23, 0.0, 7, 0, 0.0, 7, 1, 1.0, 7, 2, 0.0, 7, 3, 0.0, 7, 4, 0.0, 7, 5, 0.0, 7, 6, 0.0, 7, 7, 0.0, 7, 8, 0.0, 7, 9, 0.0, 7, 10, 0.0, 7, 11, 0.0, 7, 12, 0.0, 7, 13, 0.0, 7, 14, 0.0, 7, 15, 0.0, 7, 16, 0.0, 7, 17, 0.0, 7, 18, 0.0, 7, 19, 0.0, 7, 20, 0.0, 7, 21, 0.0, 7, 22, 0.0, 7, 23, 0.0, 8, 0, 0.0, 8, 1, 0.0, 8, 2, 1.0, 8, 3, 0.0, 8, 4, 0.0, 8, 5, 0.0, 8, 6, 0.0, 8, 7, 0.0, 8, 8, 0.0, 8, 9, 0.0, 8, 10, 0.0, 8, 11, 0.0, 8, 12, 0.0, 8, 13, 0.0, 8, 14, 0.0, 8, 15, 0.0, 8, 16, 0.0, 8, 17, 0.0, 8, 18, 0.0, 8, 19, 0.0, 8, 20, 0.0, 8, 21, 0.0, 8, 22, 0.0, 8, 23, 0.0, 9, 0, 0.0, 9, 1, 0.0, 9, 2, 1.0, 9, 3, 0.0, 9, 4, 0.0, 9, 5, 0.0, 9, 6, 0.0, 9, 7, 0.0, 9, 8, 0.0, 9, 9, 0.0, 9, 10, 0.0, 9, 11, 0.0, 9, 12, 0.0, 9, 13, 0.0, 9, 14, 0.0, 9, 15, 0.0, 9, 16, 0.0, 9, 17, 0.0, 9, 18, 0.0, 9, 19, 0.0, 9, 20, 0.0, 9, 21, 0.0, 9, 22, 0.0, 9, 23, 0.0, 10, 0, 0.0, 10, 1, 0.0, 10, 2, 1.0, 10, 3, 0.0, 10, 4, 0.0, 10, 5, 0.0, 10, 6, 0.0, 10, 7, 0.0, 10, 8, 0.0, 10, 9, 0.0, 10, 10, 0.0, 10, 11, 0.0, 10, 12, 0.0, 10, 13, 0.0, 10, 14, 0.0, 10, 15, 0.0, 10, 16, 0.0, 10, 17, 0.0, 10, 18, 0.0, 10, 19, 0.0, 10, 20, 0.0, 10, 21, 0.0, 10, 22, 0.0, 10, 23, 0.0, 11, 0, 0.0, 11, 1, 0.0, 11, 2, 1.0, 11, 3, 0.0, 11, 4, 0.0, 11, 5, 0.0, 11, 6, 0.0, 11, 7, 0.0, 11, 8, 0.0, 11, 9, 0.0, 11, 10, 0.0, 11, 11, 0.0, 11, 12, 0.0, 11, 13, 0.0, 11, 14, 0.0, 11, 15, 0.0, 11, 16, 0.0, 11, 17, 0.0, 11, 18, 0.0, 11, 19, 0.0, 11, 20, 0.0, 11, 21, 0.0, 11, 22, 0.0, 11, 23, 0.0, 12, 0, 0.0, 12, 1, 0.0, 12, 2, 0.0, 12, 3, 1.0, 12, 4, 0.0, 12, 5, 0.0, 12, 6, 0.0, 12, 7, 0.0, 12, 8, 0.0, 12, 9, 0.0, 12, 10, 0.0, 12, 11, 0.0, 12, 12, 0.0, 12, 13, 0.0, 12, 14, 0.0, 12, 15, 0.0, 12, 16, 0.0, 12, 17, 0.0, 12, 18, 0.0, 12, 19, 0.0, 12, 20, 0.0, 12, 21, 0.0, 12, 22, 0.0, 12, 23, 0.0, 13, 0, 0.0, 13, 1, 0.0, 13, 2, 0.0, 13, 3, 1.0, 13, 4, 0.0, 13, 5, 0.0, 13, 6, 0.0, 13, 7, 0.0, 13, 8, 0.0, 13, 9, 0.0, 13, 10, 0.0, 13, 11, 0.0, 13, 12, 0.0, 13, 13, 0.0, 13, 14, 0.0, 13, 15, 0.0, 13, 16, 0.0, 13, 17, 0.0, 13, 18, 0.0, 13, 19, 0.0, 13, 20, 0.0, 13, 21, 0.0, 13, 22, 0.0, 13, 23, 0.0, 14, 0, 0.0, 14, 1, 0.0, 14, 2, 0.0, 14, 3, 1.0, 14, 4, 0.0, 14, 5, 0.0, 14, 6, 0.0, 14, 7, 0.0, 14, 8, 0.0, 14, 9, 0.0, 14, 10, 0.0, 14, 11, 0.0, 14, 12, 0.0, 14, 13, 0.0, 14, 14, 0.0, 14, 15, 0.0, 14, 16, 0.0, 14, 17, 0.0, 14, 18, 0.0, 14, 19, 0.0, 14, 20, 0.0, 14, 21, 0.0, 14, 22, 0.0, 14, 23, 0.0, 15, 0, 0.0, 15, 1, 0.0, 15, 2, 0.0, 15, 3, 1.0, 15, 4, 0.0, 15, 5, 0.0, 15, 6, 0.0, 15, 7, 0.0, 15, 8, 0.0, 15, 9, 0.0, 15, 10, 0.0, 15, 11, 0.0, 15, 12, 0.0, 15, 13, 0.0, 15, 14, 0.0, 15, 15, 0.0, 15, 16, 0.0, 15, 17, 0.0, 15, 18, 0.0, 15, 19, 0.0, 15, 20, 0.0, 15, 21, 0.0, 15, 22, 0.0, 15, 23, 0.0, 16, 0, 0.0, 16, 1, 0.0, 16, 2, 0.0, 16, 3, 0.0, 16, 4, 1.0, 16, 5, 0.0, 16, 6, 0.0, 16, 7, 0.0, 16, 8, 0.0, 16, 9, 0.0, 16, 10, 0.0, 16, 11, 0.0, 16, 12, 0.0, 16, 13, 0.0, 16, 14, 0.0, 16, 15, 0.0, 16, 16, 0.0, 16, 17, 0.0, 16, 18, 0.0, 16, 19, 0.0, 16, 20, 0.0, 16, 21, 0.0, 16, 22, 0.0, 16, 23, 0.0, 17, 0, 0.0, 17, 1, 0.0, 17, 2, 0.0, 17, 3, 0.0, 17, 4, 1.0, 17, 5, 0.0, 17, 6, 0.0, 17, 7, 0.0, 17, 8, 0.0, 17, 9, 0.0, 17, 10, 0.0, 17, 11, 0.0, 17, 12, 0.0, 17, 13, 0.0, 17, 14, 0.0, 17, 15, 0.0, 17, 16, 0.0, 17, 17, 0.0, 17, 18, 0.0, 17, 19, 0.0, 17, 20, 0.0, 17, 21, 0.0, 17, 22, 0.0, 17, 23, 0.0, 18, 0, 0.0, 18, 1, 0.0, 18, 2, 0.0, 18, 3, 0.0, 18, 4, 1.0, 18, 5, 0.0, 18, 6, 0.0, 18, 7, 0.0, 18, 8, 0.0, 18, 9, 0.0, 18, 10, 0.0, 18, 11, 0.0, 18, 12, 0.0, 18, 13, 0.0, 18, 14, 0.0, 18, 15, 0.0, 18, 16, 0.0, 18, 17, 0.0, 18, 18, 0.0, 18, 19, 0.0, 18, 20, 0.0, 18, 21, 0.0, 18, 22, 0.0, 18, 23, 0.0, 19, 0, 0.0, 19, 1, 0.0, 19, 2, 0.0, 19, 3, 0.0, 19, 4, 1.0, 19, 5, 0.0, 19, 6, 0.0, 19, 7, 0.0, 19, 8, 0.0, 19, 9, 0.0, 19, 10, 0.0, 19, 11, 0.0, 19, 12, 0.0, 19, 13, 0.0, 19, 14, 0.0, 19, 15, 0.0, 19, 16, 0.0, 19, 17, 0.0, 19, 18, 0.0, 19, 19, 0.0, 19, 20, 0.0, 19, 21, 0.0, 19, 22, 0.0, 19, 23, 0.0, 20, 0, 0.0, 20, 1, 0.0, 20, 2, 0.0, 20, 3, 0.0, 20, 4, 0.0, 20, 5, 1.0, 20, 6, 0.0, 20, 7, 0.0, 20, 8, 0.0, 20, 9, 0.0, 20, 10, 0.0, 20, 11, 0.0, 20, 12, 0.0, 20, 13, 0.0, 20, 14, 0.0, 20, 15, 0.0, 20, 16, 0.0, 20, 17, 0.0, 20, 18, 0.0, 20, 19, 0.0, 20, 20, 0.0, 20, 21, 0.0, 20, 22, 0.0, 20, 23, 0.0, 21, 0, 0.0, 21, 1, 0.0, 21, 2, 0.0, 21, 3, 0.0, 21, 4, 0.0, 21, 5, 1.0, 21, 6, 0.0, 21, 7, 0.0, 21, 8, 0.0, 21, 9, 0.0, 21, 10, 0.0, 21, 11, 0.0, 21, 12, 0.0, 21, 13, 0.0, 21, 14, 0.0, 21, 15, 0.0, 21, 16, 0.0, 21, 17, 0.0, 21, 18, 0.0, 21, 19, 0.0, 21, 20, 0.0, 21, 21, 0.0, 21, 22, 0.0, 21, 23, 0.0, 22, 0, 0.0, 22, 1, 0.0, 22, 2, 0.0, 22, 3, 0.0, 22, 4, 0.0, 22, 5, 1.0, 22, 6, 0.0, 22, 7, 0.0, 22, 8, 0.0, 22, 9, 0.0, 22, 10, 0.0, 22, 11, 0.0, 22, 12, 0.0, 22, 13, 0.0, 22, 14, 0.0, 22, 15, 0.0, 22, 16, 0.0, 22, 17, 0.0, 22, 18, 0.0, 22, 19, 0.0, 22, 20, 0.0, 22, 21, 0.0, 22, 22, 0.0, 22, 23, 0.0, 23, 0, 0.0, 23, 1, 0.0, 23, 2, 0.0, 23, 3, 0.0, 23, 4, 0.0, 23, 5, 1.0, 23, 6, 0.0, 23, 7, 0.0, 23, 8, 0.0, 23, 9, 0.0, 23, 10, 0.0, 23, 11, 0.0, 23, 12, 0.0, 23, 13, 0.0, 23, 14, 0.0, 23, 15, 0.0, 23, 16, 0.0, 23, 17, 0.0, 23, 18, 0.0, 23, 19, 0.0, 23, 20, 0.0, 23, 21, 0.0, 23, 22, 0.0, 23, 23, 0.0, 24, 0, 0.0, 24, 1, 0.0, 24, 2, 0.0, 24, 3, 0.0, 24, 4, 0.0, 24, 5, 0.0, 24, 6, 1.0, 24, 7, 0.0, 24, 8, 0.0, 24, 9, 0.0, 24, 10, 0.0, 24, 11, 0.0, 24, 12, 0.0, 24, 13, 0.0, 24, 14, 0.0, 24, 15, 0.0, 24, 16, 0.0, 24, 17, 0.0, 24, 18, 0.0, 24, 19, 0.0, 24, 20, 0.0, 24, 21, 0.0, 24, 22, 0.0, 24, 23, 0.0, 25, 0, 0.0, 25, 1, 0.0, 25, 2, 0.0, 25, 3, 0.0, 25, 4, 0.0, 25, 5, 0.0, 25, 6, 1.0, 25, 7, 0.0, 25, 8, 0.0, 25, 9, 0.0, 25, 10, 0.0, 25, 11, 0.0, 25, 12, 0.0, 25, 13, 0.0, 25, 14, 0.0, 25, 15, 0.0, 25, 16, 0.0, 25, 17, 0.0, 25, 18, 0.0, 25, 19, 0.0, 25, 20, 0.0, 25, 21, 0.0, 25, 22, 0.0, 25, 23, 0.0, 26, 0, 0.0, 26, 1, 0.0, 26, 2, 0.0, 26, 3, 0.0, 26, 4, 0.0, 26, 5, 0.0, 26, 6, 1.0, 26, 7, 0.0, 26, 8, 0.0, 26, 9, 0.0, 26, 10, 0.0, 26, 11, 0.0, 26, 12, 0.0, 26, 13, 0.0, 26, 14, 0.0, 26, 15, 0.0, 26, 16, 0.0, 26, 17, 0.0, 26, 18, 0.0, 26, 19, 0.0, 26, 20, 0.0, 26, 21, 0.0, 26, 22, 0.0, 26, 23, 0.0, 27, 0, 0.0, 27, 1, 0.0, 27, 2, 0.0, 27, 3, 0.0, 27, 4, 0.0, 27, 5, 0.0, 27, 6, 1.0, 27, 7, 0.0, 27, 8, 0.0, 27, 9, 0.0, 27, 10, 0.0, 27, 11, 0.0, 27, 12, 0.0, 27, 13, 0.0, 27, 14, 0.0, 27, 15, 0.0, 27, 16, 0.0, 27, 17, 0.0, 27, 18, 0.0, 27, 19, 0.0, 27, 20, 0.0, 27, 21, 0.0, 27, 22, 0.0, 27, 23, 0.0, 28, 0, 0.0, 28, 1, 0.0, 28, 2, 0.0, 28, 3, 0.0, 28, 4, 0.0, 28, 5, 0.0, 28, 6, 0.0, 28, 7, 1.0, 28, 8, 0.0, 28, 9, 0.0, 28, 10, 0.0, 28, 11, 0.0, 28, 12, 0.0, 28, 13, 0.0, 28, 14, 0.0, 28, 15, 0.0, 28, 16, 0.0, 28, 17, 0.0, 28, 18, 0.0, 28, 19, 0.0, 28, 20, 0.0, 28, 21, 0.0, 28, 22, 0.0, 28, 23, 0.0, 29, 0, 0.0, 29, 1, 0.0, 29, 2, 0.0, 29, 3, 0.0, 29, 4, 0.0, 29, 5, 0.0, 29, 6, 0.0, 29, 7, 1.0, 29, 8, 0.0, 29, 9, 0.0, 29, 10, 0.0, 29, 11, 0.0, 29, 12, 0.0, 29, 13, 0.0, 29, 14, 0.0, 29, 15, 0.0, 29, 16, 0.0, 29, 17, 0.0, 29, 18, 0.0, 29, 19, 0.0, 29, 20, 0.0, 29, 21, 0.0, 29, 22, 0.0, 29, 23, 0.0, 30, 0, 0.0, 30, 1, 0.0, 30, 2, 0.0, 30, 3, 0.0, 30, 4, 0.0, 30, 5, 0.0, 30, 6, 0.0, 30, 7, 1.0, 30, 8, 0.0, 30, 9, 0.0, 30, 10, 0.0, 30, 11, 0.0, 30, 12, 0.0, 30, 13, 0.0, 30, 14, 0.0, 30, 15, 0.0, 30, 16, 0.0, 30, 17, 0.0, 30, 18, 0.0, 30, 19, 0.0, 30, 20, 0.0, 30, 21, 0.0, 30, 22, 0.0, 30, 23, 0.0, 31, 0, 0.0, 31, 1, 0.0, 31, 2, 0.0, 31, 3, 0.0, 31, 4, 0.0, 31, 5, 0.0, 31, 6, 0.0, 31, 7, 1.0, 31, 8, 0.0, 31, 9, 0.0, 31, 10, 0.0, 31, 11, 0.0, 31, 12, 0.0, 31, 13, 0.0, 31, 14, 0.0, 31, 15, 0.0, 31, 16, 0.0, 31, 17, 0.0, 31, 18, 0.0, 31, 19, 0.0, 31, 20, 0.0, 31, 21, 0.0, 31, 22, 0.0, 31, 23, 0.0, 32, 0, 0.0, 32, 1, 0.0, 32, 2, 0.0, 32, 3, 0.0, 32, 4, 0.0, 32, 5, 0.0, 32, 6, 0.0, 32, 7, 0.0, 32, 8, 1.0, 32, 9, 0.0, 32, 10, 0.0, 32, 11, 0.0, 32, 12, 0.0, 32, 13, 0.0, 32, 14, 0.0, 32, 15, 0.0, 32, 16, 0.0, 32, 17, 0.0, 32, 18, 0.0, 32, 19, 0.0, 32, 20, 0.0, 32, 21, 0.0, 32, 22, 0.0, 32, 23, 0.0, 33, 0, 0.0, 33, 1, 0.0, 33, 2, 0.0, 33, 3, 0.0, 33, 4, 0.0, 33, 5, 0.0, 33, 6, 0.0, 33, 7, 0.0, 33, 8, 0.0, 33, 9, 0.0, 33, 10, 0.0, 33, 11, 0.0, 33, 12, 1.0, 33, 13, 0.0, 33, 14, 0.0, 33, 15, 0.0, 33, 16, 0.0, 33, 17, 0.0, 33, 18, 0.0, 33, 19, 0.0, 33, 20, 0.0, 33, 21, 0.0, 33, 22, 0.0, 33, 23, 0.0, 34, 0, 0.0, 34, 1, 0.0, 34, 2, 0.0, 34, 3, 0.0, 34, 4, 0.0, 34, 5, 0.0, 34, 6, 0.0, 34, 7, 0.0, 34, 8, 0.0, 34, 9, 0.0, 34, 10, 0.0, 34, 11, 0.0, 34, 12, 0.0, 34, 13, 0.0, 34, 14, 0.0, 34, 15, 0.0, 34, 16, 1.0, 34, 17, 0.0, 34, 18, 0.0, 34, 19, 0.0, 34, 20, 0.0, 34, 21, 0.0, 34, 22, 0.0, 34, 23, 0.0, 35, 0, 0.0, 35, 1, 0.0, 35, 2, 0.0, 35, 3, 0.0, 35, 4, 0.0, 35, 5, 0.0, 35, 6, 0.0, 35, 7, 0.0, 35, 8, 0.0, 35, 9, 0.0, 35, 10, 0.0, 35, 11, 0.0, 35, 12, 0.0, 35, 13, 0.0, 35, 14, 0.0, 35, 15, 0.0, 35, 16, 0.0, 35, 17, 0.0, 35, 18, 0.0, 35, 19, 0.0, 35, 20, 1.0, 35, 21, 0.0, 35, 22, 0.0, 35, 23, 0.0, 36, 0, 0.0, 36, 1, 0.0, 36, 2, 0.0, 36, 3, 0.0, 36, 4, 0.0, 36, 5, 0.0, 36, 6, 0.0, 36, 7, 0.0, 36, 8, 0.0, 36, 9, 1.0, 36, 10, 0.0, 36, 11, 0.0, 36, 12, 0.0, 36, 13, 0.0, 36, 14, 0.0, 36, 15, 0.0, 36, 16, 0.0, 36, 17, 0.0, 36, 18, 0.0, 36, 19, 0.0, 36, 20, 0.0, 36, 21, 0.0, 36, 22, 0.0, 36, 23, 0.0, 37, 0, 0.0, 37, 1, 0.0, 37, 2, 0.0, 37, 3, 0.0, 37, 4, 0.0, 37, 5, 0.0, 37, 6, 0.0, 37, 7, 0.0, 37, 8, 0.0, 37, 9, 0.0, 37, 10, 0.0, 37, 11, 0.0, 37, 12, 0.0, 37, 13, 1.0, 37, 14, 0.0, 37, 15, 0.0, 37, 16, 0.0, 37, 17, 0.0, 37, 18, 0.0, 37, 19, 0.0, 37, 20, 0.0, 37, 21, 0.0, 37, 22, 0.0, 37, 23, 0.0, 38, 0, 0.0, 38, 1, 0.0, 38, 2, 0.0, 38, 3, 0.0, 38, 4, 0.0, 38, 5, 0.0, 38, 6, 0.0, 38, 7, 0.0, 38, 8, 0.0, 38, 9, 0.0, 38, 10, 0.0, 38, 11, 0.0, 38, 12, 0.0, 38, 13, 0.0, 38, 14, 0.0, 38, 15, 0.0, 38, 16, 0.0, 38, 17, 1.0, 38, 18, 0.0, 38, 19, 0.0, 38, 20, 0.0, 38, 21, 0.0, 38, 22, 0.0, 38, 23, 0.0, 39, 0, 0.0, 39, 1, 0.0, 39, 2, 0.0, 39, 3, 0.0, 39, 4, 0.0, 39, 5, 0.0, 39, 6, 0.0, 39, 7, 0.0, 39, 8, 0.0, 39, 9, 0.0, 39, 10, 0.0, 39, 11, 0.0, 39, 12, 0.0, 39, 13, 0.0, 39, 14, 0.0, 39, 15, 0.0, 39, 16, 0.0, 39, 17, 0.0, 39, 18, 0.0, 39, 19, 0.0, 39, 20, 0.0, 39, 21, 1.0, 39, 22, 0.0, 39, 23, 0.0, 40, 0, 0.0, 40, 1, 0.0, 40, 2, 0.0, 40, 3, 0.0, 40, 4, 0.0, 40, 5, 0.0, 40, 6, 0.0, 40, 7, 0.0, 40, 8, 0.0, 40, 9, 0.0, 40, 10, 1.0, 40, 11, 0.0, 40, 12, 0.0, 40, 13, 0.0, 40, 14, 0.0, 40, 15, 0.0, 40, 16, 0.0, 40, 17, 0.0, 40, 18, 0.0, 40, 19, 0.0, 40, 20, 0.0, 40, 21, 0.0, 40, 22, 0.0, 40, 23, 0.0, 41, 0, 0.0, 41, 1, 0.0, 41, 2, 0.0, 41, 3, 0.0, 41, 4, 0.0, 41, 5, 0.0, 41, 6, 0.0, 41, 7, 0.0, 41, 8, 0.0, 41, 9, 0.0, 41, 10, 0.0, 41, 11, 0.0, 41, 12, 0.0, 41, 13, 0.0, 41, 14, 1.0, 41, 15, 0.0, 41, 16, 0.0, 41, 17, 0.0, 41, 18, 0.0, 41, 19, 0.0, 41, 20, 0.0, 41, 21, 0.0, 41, 22, 0.0, 41, 23, 0.0, 42, 0, 0.0, 42, 1, 0.0, 42, 2, 0.0, 42, 3, 0.0, 42, 4, 0.0, 42, 5, 0.0, 42, 6, 0.0, 42, 7, 0.0, 42, 8, 0.0, 42, 9, 0.0, 42, 10, 0.0, 42, 11, 0.0, 42, 12, 0.0, 42, 13, 0.0, 42, 14, 0.0, 42, 15, 0.0, 42, 16, 0.0, 42, 17, 0.0, 42, 18, 1.0, 42, 19, 0.0, 42, 20, 0.0, 42, 21, 0.0, 42, 22, 0.0, 42, 23, 0.0, 43, 0, 0.0, 43, 1, 0.0, 43, 2, 0.0, 43, 3, 0.0, 43, 4, 0.0, 43, 5, 0.0, 43, 6, 0.0, 43, 7, 0.0, 43, 8, 0.0, 43, 9, 0.0, 43, 10, 0.0, 43, 11, 0.0, 43, 12, 0.0, 43, 13, 0.0, 43, 14, 0.0, 43, 15, 0.0, 43, 16, 0.0, 43, 17, 0.0, 43, 18, 0.0, 43, 19, 0.0, 43, 20, 0.0, 43, 21, 0.0, 43, 22, 1.0, 43, 23, 0.0, 44, 0, 0.0, 44, 1, 0.0, 44, 2, 0.0, 44, 3, 0.0, 44, 4, 0.0, 44, 5, 0.0, 44, 6, 0.0, 44, 7, 0.0, 44, 8, 0.0, 44, 9, 0.0, 44, 10, 0.0, 44, 11, 1.0, 44, 12, 0.0, 44, 13, 0.0, 44, 14, 0.0, 44, 15, 0.0, 44, 16, 0.0, 44, 17, 0.0, 44, 18, 0.0, 44, 19, 0.0, 44, 20, 0.0, 44, 21, 0.0, 44, 22, 0.0, 44, 23, 0.0, 45, 0, 0.0, 45, 1, 0.0, 45, 2, 0.0, 45, 3, 0.0, 45, 4, 0.0, 45, 5, 0.0, 45, 6, 0.0, 45, 7, 0.0, 45, 8, 0.0, 45, 9, 0.0, 45, 10, 0.0, 45, 11, 0.0, 45, 12, 0.0, 45, 13, 0.0, 45, 14, 0.0, 45, 15, 1.0, 45, 16, 0.0, 45, 17, 0.0, 45, 18, 0.0, 45, 19, 0.0, 45, 20, 0.0, 45, 21, 0.0, 45, 22, 0.0, 45, 23, 0.0, 46, 0, 0.0, 46, 1, 0.0, 46, 2, 0.0, 46, 3, 0.0, 46, 4, 0.0, 46, 5, 0.0, 46, 6, 0.0, 46, 7, 0.0, 46, 8, 0.0, 46, 9, 0.0, 46, 10, 0.0, 46, 11, 0.0, 46, 12, 0.0, 46, 13, 0.0, 46, 14, 0.0, 46, 15, 0.0, 46, 16, 0.0, 46, 17, 0.0, 46, 18, 0.0, 46, 19, 1.0, 46, 20, 0.0, 46, 21, 0.0, 46, 22, 0.0, 46, 23, 0.0, 47, 0, 0.0, 47, 1, 0.0, 47, 2, 0.0, 47, 3, 0.0, 47, 4, 0.0, 47, 5, 0.0, 47, 6, 0.0, 47, 7, 0.0, 47, 8, 0.0, 47, 9, 0.0, 47, 10, 0.0, 47, 11, 0.0, 47, 12, 0.0, 47, 13, 0.0, 47, 14, 0.0, 47, 15, 0.0, 47, 16, 0.0, 47, 17, 0.0, 47, 18, 0.0, 47, 19, 0.0, 47, 20, 0.0, 47, 21, 0.0, 47, 22, 0.0, 47, 23, 1.0 ]
                                         }
                                     ]
                                 }
@@ -7214,7 +7389,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 1128.0, 921.0, 150.0, 20.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 956.8421394824982, 84.21052932739258, 223.0, 20.0 ],
+                                    "presentation_rect": [ 804.0, 84.21052932739258, 376.0, 20.0 ],
                                     "text": "2D MIXES",
                                     "textjustification": 1
                                 }
@@ -7229,7 +7404,7 @@
                                     "numoutlets": 0,
                                     "patching_rect": [ 1128.0, 896.0, 160.0, 20.0 ],
                                     "presentation": 1,
-                                    "presentation_rect": [ 31.578948497772217, 84.21052932739258, 910.0, 20.0 ],
+                                    "presentation_rect": [ 32.0, 84.21052932739258, 760.0, 20.0 ],
                                     "text": "SPATIAL MIX",
                                     "textjustification": 1
                                 }
@@ -7238,26 +7413,26 @@
                                 "box": {
                                     "id": "obj-15",
                                     "maxclass": "newobj",
-                                    "numinlets": 10,
+                                    "numinlets": 12,
                                     "numoutlets": 1,
                                     "outlettype": [ "multichannelsignal" ],
-                                    "patching_rect": [ 49.0, 433.0, 737.7142857142857, 22.0 ],
-                                    "text": "mc.combine~ 10"
+                                    "patching_rect": [ 49.0, 433.0, 899.0000000000002, 22.0 ],
+                                    "text": "mc.combine~ 12"
                                 }
                             },
                             {
                                 "box": {
-                                    "columns": 40,
+                                    "columns": 48,
                                     "id": "obj-14",
                                     "maxclass": "matrixctrl",
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "list", "list" ],
                                     "parameter_enable": 0,
-                                    "patching_rect": [ 809.0, 178.0, 993.0, 578.0 ],
+                                    "patching_rect": [ 1090.0, 155.0, 993.0, 578.0 ],
                                     "presentation": 1,
                                     "presentation_rect": [ 27.368422031402588, 112.63158297538757, 1158.0, 696.0 ],
-                                    "rows": 16,
+                                    "rows": 24,
                                     "varname": "matrixctrl"
                                 }
                             },
@@ -7293,7 +7468,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "multichannelsignal", "" ],
                                     "patching_rect": [ 49.0, 793.0, 107.0, 22.0 ],
-                                    "text": "mcs.matrix~ 40 16"
+                                    "text": "mcs.matrix~ 48 24"
                                 }
                             },
                             {
@@ -7419,6 +7594,12 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-15", 11 ],
+                                    "source": [ "obj-12", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-16", 0 ],
                                     "source": [ "obj-13", 0 ]
                                 }
@@ -7426,7 +7607,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-3", 0 ],
-                                    "midpoints": [ 818.5, 767.0, 58.5, 767.0 ],
+                                    "midpoints": [ 1099.5, 767.0, 58.5, 767.0 ],
                                     "source": [ "obj-14", 0 ]
                                 }
                             },
@@ -7546,13 +7727,19 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-15", 10 ],
+                                    "source": [ "obj-8", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-15", 9 ],
                                     "source": [ "obj-9", 0 ]
                                 }
                             }
                         ]
                     },
-                    "patching_rect": [ 308.0, 1027.0, 339.24700164794876, 22.0 ],
+                    "patching_rect": [ 308.0, 1027.0, 353.0, 22.0 ],
                     "text": "p matrix",
                     "varname": "matrix"
                 }
@@ -7564,7 +7751,7 @@
                     "numinlets": 5,
                     "numoutlets": 5,
                     "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 692.0, 904.0, 353.0, 22.0 ],
+                    "patching_rect": [ 696.5370247704642, 914.0, 353.0, 22.0 ],
                     "text": "route player1 player2 player3 player4"
                 }
             },
@@ -7575,7 +7762,7 @@
                     "numinlets": 5,
                     "numoutlets": 5,
                     "outlettype": [ "", "", "", "", "" ],
-                    "patching_rect": [ 692.0, 952.0, 76.0, 22.0 ],
+                    "patching_rect": [ 696.5370247704642, 962.0, 76.0, 22.0 ],
                     "text": "route 1 2 3 4"
                 }
             },
@@ -7590,7 +7777,7 @@
                     "mode": 0,
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 692.0, 1029.4519799351692, 149.0, 148.579086 ],
+                    "patching_rect": [ 696.5370247704642, 1039.0, 149.0, 148.579086 ],
                     "presentation": 1,
                     "presentation_rect": [ 476.0, 505.0, 94.73683369159698, 93.233074426651 ],
                     "proportion": 0.39,
@@ -7893,10 +8080,10 @@
                     "id": "obj-1",
                     "maxclass": "newobj",
                     "numinlets": 4,
-                    "numoutlets": 13,
-                    "outlettype": [ "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "", "", "" ],
+                    "numoutlets": 15,
+                    "outlettype": [ "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "multichannelsignal", "", "", "" ],
                     "patching_rect": [ 340.0, 784.0, 402.9629497528076, 22.0 ],
-                    "text": "mc.poly~ poly.player8chan 4 @parallel 1",
+                    "text": "mc.poly~ poly.player8+4chan 4 @parallel 1",
                     "varname": "poly~_AA"
                 }
             },
@@ -8033,7 +8220,19 @@
             {
                 "patchline": {
                     "destination": [ "obj-4", 0 ],
-                    "midpoints": [ 669.4691247940063, 868.0, 1129.3235063552856, 868.0 ],
+                    "midpoints": [ 678.6110997881208, 856.9552612304688, 1129.3235063552856, 856.9552612304688 ],
+                    "source": [ "obj-1", 12 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-55", 12 ],
+                    "source": [ "obj-1", 11 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-55", 11 ],
                     "source": [ "obj-1", 10 ]
                 }
             },
@@ -8100,7 +8299,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-8", 0 ],
-                    "source": [ "obj-1", 11 ]
+                    "source": [ "obj-1", 13 ]
                 }
             },
             {
@@ -8118,28 +8317,28 @@
             {
                 "patchline": {
                     "destination": [ "obj-102", 0 ],
-                    "midpoints": [ 827.75, 1286.9452747106552, 785.0, 1286.9452747106552 ],
+                    "midpoints": [ 831.7870247704642, 1297.1781571507454, 789.0370247704642, 1297.1781571507454 ],
                     "source": [ "obj-104", 3 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-103", 0 ],
-                    "midpoints": [ 785.0, 1247.9452747106552, 785.0, 1247.9452747106552 ],
+                    "midpoints": [ 789.0370247704642, 1258.1781571507454, 789.0370247704642, 1258.1781571507454 ],
                     "source": [ "obj-104", 0 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-79", 0 ],
-                    "midpoints": [ 799.25, 1283.9452747106552, 785.0, 1283.9452747106552 ],
+                    "midpoints": [ 803.2870247704642, 1294.1781571507454, 789.0370247704642, 1294.1781571507454 ],
                     "source": [ "obj-104", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-81", 0 ],
-                    "midpoints": [ 813.5, 1283.9452747106552, 785.0, 1283.9452747106552 ],
+                    "midpoints": [ 817.5370247704642, 1294.1781571507454, 789.0370247704642, 1294.1781571507454 ],
                     "source": [ "obj-104", 2 ]
                 }
             },
@@ -8176,35 +8375,29 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-86", 0 ],
-                    "source": [ "obj-115", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-106", 0 ],
-                    "midpoints": [ 882.75, 1010.9452747106552, 868.5, 1010.9452747106552 ],
+                    "midpoints": [ 887.2870247704642, 1021.1781571507454, 873.0370247704642, 1021.1781571507454 ],
                     "source": [ "obj-118", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-108", 0 ],
-                    "midpoints": [ 897.0, 1010.9452747106552, 868.5, 1010.9452747106552 ],
+                    "midpoints": [ 901.5370247704642, 1021.1781571507454, 873.0370247704642, 1021.1781571507454 ],
                     "source": [ "obj-118", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-116", 0 ],
-                    "midpoints": [ 911.25, 1013.9452747106552, 868.5, 1013.9452747106552 ],
+                    "midpoints": [ 915.7870247704642, 1024.1781571507454, 873.0370247704642, 1024.1781571507454 ],
                     "source": [ "obj-118", 3 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-117", 0 ],
-                    "midpoints": [ 868.5, 974.9452747106552, 868.5, 974.9452747106552 ],
+                    "midpoints": [ 873.0370247704642, 985.1781571507454, 873.0370247704642, 985.1781571507454 ],
                     "source": [ "obj-118", 0 ]
                 }
             },
@@ -8510,28 +8703,28 @@
             {
                 "patchline": {
                     "destination": [ "obj-166", 0 ],
-                    "midpoints": [ 966.25, 1283.9452747106552, 952.0, 1283.9452747106552 ],
+                    "midpoints": [ 970.2870247704642, 1294.1781571507454, 956.0370247704642, 1294.1781571507454 ],
                     "source": [ "obj-170", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-167", 0 ],
-                    "midpoints": [ 980.5, 1283.9452747106552, 952.0, 1283.9452747106552 ],
+                    "midpoints": [ 984.5370247704642, 1294.1781571507454, 956.0370247704642, 1294.1781571507454 ],
                     "source": [ "obj-170", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-168", 0 ],
-                    "midpoints": [ 994.75, 1286.9452747106552, 952.0, 1286.9452747106552 ],
+                    "midpoints": [ 998.7870247704642, 1297.1781571507454, 956.0370247704642, 1297.1781571507454 ],
                     "source": [ "obj-170", 3 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-169", 0 ],
-                    "midpoints": [ 952.0, 1247.9452747106552, 952.0, 1247.9452747106552 ],
+                    "midpoints": [ 956.0370247704642, 1258.1781571507454, 956.0370247704642, 1258.1781571507454 ],
                     "source": [ "obj-170", 0 ]
                 }
             },
@@ -8847,6 +9040,12 @@
                 "patchline": {
                     "destination": [ "obj-360", 0 ],
                     "source": [ "obj-244", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-96", 0 ],
+                    "source": [ "obj-247", 0 ]
                 }
             },
             {
@@ -9242,8 +9441,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-115", 0 ],
-                    "midpoints": [ 317.5, 1607.4642802956805, 1326.6923716068268, 1607.4642802956805 ],
+                    "destination": [ "obj-86", 0 ],
+                    "midpoints": [ 317.5, 1500.805955100368, 1326.5, 1500.805955100368 ],
                     "source": [ "obj-33", 0 ]
                 }
             },
@@ -9913,28 +10112,28 @@
             {
                 "patchline": {
                     "destination": [ "obj-23", 0 ],
-                    "midpoints": [ 715.75, 1011.0, 701.5, 1011.0 ],
+                    "midpoints": [ 720.2870247704642, 1021.2328824400902, 706.0370247704642, 1021.2328824400902 ],
                     "source": [ "obj-50", 1 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-25", 0 ],
-                    "midpoints": [ 730.0, 1011.0, 701.5, 1011.0 ],
+                    "midpoints": [ 734.5370247704642, 1021.2328824400902, 706.0370247704642, 1021.2328824400902 ],
                     "source": [ "obj-50", 2 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-29", 0 ],
-                    "midpoints": [ 744.25, 1014.0, 701.5, 1014.0 ],
+                    "midpoints": [ 748.7870247704642, 1024.2328824400902, 706.0370247704642, 1024.2328824400902 ],
                     "source": [ "obj-50", 3 ]
                 }
             },
             {
                 "patchline": {
                     "destination": [ "obj-30", 0 ],
-                    "midpoints": [ 701.5, 975.0, 701.5, 975.0 ],
+                    "midpoints": [ 706.0370247704642, 985.2328824400902, 706.0370247704642, 985.2328824400902 ],
                     "source": [ "obj-50", 0 ]
                 }
             },
@@ -9958,13 +10157,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-60", 0 ],
-                    "source": [ "obj-54", 1 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-75", 0 ],
+                    "destination": [ "obj-156", 0 ],
                     "source": [ "obj-54", 0 ]
                 }
             },
@@ -9978,12 +10171,6 @@
                 "patchline": {
                     "destination": [ "obj-69", 0 ],
                     "source": [ "obj-59", 0 ]
-                }
-            },
-            {
-                "patchline": {
-                    "destination": [ "obj-16", 0 ],
-                    "source": [ "obj-60", 0 ]
                 }
             },
             {
@@ -10213,12 +10400,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-156", 0 ],
-                    "source": [ "obj-75", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-14", 0 ],
                     "source": [ "obj-76", 0 ]
                 }
@@ -10267,7 +10448,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-165", 0 ],
+                    "destination": [ "obj-96", 0 ],
                     "source": [ "obj-86", 0 ]
                 }
             },
@@ -10279,7 +10460,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-94", 0 ],
+                    "destination": [ "obj-86", 2 ],
                     "source": [ "obj-88", 1 ]
                 }
             },
@@ -10303,19 +10484,13 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-115", 1 ],
-                    "source": [ "obj-94", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-82", 1 ],
                     "source": [ "obj-95", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-94", 1 ],
+                    "destination": [ "obj-165", 0 ],
                     "source": [ "obj-96", 0 ]
                 }
             },
@@ -10333,66 +10508,58 @@
             }
         ],
         "parameters": {
-            "obj-1.1::obj-16": [ "mc.live.gain~[16]", "2D", 0 ],
-            "obj-1.1::obj-17": [ "mc.live.gain~[15]", "spatial", 0 ],
-            "obj-1.1::obj-27": [ "mc.live.gain~[14]", "footsteps", 0 ],
-            "obj-1.1::obj-36": [ "mc.live.gain~[17]", "full player", 0 ],
-            "obj-1.2::obj-16": [ "mc.live.gain~[11]", "2D", 0 ],
-            "obj-1.2::obj-17": [ "mc.live.gain~[13]", "spatial", 0 ],
-            "obj-1.2::obj-27": [ "mc.live.gain~[12]", "footsteps", 0 ],
-            "obj-1.2::obj-36": [ "mc.live.gain~[8]", "full player", 0 ],
-            "obj-1.3::obj-16": [ "mc.live.gain~[4]", "2D", 0 ],
+            "obj-1.1::obj-16": [ "mc.live.gain~[8]", "2D", 0 ],
+            "obj-1.1::obj-17": [ "mc.live.gain~[16]", "spatial", 0 ],
+            "obj-1.1::obj-27": [ "mc.live.gain~[15]", "footsteps", 0 ],
+            "obj-1.1::obj-36": [ "mc.live.gain~[14]", "full player", 0 ],
+            "obj-1.2::obj-16": [ "mc.live.gain~[10]", "2D", 0 ],
+            "obj-1.2::obj-17": [ "mc.live.gain~[12]", "spatial", 0 ],
+            "obj-1.2::obj-27": [ "mc.live.gain~[11]", "footsteps", 0 ],
+            "obj-1.2::obj-36": [ "mc.live.gain~[9]", "full player", 0 ],
+            "obj-1.3::obj-16": [ "mc.live.gain~[2]", "2D", 0 ],
             "obj-1.3::obj-17": [ "mc.live.gain~[1]", "spatial", 0 ],
-            "obj-1.3::obj-27": [ "mc.live.gain~[2]", "footsteps", 0 ],
-            "obj-1.3::obj-36": [ "mc.live.gain~[3]", "full player", 0 ],
-            "obj-1.4::obj-16": [ "mc.live.gain~[6]", "2D", 0 ],
-            "obj-1.4::obj-17": [ "mc.live.gain~[5]", "spatial", 0 ],
-            "obj-1.4::obj-27": [ "mc.live.gain~[7]", "footsteps", 0 ],
-            "obj-1.4::obj-36": [ "mc.live.gain~[9]", "full player", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
+            "obj-1.3::obj-27": [ "mc.live.gain~[3]", "footsteps", 0 ],
+            "obj-1.3::obj-36": [ "mc.live.gain~[4]", "full player", 0 ],
+            "obj-1.4::obj-16": [ "mc.live.gain~[5]", "2D", 0 ],
+            "obj-1.4::obj-17": [ "mc.live.gain~[6]", "spatial", 0 ],
+            "obj-1.4::obj-27": [ "mc.live.gain~[13]", "footsteps", 0 ],
+            "obj-1.4::obj-36": [ "mc.live.gain~[7]", "full player", 0 ],
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
-                    "parameter_longname": "mc.live.gain~[16]"
+                    "parameter_longname": "mc.live.gain~[8]"
                 },
                 "obj-1.1::obj-17": {
-                    "parameter_longname": "mc.live.gain~[15]"
+                    "parameter_longname": "mc.live.gain~[16]"
                 },
                 "obj-1.1::obj-27": {
-                    "parameter_longname": "mc.live.gain~[14]"
+                    "parameter_longname": "mc.live.gain~[15]"
                 },
                 "obj-1.1::obj-36": {
-                    "parameter_longname": "mc.live.gain~[17]"
+                    "parameter_longname": "mc.live.gain~[14]"
                 },
                 "obj-1.3::obj-16": {
-                    "parameter_longname": "mc.live.gain~[4]"
+                    "parameter_longname": "mc.live.gain~[2]"
                 },
                 "obj-1.3::obj-17": {
                     "parameter_longname": "mc.live.gain~[1]"
                 },
                 "obj-1.3::obj-27": {
-                    "parameter_longname": "mc.live.gain~[2]"
-                },
-                "obj-1.3::obj-36": {
                     "parameter_longname": "mc.live.gain~[3]"
                 },
-                "obj-1.4::obj-16": {
-                    "parameter_longname": "mc.live.gain~[6]"
+                "obj-1.3::obj-36": {
+                    "parameter_longname": "mc.live.gain~[4]"
                 },
-                "obj-1.4::obj-17": {
+                "obj-1.4::obj-16": {
                     "parameter_longname": "mc.live.gain~[5]"
                 },
+                "obj-1.4::obj-17": {
+                    "parameter_longname": "mc.live.gain~[6]"
+                },
                 "obj-1.4::obj-27": {
-                    "parameter_longname": "mc.live.gain~[7]"
+                    "parameter_longname": "mc.live.gain~[13]"
                 },
                 "obj-1.4::obj-36": {
-                    "parameter_longname": "mc.live.gain~[9]"
+                    "parameter_longname": "mc.live.gain~[7]"
                 }
             },
             "inherited_shortname": 1
