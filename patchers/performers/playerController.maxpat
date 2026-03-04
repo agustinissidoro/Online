@@ -18,24 +18,90 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-227",
+                    "id": "obj-232",
                     "maxclass": "message",
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1708.0, 619.0, 41.0, 22.0 ],
-                    "text": "fsaa 1"
+                    "patching_rect": [ 1848.0, 2093.0, 75.0, 22.0 ],
+                    "text": "filter nearest"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-216",
+                    "maxclass": "jit.pwindow",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "jit_matrix", "" ],
+                    "patching_rect": [ 1605.0, 1733.5, 161.06059229373932, 291.0 ],
+                    "sync": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-198",
+                    "maxclass": "jit.pwindow",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "jit_matrix", "" ],
+                    "patching_rect": [ 1665.0, 2070.0, 80.0, 60.0 ],
+                    "sync": 1
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-189",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "FullPacket" ],
+                    "patching_rect": [ 2591.075481891632, -113.0, 79.0, 22.0 ],
+                    "text": "o.route /state"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-188",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 2812.0, 437.0, 47.0, 22.0 ],
+                    "text": "zl.iter 1"
                 }
             },
             {
                 "box": {
                     "id": "obj-183",
-                    "maxclass": "message",
+                    "maxclass": "newobj",
                     "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1862.0, 2002.0, 61.0, 22.0 ],
-                    "text": "filter none"
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 2722.739331891632, -197.4789798259735, 188.0, 22.0 ],
+                    "text": "combine /livelink msg @triggers 1"
+                }
+            },
+            {
+                "box": {
+                    "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
+                    "id": "obj-34",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 2722.739331891632, -153.4789798259735, 77.0, 22.0 ],
+                    "text": "s to_live_link"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 2,
+                    "outlettype": [ "", "" ],
+                    "patching_rect": [ 2489.075481891632, -155.0, 121.0, 22.0 ],
+                    "text": "route reset"
                 }
             },
             {
@@ -1062,7 +1128,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2830.0, 384.0, 72.0, 22.0 ],
+                    "patching_rect": [ 2806.0, 585.0, 72.0, 22.0 ],
                     "text": "prepend set"
                 }
             },
@@ -1073,7 +1139,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 2711.5, 395.0, 59.0, 22.0 ],
+                    "patching_rect": [ 2688.0, 596.0, 59.0, 22.0 ],
                     "text": "route text"
                 }
             },
@@ -1086,7 +1152,7 @@
                     "numoutlets": 4,
                     "outlettype": [ "", "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2711.5, 325.5, 100.0, 50.0 ],
+                    "patching_rect": [ 2688.0, 526.0, 100.0, 50.0 ],
                     "text": "BLTH Bluetooth-Incoming-Port",
                     "varname": "textedit[2]"
                 }
@@ -1099,7 +1165,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2675.5, 274.0, 91.0, 22.0 ],
+                    "patching_rect": [ 2652.0, 475.0, 91.0, 22.0 ],
                     "restore": [ "BLTH Bluetooth-Incoming-Port" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
@@ -1116,7 +1182,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 2914.5, 491.5, 63.0, 22.0 ],
+                    "patching_rect": [ 2891.0, 692.0, 63.0, 22.0 ],
                     "text": "s to_serial"
                 }
             },
@@ -1128,7 +1194,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2818.0, 25.5, 24.0, 24.0 ],
+                    "patching_rect": [ 2794.0, 191.0, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 171.3235261440277, 439.73528575897217, 24.0, 24.0 ]
                 }
@@ -1140,7 +1206,7 @@
                     "numinlets": 2,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 2836.0, 234.0, 60.0, 22.0 ],
+                    "patching_rect": [ 2812.0, 396.0, 60.0, 22.0 ],
                     "text": "route port"
                 }
             },
@@ -1151,7 +1217,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2914.5, 452.0, 77.0, 22.0 ],
+                    "patching_rect": [ 2891.0, 653.0, 77.0, 22.0 ],
                     "text": "prepend port"
                 }
             },
@@ -1162,7 +1228,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2992.5, 151.5, 35.0, 22.0 ],
+                    "patching_rect": [ 2969.0, 313.0, 35.0, 22.0 ],
                     "text": "clear"
                 }
             },
@@ -1173,7 +1239,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "bang", "bang" ],
-                    "patching_rect": [ 2818.0, 111.0, 193.5, 22.0 ],
+                    "patching_rect": [ 2794.0, 273.0, 193.5, 22.0 ],
                     "text": "t b b"
                 }
             },
@@ -1184,7 +1250,7 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
-                    "patching_rect": [ 2818.0, 73.5, 58.0, 22.0 ],
+                    "patching_rect": [ 2794.0, 235.0, 58.0, 22.0 ],
                     "text": "loadbang"
                 }
             },
@@ -1195,20 +1261,20 @@
                     "numinlets": 1,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2836.0, 270.5, 96.0, 22.0 ],
+                    "patching_rect": [ 2812.0, 475.0, 96.0, 22.0 ],
                     "text": "prepend append"
                 }
             },
             {
                 "box": {
                     "id": "obj-294",
-                    "items": [ "BLTH", "Bluetooth-Incoming-Port" ],
+                    "items": [ "BLTH", ",", "Bluetooth-Incoming-Port" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "int", "", "" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2836.0, 329.0, 176.0, 22.0 ],
+                    "patching_rect": [ 2812.0, 530.0, 176.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 40.939599096775055, 440.73528575897217, 124.9721629023552, 22.0 ],
                     "varname": "umenu[1]"
@@ -1221,7 +1287,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2818.0, 151.5, 32.0, 22.0 ],
+                    "patching_rect": [ 2794.0, 313.0, 32.0, 22.0 ],
                     "text": "print"
                 }
             },
@@ -1232,7 +1298,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "int", "" ],
-                    "patching_rect": [ 2818.0, 196.0, 37.0, 22.0 ],
+                    "patching_rect": [ 2794.0, 358.0, 37.0, 22.0 ],
                     "text": "serial"
                 }
             },
@@ -1963,7 +2029,7 @@
                                     "maxclass": "inlet",
                                     "numinlets": 0,
                                     "numoutlets": 1,
-                                    "outlettype": [ "" ],
+                                    "outlettype": [ "FullPacket" ],
                                     "patching_rect": [ 49.99995710836811, 40.000002272583004, 30.0, 30.0 ]
                                 }
                             },
@@ -2139,7 +2205,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 2489.075481891632, -86.554616689682, 259.66385, 22.0 ],
+                    "patching_rect": [ 2651.075481891632, 26.0, 259.66385, 22.0 ],
                     "text": "p receive_lights"
                 }
             },
@@ -2151,7 +2217,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2549.2414443916323, -139.49579000473022, 24.0, 24.0 ],
+                    "patching_rect": [ 2712.075481891632, -27.0, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 42.64705801010132, 506.61763739585876, 24.0, 24.0 ]
                 }
@@ -2163,7 +2229,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 2894.1174745559692, -26.89075469970703, 46.0, 22.0 ],
+                    "patching_rect": [ 2489.075481891632, -77.0, 46.0, 22.0 ],
                     "text": "s lights"
                 }
             },
@@ -2174,7 +2240,7 @@
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 2794.9578166007996, -26.89075469970703, 63.0, 22.0 ],
+                    "patching_rect": [ 3335.0, -197.4789798259735, 63.0, 22.0 ],
                     "text": "s to_serial"
                 }
             },
@@ -2186,7 +2252,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2669.5733693916322, -139.49579000473022, 24.0, 24.0 ],
+                    "patching_rect": [ 2832.075481891632, -27.0, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 277.20587706565857, 472.7941086292267, 24.0, 24.0 ]
                 }
@@ -2208,7 +2274,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2894.1174745559692, -81.51260018348694, 35.0, 22.0 ],
+                    "patching_rect": [ 2489.075481891632, -113.0, 35.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 390.4411690235138, 440.4411680698395, 35.0, 22.0 ],
                     "text": "reset"
@@ -2221,7 +2287,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2838.6552929878235, -81.51260018348694, 37.0, 22.0 ],
+                    "patching_rect": [ 3379.0, -252.4789798259735, 37.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 315.44117045402527, 508.8235197067261, 37.0, 22.0 ],
                     "text": "close"
@@ -2234,7 +2300,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 2794.9578166007996, -81.51260018348694, 35.0, 22.0 ],
+                    "patching_rect": [ 3335.0, -252.4789798259735, 35.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 274.2647006511688, 508.08822560310364, 35.0, 22.0 ],
                     "text": "open"
@@ -2250,7 +2316,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2489.075481891632, -32.773107290267944, 24.0, 24.0 ],
+                    "patching_rect": [ 2651.075481891632, 80.0, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 141.91176199913025, 472.7941086292267, 24.0, 24.0 ]
                 }
@@ -2263,7 +2329,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2609.407406891632, -139.49579000473022, 24.0, 24.0 ],
+                    "patching_rect": [ 2772.075481891632, -27.0, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 42.64705801010132, 472.7941086292267, 24.0, 24.0 ]
                 }
@@ -2276,7 +2342,7 @@
                     "numoutlets": 1,
                     "outlettype": [ "int" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2729.739331891632, -139.49579000473022, 24.0, 24.0 ],
+                    "patching_rect": [ 2892.075481891632, -27.0, 24.0, 24.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 141.91176199913025, 506.61763739585876, 24.0, 24.0 ]
                 }
@@ -2525,7 +2591,7 @@
                             }
                         ]
                     },
-                    "patching_rect": [ 2413.580439686775, 26.5, 146.0, 22.0 ],
+                    "patching_rect": [ 2414.075481891632, 145.5, 146.0, 22.0 ],
                     "text": "p receive_playercontroller"
                 }
             },
@@ -2562,7 +2628,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2044.0, 353.0120612382889, 99.0, 22.0 ],
-                    "restore": [ 0.45 ],
+                    "restore": [ 1.3 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6036,8 +6102,8 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
-                    "patching_rect": [ 2341.085804581642, 1643.6973810195923, 93.0, 22.0 ],
-                    "restore": [ 0.75 ],
+                    "patching_rect": [ 2341.0, 1809.0, 93.0, 22.0 ],
+                    "restore": [ 0.738 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6254,7 +6320,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 86.0, 390.0, 69.0, 22.0 ],
-                    "restore": [ 0 ],
+                    "restore": [ 2 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -8932,7 +8998,7 @@
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
                                                     "patching_rect": [ 723.0, 525.0, 50.0, 35.0 ],
-                                                    "text": "640 477"
+                                                    "text": "1148 857"
                                                 }
                                             },
                                             {
@@ -9704,7 +9770,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 1810.0605922937393, 2071.0, 150.0, 20.0 ]
+                    "patching_rect": [ 1807.0, 2172.0, 150.0, 20.0 ]
                 }
             },
             {
@@ -9726,7 +9792,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_gl_texture", "", "" ],
-                    "patching_rect": [ 1966.0605922937393, 2218.0, 371.2307942509651, 35.0 ],
+                    "patching_rect": [ 1963.0, 2319.0, 371.2307942509651, 35.0 ],
                     "text": "jit.gl.node online @name score @enable 1 @transform_reset 0 @depth_enable 0 @blend_enable 1 @layer 0"
                 }
             },
@@ -9749,7 +9815,7 @@
                     "numinlets": 0,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 1965.8119857311249, 2178.632500708103, 71.0, 22.0 ],
+                    "patching_rect": [ 1963.0, 2280.0, 71.0, 22.0 ],
                     "text": "r score_dim"
                 }
             },
@@ -9771,7 +9837,7 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 1966.0605922937393, 2139.0, 201.0, 22.0 ],
+                    "patching_rect": [ 1966.0605922937393, 2240.0, 201.0, 22.0 ],
                     "text": "jit.gl.layer score @transform_reset 0"
                 }
             },
@@ -9817,7 +9883,7 @@
                     "numoutlets": 2,
                     "outlettype": [ "", "bang" ],
                     "parameter_enable": 0,
-                    "patching_rect": [ 2378.0605922937393, 1684.8738491535187, 50.0, 22.0 ],
+                    "patching_rect": [ 2378.0, 1850.0, 50.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 148.52940893173218, 365.44116950035095, 50.0, 22.0 ],
                     "varname": "number"
@@ -9863,8 +9929,27 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 508.0, 447.0, 1000.0, 766.0 ],
+                        "rect": [ 1435.0, 382.0, 1000.0, 766.0 ],
                         "boxes": [
+                            {
+                                "box": {
+                                    "filename": "none",
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 375.0, 361.0, 237.0, 22.0 ],
+                                    "text": "jit.gl.shader score @name pixelExact2OLD",
+                                    "textfile": {
+                                        "text": "<jittershader name=\"fill-flat-triangles\">\n    <description>\n        fill-flat-triangles with XYZ Rotation + Bottom-Left Scaling +\n        Correct Z-Aspect + Absolute Anchor (Top-Left Space, Consistent Flip)\n    </description>\n\n    <param name=\"position\" type=\"vec3\" state=\"POSITION\" />\n    <param name=\"mvpmatrix\" type=\"mat4\" state=\"MODELVIEW_PROJECTION_MATRIX\"/>\n    <param name=\"texcoord\" type=\"vec2\" state=\"TEXCOORD\" />\n    <param name=\"texdim\" type=\"vec2\" state=\"TEXDIM0\" />\n    <param name=\"eye\" type=\"vec3\" state=\"CAMERA_POSITION\" />\n    <param name=\"tex0\" type=\"int\" default=\"0\" />\n\n    <!-- Absolute anchor in TOP-LEFT pixel space -->\n    <param name=\"anchor\" type=\"vec2\" default=\"0 0\" />\n\n    <param name=\"scale\" type=\"float\" default=\"1.0\" />\n    <param name=\"rotX\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotY\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotZ\" type=\"float\" default=\"0.0\" />\n\n    <language name=\"glsl\" version=\"1.5\">\n\n        <bind param=\"position\" program=\"vp\" />\n        <bind param=\"texcoord\" program=\"vp\" />\n        <bind param=\"texdim\" program=\"vp\" />\n        <bind param=\"eye\" program=\"vp\" />\n        <bind param=\"anchor\" program=\"vp\" />\n        <bind param=\"scale\" program=\"vp\" />\n        <bind param=\"rotX\" program=\"vp\" />\n        <bind param=\"rotY\" program=\"vp\" />\n        <bind param=\"rotZ\" program=\"vp\" />\n        <bind param=\"mvpmatrix\" program=\"vp\" />\n        <bind param=\"tex0\" program=\"fp\" />\n\n        <!-- ===================== VERTEX SHADER ===================== -->\n        <program name=\"vp\" type=\"vertex\">\n<![CDATA[\n#version 330 core\n\nuniform mat4 mvpmatrix;\n\nin vec3 position;\nin vec2 texcoord;\n\nuniform vec2 texdim;\nuniform vec3 eye;\nuniform vec2 anchor;\n\nuniform float scale;\nuniform float rotX;\nuniform float rotY;\nuniform float rotZ;\n\nout jit_PerVertex {\n    vec2 texcoord;\n} jit_out;\n\n/* ------------ rotation matrices ---------------- */\n\nmat3 rotXmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(\n        1, 0, 0,\n        0, c,-s,\n        0, s, c\n    );\n}\n\nmat3 rotYmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(\n         c, 0, s,\n         0, 1, 0,\n        -s, 0, c\n    );\n}\n\nmat2 rotZmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat2(\n        c,-s,\n        s, c\n    );\n}\n\nvoid main() {\n\n    /* full 3D rotation */\n    vec3 v = position;\n    v = rotXmat(rotX) * v;\n    v = rotYmat(rotY) * v;\n\n    /* GLOBAL vertical flip: geometry now top-left space */\n    vec2 pixelPos = (vec2(v.x, -v.y) * 0.5 + 0.5) * texdim;\n\n    /* pivot at top-left corner of image */\n    vec2 pivot = vec2(0.0, 0.0);\n\n    vec2 centered = pixelPos - pivot;\n\n    /* aspect-correct Z rotation */\n    centered.x /= texdim.x;\n    centered.y /= texdim.y;\n    centered = rotZmat(rotZ) * centered;\n    centered.x *= texdim.x;\n    centered.y *= texdim.y;\n\n    pixelPos = centered + pivot;\n\n    /* scale around pivot */\n    pixelPos = (pixelPos - pivot) * scale + pivot;\n\n    /* absolute placement (top-left space) */\n    pixelPos += anchor;\n\n    gl_Position = mvpmatrix * vec4(pixelPos, eye.z, 1.0);\n\n    /* texture flip to match geometry */\n    jit_out.texcoord = vec2(texcoord.x, 1.0 - texcoord.y) * texdim;\n}\n]]>\n        </program>\n\n        <!-- ===================== FRAGMENT SHADER ===================== -->\n        <program name=\"fp\" type=\"fragment\">\n<![CDATA[\n#version 330 core\n\nuniform samplerJit0 tex0;\n\nin jit_PerVertex {\n    vec2 texcoord;\n} jit_in;\n\nout vec4 color;\n\nvoid main() {\n    color = texture(tex0, jit_in.texcoord);\n}\n]]>\n        </program>\n\n    </language>\n</jittershader>\n",
+                                        "filename": "none",
+                                        "flags": 0,
+                                        "embed": 1,
+                                        "autowatch": 1
+                                    }
+                                }
+                            },
                             {
                                 "box": {
                                     "filename": "none",
@@ -9892,7 +9977,7 @@
                                     "numinlets": 1,
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
-                                    "patching_rect": [ 200.0, 352.0, 316.0, 22.0 ],
+                                    "patching_rect": [ 200.0, 408.0, 316.0, 22.0 ],
                                     "text": "jit.gl.shader score @name projectionModeScaleRotZaaaa",
                                     "textfile": {
                                         "text": "<jittershader name=\"fill-flat-triangles\">\n    <description>fill-flat-triangles with XYZ Rotation + Bottom-Left Scaling + Correct Z-Aspect</description>\n\n    <param name=\"position\" type=\"vec3\" state=\"POSITION\" />\n    <param name=\"mvpmatrix\" type=\"mat4\" state=\"MODELVIEW_PROJECTION_MATRIX\"/>\n    <param name=\"texcoord\" type=\"vec2\" state=\"TEXCOORD\" />\n    <param name=\"texdim\" type=\"vec2\" state=\"TEXDIM0\" />\n    <param name=\"eye\" type=\"vec3\" state=\"CAMERA_POSITION\" />\n    <param name=\"tex0\" type=\"int\" default=\"0\" />\n    <param name=\"offset\" type=\"vec2\" default=\"0 0\" />\n\n    <param name=\"scale\" type=\"float\" default=\"1.0\" />\n    <param name=\"rotX\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotY\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotZ\" type=\"float\" default=\"0.0\" />\n\n    <language name=\"glsl\" version=\"1.5\">\n\n        <bind param=\"position\" program=\"vp\" />\n        <bind param=\"texcoord\" program=\"vp\" />\n        <bind param=\"texdim\" program=\"vp\" />\n        <bind param=\"offset\" program=\"vp\" />\n        <bind param=\"eye\" program=\"vp\" />\n        <bind param=\"scale\" program=\"vp\" />\n        <bind param=\"rotX\" program=\"vp\" />\n        <bind param=\"rotY\" program=\"vp\" />\n        <bind param=\"rotZ\" program=\"vp\" />\n        <bind param=\"mvpmatrix\" program=\"vp\" />\n        <bind param=\"tex0\" program=\"fp\" />\n\n        <program name=\"vp\" type=\"vertex\">\n<![CDATA[\n#version 330 core\n\nuniform mat4 mvpmatrix;\n\nin vec3 position;\nin vec2 texcoord;\n\nuniform vec2 texdim, offset;\nuniform vec3 eye;\n\nuniform float scale;\nuniform float rotX;\nuniform float rotY;\nuniform float rotZ;\n\nout jit_PerVertex {\n    vec2 texcoord;\n} jit_out;\n\n/* ------------ rotation matrices ---------------- */\n\nmat3 rotXmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(\n        1, 0, 0,\n        0, c,-s,\n        0, s, c\n    );\n}\n\nmat3 rotYmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(\n         c, 0, s,\n         0, 1, 0,\n        -s, 0, c\n    );\n}\n\nmat2 rotZmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat2(\n        c,-s,\n        s, c\n    );\n}\n\nvoid main() {\n\n    /* --- full 3D rotation on the incoming vertex --- */\n    vec3 v = position;\n    v = rotXmat(rotX) * v;\n    v = rotYmat(rotY) * v;\n\n    /* convert XY to pixel coords (pre-Z-rotation) */\n    vec2 pixelPos = (v.xy * 0.5 + 0.5) * texdim;\n\n    /* bottom-left pivot */\n    vec2 pivot = vec2(0.0, texdim.y);\n\n    /* move into pivot space */\n    vec2 centered = pixelPos - pivot;\n\n    /* --- aspect-correct Z rotation --- */\n    centered.x /= texdim.x;\n    centered.y /= texdim.y;\n\n    centered = rotZmat(rotZ) * centered;\n\n    centered.x *= texdim.x;\n    centered.y *= texdim.y;\n\n    pixelPos = centered + pivot;\n\n    /* scaling around pivot */\n    pixelPos = (pixelPos - pivot) * scale + pivot;\n\n    /* offset AFTER scaling */\n    pixelPos += offset;\n\n    gl_Position = mvpmatrix * vec4(pixelPos, eye.z, 1.0);\n\n    /* IMPORTANT: flip Y in normalized space BEFORE pixel scaling */\n    jit_out.texcoord = vec2(texcoord.x, 1.0 - texcoord.y) * texdim;\n}\n]]>\n        </program>\n\n        <program name=\"fp\" type=\"fragment\">\n<![CDATA[\n#version 330 core\n\nuniform samplerJit0 tex0;\n\nin jit_PerVertex {\n    vec2 texcoord;\n} jit_in;\n\nout vec4 color;\n\nvoid main() {\n    color = texture(tex0, jit_in.texcoord);\n}\n]]>\n        </program>\n\n    </language>\n</jittershader>\n",
@@ -10055,7 +10140,7 @@
                                     "patching_rect": [ 196.0, 303.0, 213.0, 22.0 ],
                                     "text": "jit.gl.shader score @name pixelExact2",
                                     "textfile": {
-                                        "text": "<jittershader name=\"fill-flat-triangles\">\n    <description>\n        fill-flat-triangles with XYZ Rotation + Bottom-Left Scaling +\n        Correct Z-Aspect + Absolute Anchor (Top-Left Space, Consistent Flip)\n    </description>\n\n    <param name=\"position\" type=\"vec3\" state=\"POSITION\" />\n    <param name=\"mvpmatrix\" type=\"mat4\" state=\"MODELVIEW_PROJECTION_MATRIX\"/>\n    <param name=\"texcoord\" type=\"vec2\" state=\"TEXCOORD\" />\n    <param name=\"texdim\" type=\"vec2\" state=\"TEXDIM0\" />\n    <param name=\"eye\" type=\"vec3\" state=\"CAMERA_POSITION\" />\n    <param name=\"tex0\" type=\"int\" default=\"0\" />\n\n    <!-- Absolute anchor in TOP-LEFT pixel space -->\n    <param name=\"anchor\" type=\"vec2\" default=\"0 0\" />\n\n    <param name=\"scale\" type=\"float\" default=\"1.0\" />\n    <param name=\"rotX\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotY\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotZ\" type=\"float\" default=\"0.0\" />\n\n    <language name=\"glsl\" version=\"1.5\">\n\n        <bind param=\"position\" program=\"vp\" />\n        <bind param=\"texcoord\" program=\"vp\" />\n        <bind param=\"texdim\" program=\"vp\" />\n        <bind param=\"eye\" program=\"vp\" />\n        <bind param=\"anchor\" program=\"vp\" />\n        <bind param=\"scale\" program=\"vp\" />\n        <bind param=\"rotX\" program=\"vp\" />\n        <bind param=\"rotY\" program=\"vp\" />\n        <bind param=\"rotZ\" program=\"vp\" />\n        <bind param=\"mvpmatrix\" program=\"vp\" />\n        <bind param=\"tex0\" program=\"fp\" />\n\n        <!-- ===================== VERTEX SHADER ===================== -->\n        <program name=\"vp\" type=\"vertex\">\n<![CDATA[\n#version 330 core\n\nuniform mat4 mvpmatrix;\n\nin vec3 position;\nin vec2 texcoord;\n\nuniform vec2 texdim;\nuniform vec3 eye;\nuniform vec2 anchor;\n\nuniform float scale;\nuniform float rotX;\nuniform float rotY;\nuniform float rotZ;\n\nout jit_PerVertex {\n    vec2 texcoord;\n} jit_out;\n\n/* ------------ rotation matrices ---------------- */\n\nmat3 rotXmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(\n        1, 0, 0,\n        0, c,-s,\n        0, s, c\n    );\n}\n\nmat3 rotYmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(\n         c, 0, s,\n         0, 1, 0,\n        -s, 0, c\n    );\n}\n\nmat2 rotZmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat2(\n        c,-s,\n        s, c\n    );\n}\n\nvoid main() {\n\n    /* full 3D rotation */\n    vec3 v = position;\n    v = rotXmat(rotX) * v;\n    v = rotYmat(rotY) * v;\n\n    /* GLOBAL vertical flip: geometry now top-left space */\n    vec2 pixelPos = (vec2(v.x, -v.y) * 0.5 + 0.5) * texdim;\n\n    /* pivot at top-left corner of image */\n    vec2 pivot = vec2(0.0, 0.0);\n\n    vec2 centered = pixelPos - pivot;\n\n    /* aspect-correct Z rotation */\n    centered.x /= texdim.x;\n    centered.y /= texdim.y;\n    centered = rotZmat(rotZ) * centered;\n    centered.x *= texdim.x;\n    centered.y *= texdim.y;\n\n    pixelPos = centered + pivot;\n\n    /* scale around pivot */\n    pixelPos = (pixelPos - pivot) * scale + pivot;\n\n    /* absolute placement (top-left space) */\n    pixelPos += anchor;\n\n    gl_Position = mvpmatrix * vec4(pixelPos, eye.z, 1.0);\n\n    /* texture flip to match geometry */\n    jit_out.texcoord = vec2(texcoord.x, 1.0 - texcoord.y) * texdim;\n}\n]]>\n        </program>\n\n        <!-- ===================== FRAGMENT SHADER ===================== -->\n        <program name=\"fp\" type=\"fragment\">\n<![CDATA[\n#version 330 core\n\nuniform samplerJit0 tex0;\n\nin jit_PerVertex {\n    vec2 texcoord;\n} jit_in;\n\nout vec4 color;\n\nvoid main() {\n    color = texture(tex0, jit_in.texcoord);\n}\n]]>\n        </program>\n\n    </language>\n</jittershader>\n",
+                                        "text": "<jittershader name=\"fill-flat-triangles\">\n    <description>\n        fill-flat-triangles with XYZ Rotation + Bottom-Left Scaling +\n        Correct Z-Aspect + Absolute Anchor (Top-Left Space, Consistent Flip)\n    </description>\n    <param name=\"position\" type=\"vec3\" state=\"POSITION\" />\n    <param name=\"mvpmatrix\" type=\"mat4\" state=\"MODELVIEW_PROJECTION_MATRIX\"/>\n    <param name=\"texcoord\" type=\"vec2\" state=\"TEXCOORD\" />\n    <param name=\"texdim\" type=\"vec2\" state=\"TEXDIM0\" />\n    <param name=\"eye\" type=\"vec3\" state=\"CAMERA_POSITION\" />\n    <param name=\"tex0\" type=\"int\" default=\"0\" />\n    <param name=\"anchor\" type=\"vec2\" default=\"0 0\" />\n    <param name=\"scale\" type=\"float\" default=\"1.0\" />\n    <param name=\"rotX\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotY\" type=\"float\" default=\"0.0\" />\n    <param name=\"rotZ\" type=\"float\" default=\"0.0\" />\n    <language name=\"glsl\" version=\"1.5\">\n        <bind param=\"position\" program=\"vp\" />\n        <bind param=\"texcoord\" program=\"vp\" />\n        <bind param=\"texdim\" program=\"vp\" />\n        <bind param=\"eye\" program=\"vp\" />\n        <bind param=\"anchor\" program=\"vp\" />\n        <bind param=\"scale\" program=\"vp\" />\n        <bind param=\"rotX\" program=\"vp\" />\n        <bind param=\"rotY\" program=\"vp\" />\n        <bind param=\"rotZ\" program=\"vp\" />\n        <bind param=\"mvpmatrix\" program=\"vp\" />\n        <bind param=\"tex0\" program=\"fp\" />\n        <program name=\"vp\" type=\"vertex\">\n<![CDATA[\n#version 330 core\nuniform mat4 mvpmatrix;\nin vec3 position;\nin vec2 texcoord;\nuniform vec2 texdim;\nuniform vec3 eye;\nuniform vec2 anchor;\nuniform float scale;\nuniform float rotX;\nuniform float rotY;\nuniform float rotZ;\nout jit_PerVertex {\n    vec2 texcoord;\n} jit_out;\nmat3 rotXmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(1,0,0, 0,c,-s, 0,s,c);\n}\nmat3 rotYmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat3(c,0,s, 0,1,0, -s,0,c);\n}\nmat2 rotZmat(float a) {\n    float s = sin(a), c = cos(a);\n    return mat2(c,-s, s,c);\n}\nvoid main() {\n    vec3 v = position;\n    v = rotXmat(rotX) * v;\n    v = rotYmat(rotY) * v;\n    vec2 pixelPos = (vec2(v.x, -v.y) * 0.5 + 0.5) * texdim;\n    vec2 pivot = vec2(0.0, 0.0);\n    vec2 centered = pixelPos - pivot;\n    centered.x /= texdim.x;\n    centered.y /= texdim.y;\n    centered = rotZmat(rotZ) * centered;\n    centered.x *= texdim.x;\n    centered.y *= texdim.y;\n    pixelPos = centered + pivot;\n    pixelPos = (pixelPos - pivot) * scale + pivot;\n    pixelPos += anchor;\n    gl_Position = mvpmatrix * vec4(pixelPos, eye.z, 1.0);\n    jit_out.texcoord = vec2(texcoord.x, 1.0 - texcoord.y) * texdim;\n}\n]]>\n        </program>\n        <program name=\"fp\" type=\"fragment\">\n<![CDATA[\n#version 330 core\nuniform samplerJit0 tex0;\nin jit_PerVertex {\n    vec2 texcoord;\n} jit_in;\nout vec4 color;\nvoid main() {\n    color = texture(tex0, jit_in.texcoord);\n}\n]]>\n        </program>\n    </language>\n</jittershader>",
                                         "filename": "none",
                                         "flags": 0,
                                         "embed": 1,
@@ -10144,7 +10229,15 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-166", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-141", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-166", 0 ]
                                 }
                             },
@@ -10174,7 +10267,15 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "order": 0,
+                                    "source": [ "obj-6", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-141", 0 ],
+                                    "order": 1,
                                     "source": [ "obj-6", 0 ]
                                 }
                             }
@@ -10502,7 +10603,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 134.67735362052917, 368.0, 87.0, 36.0 ],
-                                    "text": "jit_matrix u345001620"
+                                    "text": "jit_matrix u309001946"
                                 }
                             },
                             {
@@ -11085,7 +11186,7 @@
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "items": [ "ZOWIEBOX (ZowieBox-24006)", ",", "PRO-3487-CONCERT.LOCAL (macOS AV Output)" ],
+                                    "items": "<empty>",
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -11668,7 +11769,7 @@
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_matrix", "bang", "" ],
-                    "patching_rect": [ 1788.0, 618.9393393397331, 498.0, 49.0 ],
+                    "patching_rect": [ 1788.0, 618.9393393397331, 389.0, 49.0 ],
                     "text": "jit.world online @enable 0 @dim 4000 4000 @size 360 640 @fsaa 0 @displaylink 0 @fps 30 @floating 0 @fsmenubar 0 @erase_color 1. 1. 1. 1. @preserve_aspect 1 @visible 0 @border 1 @esc_fullscreen 1"
                 }
             },
@@ -11849,7 +11950,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-198", 0 ],
+                    "order": 1,
+                    "source": [ "obj-106", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-85", 0 ],
+                    "order": 0,
                     "source": [ "obj-106", 0 ]
                 }
             },
@@ -12009,7 +12118,15 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-216", 0 ],
+                    "order": 1,
+                    "source": [ "obj-134", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-6", 0 ],
+                    "order": 0,
                     "source": [ "obj-134", 0 ]
                 }
             },
@@ -12284,7 +12401,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-134", 0 ],
+                    "destination": [ "obj-34", 0 ],
                     "source": [ "obj-183", 0 ]
                 }
             },
@@ -12298,6 +12415,25 @@
                 "patchline": {
                     "destination": [ "obj-191", 0 ],
                     "source": [ "obj-185", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-296", 0 ],
+                    "source": [ "obj-188", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-263", 0 ],
+                    "midpoints": [ 2600.575481891632, -70.3525390625, 2781.575481891632, -70.3525390625 ],
+                    "source": [ "obj-189", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-288", 0 ],
+                    "source": [ "obj-189", 1 ]
                 }
             },
             {
@@ -12320,13 +12456,19 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-183", 1 ],
+                    "source": [ "obj-194", 2 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-257", 0 ],
                     "source": [ "obj-194", 0 ]
                 }
             },
             {
                 "patchline": {
-                    "destination": [ "obj-288", 0 ],
+                    "destination": [ "obj-5", 0 ],
                     "source": [ "obj-194", 1 ]
                 }
             },
@@ -12480,12 +12622,6 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-32", 0 ],
-                    "source": [ "obj-227", 0 ]
-                }
-            },
-            {
-                "patchline": {
                     "destination": [ "obj-88", 1 ],
                     "source": [ "obj-228", 0 ]
                 }
@@ -12495,6 +12631,12 @@
                     "destination": [ "obj-135", 0 ],
                     "midpoints": [ 587.8132743835449, 880.7710840702057, 397.5, 880.7710840702057 ],
                     "source": [ "obj-231", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-134", 0 ],
+                    "source": [ "obj-232", 0 ]
                 }
             },
             {
@@ -12703,7 +12845,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-296", 0 ],
+                    "destination": [ "obj-188", 0 ],
                     "source": [ "obj-311", 0 ]
                 }
             },
@@ -12728,7 +12870,7 @@
             {
                 "patchline": {
                     "destination": [ "obj-308", 0 ],
-                    "midpoints": [ 2721.0, 486.0, 2924.0, 486.0 ],
+                    "midpoints": [ 2697.5, 686.5, 2900.5, 686.5 ],
                     "source": [ "obj-319", 0 ]
                 }
             },
@@ -12759,8 +12901,8 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-6", 0 ],
-                    "midpoints": [ 2222.5605922937393, 2100.932369172573, 1975.5605922937393, 2100.932369172573 ],
+                    "destination": [ "obj-86", 0 ],
+                    "midpoints": [ 2222.5605922937393, 2279.394330564566, 1972.5, 2279.394330564566 ],
                     "source": [ "obj-38", 0 ]
                 }
             },
@@ -12810,6 +12952,18 @@
                 "patchline": {
                     "destination": [ "obj-98", 0 ],
                     "source": [ "obj-48", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-189", 0 ],
+                    "source": [ "obj-5", 1 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-274", 0 ],
+                    "source": [ "obj-5", 0 ]
                 }
             },
             {
