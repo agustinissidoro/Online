@@ -18,6 +18,28 @@
         "boxes": [
             {
                 "box": {
+                    "id": "obj-227",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1708.0, 619.0, 41.0, 22.0 ],
+                    "text": "fsaa 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-183",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1862.0, 2002.0, 61.0, 22.0 ],
+                    "text": "filter none"
+                }
+            },
+            {
+                "box": {
                     "color": [ 0.929411764705882, 0.937254901960784, 0.964705882352941, 1.0 ],
                     "id": "obj-76",
                     "maxclass": "newobj",
@@ -2540,7 +2562,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2044.0, 353.0120612382889, 99.0, 22.0 ],
-                    "restore": [ 1.3 ],
+                    "restore": [ 0.45 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6066,7 +6088,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 632.2542531490326, 1254.216913819313, 85.0, 22.0 ],
-                    "restore": [ "127.0.0.1 9005" ],
+                    "restore": [ "192.168.100.2 9005" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6086,7 +6108,7 @@
                     "patching_rect": [ 665.2542531490326, 1295.1807707548141, 163.0, 33.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 41.52542471885681, 658.3892903923988, 140.0, 23.0 ],
-                    "text": "127.0.0.1 9005",
+                    "text": "192.168.100.2 9005",
                     "varname": "textedit[1]"
                 }
             },
@@ -10480,7 +10502,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 134.67735362052917, 368.0, 87.0, 36.0 ],
-                                    "text": "jit_matrix u292004405"
+                                    "text": "jit_matrix u345001620"
                                 }
                             },
                             {
@@ -11063,7 +11085,7 @@
                             {
                                 "box": {
                                     "id": "obj-3",
-                                    "items": "AGUSTIN-PC (Adobe After Effects)",
+                                    "items": [ "ZOWIEBOX (ZowieBox-24006)", ",", "PRO-3487-CONCERT.LOCAL (macOS AV Output)" ],
                                     "maxclass": "umenu",
                                     "numinlets": 1,
                                     "numoutlets": 3,
@@ -11641,13 +11663,13 @@
                 "box": {
                     "color": [ 1.0, 0.0, 0.0, 1.0 ],
                     "id": "obj-32",
-                    "linecount": 4,
+                    "linecount": 3,
                     "maxclass": "newobj",
                     "numinlets": 1,
                     "numoutlets": 3,
                     "outlettype": [ "jit_matrix", "bang", "" ],
-                    "patching_rect": [ 1788.0, 618.9393393397331, 358.0, 62.0 ],
-                    "text": "jit.world online @enable 0 @dim 4000 4000 @size 360 640 @fsaa 1 @displaylink 0 @fps 30 @floating 0 @fsmenubar 0 @erase_color 1. 1. 1. 1. @preserve_aspect 1 @visible 0 @border 1 @esc_fullscreen 1"
+                    "patching_rect": [ 1788.0, 618.9393393397331, 498.0, 49.0 ],
+                    "text": "jit.world online @enable 0 @dim 4000 4000 @size 360 640 @fsaa 0 @displaylink 0 @fps 30 @floating 0 @fsmenubar 0 @erase_color 1. 1. 1. 1. @preserve_aspect 1 @visible 0 @border 1 @esc_fullscreen 1"
                 }
             },
             {
@@ -12262,6 +12284,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-134", 0 ],
+                    "source": [ "obj-183", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-177", 0 ],
                     "source": [ "obj-184", 1 ]
                 }
@@ -12448,6 +12476,12 @@
                 "patchline": {
                     "destination": [ "obj-88", 2 ],
                     "source": [ "obj-226", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-32", 0 ],
+                    "source": [ "obj-227", 0 ]
                 }
             },
             {

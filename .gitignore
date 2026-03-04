@@ -21,3 +21,9 @@
 !/.gitignore
 !/.gitattributes
 !/score.txt
+
+# Ignore the active config in the performers folder
+/patchers/performers/config.json
+
+# Whitelist the template so others can see it
+!/patchers/performers/config.example.json
