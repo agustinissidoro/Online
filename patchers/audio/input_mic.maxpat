@@ -4,13 +4,47 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 1,
+            "revision": 2,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1852.0, 862.0 ],
+        "rect": [ 134.0, 178.0, 1314.0, 862.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-10",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 1374.0, 359.0, 50.0, 22.0 ],
+                    "text": "0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-7",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 874.0, 328.0, 50.0, 22.0 ],
+                    "text": "0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-3",
+                    "linecount": 3,
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 526.0, 86.0, 168.0, 49.0 ],
+                    "text": "/spatial/listener \"roomtone_01.wav  -83.528 0.17\""
+                }
+            },
             {
                 "box": {
                     "id": "obj-12",
@@ -46,13 +80,84 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 1,
+                            "revision": 2,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 59.0, 87.0, 1248.0, 862.0 ],
+                        "rect": [ 351.0, 280.0, 1248.0, 862.0 ],
+                        "visible": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-8",
+                                    "linecount": 5,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 119.0, 118.0, 50.0, 76.0 ],
+                                    "text": "1 recorded_soprano_01.wav 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-5",
+                                    "linecount": 3,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 925.0, 692.0, 320.0, 49.0 ],
+                                    "text": "\"Macintosh HD:/Users/production/Documents/Max 9/Library/Online-main/audio/2D/recorded_soprano_01.wav\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-3",
+                                    "linecount": 4,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 918.0, 436.0, 50.0, 62.0 ],
+                                    "text": "recorded_soprano_01.wav"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "hidden": 1,
+                                    "id": "obj-15",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 303.0, 803.0, 614.0, 22.0 ],
+                                    "text": "\"Macintosh HD:/Users/production/Documents/Max 9/Library/Online-main/audio/2D/recorded_soprano_01.wav\""
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-9",
+                                    "linecount": 5,
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 199.0, 183.0, 50.0, 76.0 ],
+                                    "text": "1 recorded_soprano_01.wav 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 607.7866833806038, 143.0, 50.0, 22.0 ]
+                                }
+                            },
                             {
                                 "box": {
                                     "color": [ 0.176470588235294, 1.0, 0.0, 1.0 ],
@@ -77,12 +182,13 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 1,
+                                            "revision": 2,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 34.0, 87.0, 1852.0, 862.0 ],
+                                        "rect": [ 134.0, 178.0, 1852.0, 862.0 ],
+                                        "visible": 1,
                                         "boxes": [
                                             {
                                                 "box": {
@@ -93,7 +199,7 @@
                                                     "numinlets": 0,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 94.0, 735.0, 103.0, 22.0 ],
+                                                    "patching_rect": [ 94.0, 716.0, 103.0, 49.0 ],
                                                     "text": "r #0_rec_duration"
                                                 }
                                             },
@@ -160,7 +266,7 @@
                                                     "numinlets": 2,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 51.269214391708374, 138.0, 76.0, 22.0 ],
+                                                    "patching_rect": [ 51.269214391708374, 138.0, 76.0, 35.0 ],
                                                     "text": "#0-recording"
                                                 }
                                             },
@@ -281,7 +387,7 @@
                                                     "numinlets": 3,
                                                     "numoutlets": 1,
                                                     "outlettype": [ "" ],
-                                                    "patching_rect": [ 50.0, 298.0, 131.0, 22.0 ],
+                                                    "patching_rect": [ 179.0, 298.0, 131.0, 22.0 ],
                                                     "text": "ears.soundtouch~ 1 10"
                                                 }
                                             },
@@ -516,19 +622,13 @@
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-64", 0 ],
-                                                    "source": [ "obj-69", 0 ]
-                                                }
-                                            },
-                                            {
-                                                "patchline": {
                                                     "destination": [ "obj-64", 1 ],
                                                     "source": [ "obj-70", 1 ]
                                                 }
                                             },
                                             {
                                                 "patchline": {
-                                                    "destination": [ "obj-69", 0 ],
+                                                    "destination": [ "obj-64", 0 ],
                                                     "source": [ "obj-70", 0 ]
                                                 }
                                             },
@@ -635,7 +735,7 @@
                                     "numoutlets": 2,
                                     "outlettype": [ "", "" ],
                                     "patching_rect": [ 893.7855327129364, 558.8983225822449, 213.0, 22.0 ],
-                                    "text": "combine folder spatial/ file @triggers 2"
+                                    "text": "combine folder 2D/ file @triggers 2"
                                 }
                             },
                             {
@@ -856,6 +956,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-14", 0 ],
+                                    "order": 0,
                                     "source": [ "obj-2", 0 ]
                                 }
                             },
@@ -863,6 +964,26 @@
                                 "patchline": {
                                     "destination": [ "obj-40", 0 ],
                                     "source": [ "obj-2", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-7", 1 ],
+                                    "source": [ "obj-2", 2 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-8", 1 ],
+                                    "order": 2,
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-9", 1 ],
+                                    "order": 1,
+                                    "source": [ "obj-2", 0 ]
                                 }
                             },
                             {
@@ -895,14 +1016,30 @@
                             },
                             {
                                 "patchline": {
+                                    "destination": [ "obj-3", 1 ],
+                                    "order": 1,
+                                    "source": [ "obj-25", 1 ]
+                                }
+                            },
+                            {
+                                "patchline": {
                                     "destination": [ "obj-38", 2 ],
                                     "midpoints": [ 513.1101455688477, 490.956162750721, 1097.2855327129364, 490.956162750721 ],
+                                    "order": 0,
                                     "source": [ "obj-25", 1 ]
                                 }
                             },
                             {
                                 "patchline": {
                                     "destination": [ "obj-10", 0 ],
+                                    "order": 1,
+                                    "source": [ "obj-26", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-15", 1 ],
+                                    "order": 0,
                                     "source": [ "obj-26", 0 ]
                                 }
                             },
@@ -965,6 +1102,14 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-26", 1 ],
+                                    "order": 1,
+                                    "source": [ "obj-39", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-5", 1 ],
+                                    "order": 0,
                                     "source": [ "obj-39", 0 ]
                                 }
                             },
@@ -1107,6 +1252,13 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-10", 1 ],
+                    "order": 0,
+                    "source": [ "obj-16", 2 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-18", 0 ],
                     "source": [ "obj-16", 0 ]
                 }
@@ -1114,6 +1266,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-33", 1 ],
+                    "order": 1,
+                    "source": [ "obj-16", 2 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-7", 1 ],
+                    "order": 2,
                     "source": [ "obj-16", 2 ]
                 }
             },
@@ -1127,6 +1287,14 @@
             {
                 "patchline": {
                     "destination": [ "obj-12", 0 ],
+                    "order": 0,
+                    "source": [ "obj-34", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-3", 1 ],
+                    "order": 1,
                     "source": [ "obj-34", 0 ]
                 }
             },

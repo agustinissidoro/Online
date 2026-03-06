@@ -12,13 +12,13 @@ unreal /UI/player2/video/display/value 0
 unreal /UI/player3/video/display/value 0
 unreal /UI/player4/video/display/value 0
 
+unreal /game/player1/relocate/value Soprano_0
+unreal /game/player3/relocate/value Tenor_0
+
 CUE 1 INTRO-VIDEOS
 
 clock 0
 clock 1
-
-unreal /game/player1/relocate/value Soprano_0
-unreal /game/player3/relocate/value Tenor_0
 
 unreal /UI/player1/video/load/value waitingvideo_soprano
 unreal /UI/player1/video/display/value 1
