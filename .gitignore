@@ -21,6 +21,8 @@
 !/.gitignore
 !/.gitattributes
 !/score.txt
+!/network_scanner.py
+!/run_scanner.command
 
 # Ignore the active config in the performers folder
 /patchers/performers/config.json
