@@ -36,7 +36,6 @@ unreal /UI/player4/video/load/value waitingvideo_bass
 unreal /UI/player4/video/display/value 1
 unreal /UI/player4/video/play/value 0 0
 
-// audio /audio/all/2D/play video_intro.wav 1 1 0 0 -12 0 0
 audio /audio/player1/2D/play video_intro.wav 1 1 0 0 -12 0 0
 audio /audio/player2/2D/play video_intro.wav 1 1 0 0 -12 0 500
 audio /audio/player3/2D/play video_intro.wav 1 1 0 0 -12 0 1000
