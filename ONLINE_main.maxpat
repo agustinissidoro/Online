@@ -9,9 +9,66 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1761.0, 1062.0 ],
+        "rect": [ 34.0, 87.0, 1690.0, 1062.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-557",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 591.0, 4407.0, 255.0, 22.0 ],
+                    "text": "/game/player2/endless_runner/destroy/value 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-553",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 591.0, 4308.0, 281.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "/game/player2/endless_runner/text/value prueba jje"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-552",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 665.0, 3987.0, 242.0, 22.0 ],
+                    "text": "/game/player2/endless_runner/state/value 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-549",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 606.0, 4135.0, 313.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "/sequence/load/value, /sequence/load/value Scene_1_12"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-548",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 721.0, 3882.0, 251.0, 22.0 ],
+                    "text": "/sequence/load/value, /sequence/play/value 1"
+                }
+            },
             {
                 "box": {
                     "id": "obj-547",
@@ -2404,7 +2461,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 470.0, 4275.5, 73.0, 22.0 ],
+                    "patching_rect": [ 149.0, 4361.0, 73.0, 22.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 186.66667222976685, 58.0000017285347, 73.0, 22.0 ],
                     "text": "INIT players"
@@ -2418,7 +2475,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 470.0, 4342.0, 309.0, 102.0 ],
+                    "patching_rect": [ 149.0, 4428.0, 309.0, 102.0 ],
                     "text": ";\rto_all_player_controller /player_controller/all/keyboard 1;\rto_all_player_controller /player_controller/all/video 1;\rto_all_player_controller /player_controller/all/mouse 1;\rto_all_player_controller /player_controller/all/page 1;\rto_all_player_controller /player_controller/all/bar 1;\r"
                 }
             },
@@ -4150,7 +4207,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2607.0, 4157.0, 123.0, 22.0 ],
-                    "restore": [ 1 ],
+                    "restore": [ 2 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -4277,7 +4334,7 @@
                     "patching_rect": [ 2473.0, 3337.0, 428.0, 51.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1169.0000001266599, 212.0, 169.0, 51.0 ],
-                    "text": "00:00",
+                    "text": "1167:11",
                     "textjustification": 1
                 }
             },
@@ -4798,7 +4855,7 @@
             {
                 "box": {
                     "id": "obj-458",
-                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "END" ],
+                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4841,6 +4898,7 @@
                     "patching_rect": [ 3399.5, 741.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 719.0, 262.0, 357.0, 29.0 ],
+                    "text": "ENTRANCE",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -4896,6 +4954,7 @@
                     "patching_rect": [ 3329.0, 844.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 217.0, 356.0, 40.0 ],
+                    "text": "INIT",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -5216,7 +5275,7 @@
             {
                 "box": {
                     "id": "obj-414",
-                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "END" ],
+                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5260,7 +5319,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-411",
-                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "END" ],
+                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5494,7 +5553,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 9 ],
+                    "restore": [ 2 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -11020,17 +11079,6 @@
             },
             {
                 "box": {
-                    "id": "obj-27",
-                    "maxclass": "message",
-                    "numinlets": 2,
-                    "numoutlets": 1,
-                    "outlettype": [ "" ],
-                    "patching_rect": [ 1310.0, 4191.0, 173.0, 22.0 ],
-                    "text": "/game/player1/relocate/value 1"
-                }
-            },
-            {
-                "box": {
                     "bgcolor": [ 1.0, 0.0, 0.0, 1.0 ],
                     "id": "obj-62",
                     "maxclass": "comment",
@@ -14852,6 +14900,18 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-548", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-549", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-33", 0 ],
                     "source": [ "obj-55", 0 ]
                 }
@@ -14860,6 +14920,18 @@
                 "patchline": {
                     "destination": [ "obj-555", 0 ],
                     "source": [ "obj-551", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-552", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-553", 0 ]
                 }
             },
             {
@@ -14878,6 +14950,12 @@
                 "patchline": {
                     "destination": [ "obj-576", 0 ],
                     "source": [ "obj-556", 3 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-557", 0 ]
                 }
             },
             {
@@ -15548,14 +15626,6 @@
             "obj-1.4::obj-27": [ "mc.live.gain~[13]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[7]", "full player", 0 ],
             "obj-536": [ "live.toggle", "live.toggle", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[8]"
