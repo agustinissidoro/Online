@@ -15,7 +15,10 @@ unreal /UI/player4/video/display/value 0
 unreal /game/player1/relocate/value Soprano_0
 unreal /game/player3/relocate/value Tenor_0
 
-CUE 1 INTRO-VIDEOS
+player_controller_test bang
+
+
+CUE 1 ENTRANCE
 
 clock 0
 clock 1
@@ -42,13 +45,34 @@ audio /audio/player3/2D/play video_intro.wav 1 1 0 0 -12 0 1000
 audio /audio/player4/2D/play video_intro.wav 1 1 0 0 -12 0 1500
 
 
-CUE 2 LIVE-START
+liveSync cue Soprano enter
+
+CUE 2 SOPRANO-ENTER
+
+liveSync play
+
+CUE 3 SOPRANO-JOIN
+
+liveSync cue Start. Soprano Join Video.
 
 clock 0
 clock 1
 
 liveSync play
 
-CUE 3 END
+CUE 4 FIND-SOPRANO-1
+
+liveSync cue UI set
+liveSync play
+
+CUE 5 TENOR-DIES-1
+
+liveSync cue Tenor dies
+liveSync play
+
+CUE 6 FIND-SOPRANO-2
+
+liveSync cue UI set 2
+liveSync play
 
 

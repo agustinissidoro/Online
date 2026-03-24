@@ -4,12 +4,12 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 2,
+            "revision": 1,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 134.0, 178.0, 1314.0, 862.0 ],
+        "rect": [ 134.0, 89.0, 1314.0, 862.0 ],
         "boxes": [
             {
                 "box": {
@@ -41,8 +41,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 526.0, 86.0, 168.0, 49.0 ],
-                    "text": "/spatial/listener \"roomtone_01.wav  -83.528 0.17\""
+                    "patching_rect": [ 526.0, 86.0, 46.0, 49.0 ],
+                    "text": "/mic/gainout 0."
                 }
             },
             {
@@ -80,13 +80,12 @@
                         "appversion": {
                             "major": 9,
                             "minor": 1,
-                            "revision": 2,
+                            "revision": 1,
                             "architecture": "x64",
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 351.0, 280.0, 1248.0, 862.0 ],
-                        "visible": 1,
+                        "rect": [ 351.0, 89.0, 1248.0, 862.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -182,13 +181,12 @@
                                         "appversion": {
                                             "major": 9,
                                             "minor": 1,
-                                            "revision": 2,
+                                            "revision": 1,
                                             "architecture": "x64",
                                             "modernui": 1
                                         },
                                         "classnamespace": "box",
-                                        "rect": [ 134.0, 178.0, 1852.0, 862.0 ],
-                                        "visible": 1,
+                                        "rect": [ 34.0, 89.0, 1852.0, 862.0 ],
                                         "boxes": [
                                             {
                                                 "box": {

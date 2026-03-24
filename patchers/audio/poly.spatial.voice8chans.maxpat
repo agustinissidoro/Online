@@ -96,6 +96,10 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 815.0, 879.0, 35.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "out 2"
                 }
             },
@@ -228,10 +232,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 238.0, 582.0, 35.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "out 1"
                 }
             },
@@ -242,10 +242,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 63.0, 582.0, 119.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "mc.out~ 1 @chans 8"
                 }
             },
@@ -257,10 +253,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 199.0, 53.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 2"
                 }
             },
@@ -272,10 +264,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 63.0, 53.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 1"
                 }
             },
@@ -384,6 +372,7 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 134.0, 159.0, 1540.0, 912.0 ],
+                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -931,7 +920,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 62.0, 183.0, 130.0, 35.0 ],
-                                    "text": "pad-027.wav 1 1 1 1500 0"
+                                    "text": "roomtone_01.wav 1 1 0 0 18 false 0"
                                 }
                             },
                             {
@@ -1340,7 +1329,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 243.0, 30.0, 129.0, 35.0 ],
-                                    "text": "pad-027.wav 1 1 1 1500 0"
+                                    "text": "roomtone_01.wav 1 1 0 0 18 false 0"
                                 }
                             },
                             {
@@ -1706,6 +1695,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-50", 0 ],
+                                    "disabled": 1,
                                     "source": [ "obj-48", 0 ]
                                 }
                             },

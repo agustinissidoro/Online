@@ -244,9 +244,30 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 134.0, 159.0, 1387.0, 921.0 ],
+                        "rect": [ 134.0, 159.0, 1304.0, 921.0 ],
                         "visible": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-35",
+                                    "maxclass": "message",
+                                    "numinlets": 2,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 241.0, 685.0, 32.0, 22.0 ],
+                                    "text": "print"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-32",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 51.0, 816.0, 32.0, 22.0 ],
+                                    "text": "print"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-34",
@@ -995,8 +1016,15 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-76", 0 ],
+                                    "disabled": 1,
                                     "midpoints": [ 80.5, 732.0, 163.5, 732.0 ],
                                     "source": [ "obj-34", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-76", 0 ],
+                                    "source": [ "obj-35", 0 ]
                                 }
                             },
                             {
@@ -1133,6 +1161,13 @@
                                     "destination": [ "obj-30", 0 ],
                                     "order": 1,
                                     "source": [ "obj-76", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-32", 0 ],
+                                    "disabled": 1,
+                                    "source": [ "obj-76", 2 ]
                                 }
                             },
                             {

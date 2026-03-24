@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 125.0, 1852.0, 921.0 ],
+        "rect": [ 34.0, 125.0, 1852.0, 997.0 ],
         "boxes": [
             {
                 "box": {
@@ -19,7 +19,7 @@
                     "numinlets": 8,
                     "numoutlets": 2,
                     "outlettype": [ "multichannelsignal", "multichannelsignal" ],
-                    "patching_rect": [ 964.0, 820.0, 100.0, 102.0 ],
+                    "patching_rect": [ 964.0, 718.0, 100.0, 102.0 ],
                     "text": "mc.abl.dsp.quartz~ @mix 0.25 @decay 1.5 @damping 0.7 @size 0.5 @diffusion 0.2 @distance 0.25"
                 }
             },
@@ -591,7 +591,7 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "multichannelsignal" ],
-                    "patching_rect": [ 964.0, 765.0, 213.0, 22.0 ],
+                    "patching_rect": [ 964.0, 878.0, 213.0, 22.0 ],
                     "text": "mc.+~"
                 }
             },
@@ -1197,7 +1197,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-2", 1 ],
+                    "destination": [ "obj-31", 0 ],
                     "source": [ "obj-21", 0 ]
                 }
             },
@@ -1245,7 +1245,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-21", 0 ],
+                    "destination": [ "obj-2", 1 ],
                     "source": [ "obj-31", 0 ]
                 }
             },
@@ -1287,7 +1287,7 @@
             },
             {
                 "patchline": {
-                    "destination": [ "obj-31", 0 ],
+                    "destination": [ "obj-21", 0 ],
                     "source": [ "obj-4", 0 ]
                 }
             },
