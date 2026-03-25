@@ -31,7 +31,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 591.0, 4308.0, 281.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "/game/player2/endless_runner/text/value prueba jje"
                 }
             },
@@ -54,7 +53,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 606.0, 4135.0, 313.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "/sequence/load/value, /sequence/load/value Scene_1_12"
                 }
             },
@@ -1123,7 +1121,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-593",
-                    "items": "<empty>",
+                    "items": "video_intro.wav",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -1517,7 +1515,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-587",
-                    "items": "<empty>",
+                    "items": "video_intro.wav",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -1579,7 +1577,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-583",
-                    "items": "<empty>",
+                    "items": "video_intro.wav",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -2339,7 +2337,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-556",
-                    "items": "<empty>",
+                    "items": "video_intro.wav",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -2369,7 +2367,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-533",
-                    "items": "<empty>",
+                    "items": "roomtone_01.wav",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -4334,7 +4332,7 @@
                     "patching_rect": [ 2473.0, 3337.0, 428.0, 51.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1169.0000001266599, 212.0, 169.0, 51.0 ],
-                    "text": "1167:11",
+                    "text": "05:42",
                     "textjustification": 1
                 }
             },
@@ -4898,7 +4896,7 @@
                     "patching_rect": [ 3399.5, 741.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 719.0, 262.0, 357.0, 29.0 ],
-                    "text": "ENTRANCE",
+                    "text": "SOPRANO-ENTER",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -4954,7 +4952,7 @@
                     "patching_rect": [ 3329.0, 844.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 217.0, 356.0, 40.0 ],
-                    "text": "INIT",
+                    "text": "ENTRANCE",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -15626,6 +15624,14 @@
             "obj-1.4::obj-27": [ "mc.live.gain~[13]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[7]", "full player", 0 ],
             "obj-536": [ "live.toggle", "live.toggle", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[8]"
