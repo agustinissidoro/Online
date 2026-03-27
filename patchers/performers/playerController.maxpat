@@ -19,6 +19,167 @@
             {
                 "box": {
                     "color": [ 0.949019607843137, 0.0, 1.0, 1.0 ],
+                    "id": "obj-216",
+                    "maxclass": "newobj",
+                    "numinlets": 0,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patcher": {
+                        "fileversion": 1,
+                        "appversion": {
+                            "major": 9,
+                            "minor": 1,
+                            "revision": 2,
+                            "architecture": "x64",
+                            "modernui": 1
+                        },
+                        "classnamespace": "box",
+                        "rect": [ 682.0, 226.0, 1000.0, 780.0 ],
+                        "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-4",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 418.0, 215.0, 57.0, 22.0 ],
+                                    "text": "tosymbol"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-3",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "int" ],
+                                    "patching_rect": [ 417.0, 125.0, 22.0, 22.0 ],
+                                    "text": "t 1"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-2",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 417.0, 163.0, 85.0, 22.0 ],
+                                    "text": "prepend index"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-1",
+                                    "maxclass": "newobj",
+                                    "numinlets": 2,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "bang", "" ],
+                                    "patching_rect": [ 417.0, 86.0, 41.0, 22.0 ],
+                                    "text": "sel 99"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
+                                    "id": "obj-51",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 172.0, 264.0, 49.0, 22.0 ],
+                                    "text": "r player"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "id": "obj-87",
+                                    "maxclass": "newobj",
+                                    "numinlets": 4,
+                                    "numoutlets": 2,
+                                    "outlettype": [ "", "" ],
+                                    "patching_rect": [ 50.0, 318.0, 386.0, 22.0 ],
+                                    "text": "combine /player_controller/player 1 /camera/change/ index @triggers 3"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
+                                    "id": "obj-78",
+                                    "maxclass": "newobj",
+                                    "numinlets": 0,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 417.0, 39.0, 84.0, 22.0 ],
+                                    "text": "r key_pressed"
+                                }
+                            },
+                            {
+                                "box": {
+                                    "comment": "",
+                                    "id": "obj-213",
+                                    "index": 1,
+                                    "maxclass": "outlet",
+                                    "numinlets": 1,
+                                    "numoutlets": 0,
+                                    "patching_rect": [ 50.0, 400.0, 30.0, 30.0 ]
+                                }
+                            }
+                        ],
+                        "lines": [
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-3", 0 ],
+                                    "source": [ "obj-1", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-2", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-2", 0 ],
+                                    "source": [ "obj-3", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-87", 3 ],
+                                    "source": [ "obj-4", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-87", 1 ],
+                                    "source": [ "obj-51", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-1", 0 ],
+                                    "source": [ "obj-78", 0 ]
+                                }
+                            },
+                            {
+                                "patchline": {
+                                    "destination": [ "obj-213", 0 ],
+                                    "source": [ "obj-87", 0 ]
+                                }
+                            }
+                        ]
+                    },
+                    "patching_rect": [ 59.03614675998688, 666.2831305265427, 105.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "p camera_change"
+                }
+            },
+            {
+                "box": {
+                    "color": [ 0.949019607843137, 0.0, 1.0, 1.0 ],
                     "id": "obj-359",
                     "maxclass": "newobj",
                     "numinlets": 0,
@@ -1946,7 +2107,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 34.0, 87.0, 1980.0, 1062.0 ],
+                        "rect": [ -346.0, 230.0, 1980.0, 1062.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -2621,7 +2782,7 @@
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 851.4925068616867, 88.80596697330475, 150.0, 87.0 ],
+                                    "patching_rect": [ 851.4925068616867, 88.80596697330475, 150.0, 89.0 ],
                                     "text": "122\n115\n100\n113\n\n97"
                                 }
                             },
@@ -8434,15 +8595,15 @@
                                 "box": {
                                     "fontsize": 18.0,
                                     "id": "obj-3",
-                                    "linecount": 33,
+                                    "linecount": 34,
                                     "maxclass": "comment",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 23.0, 67.0, 266.0, 710.0 ],
+                                    "patching_rect": [ 23.0, 67.0, 266.0, 731.0 ],
                                     "presentation": 1,
-                                    "presentation_linecount": 33,
-                                    "presentation_rect": [ 2.0, 22.0, 405.0, 710.0 ],
-                                    "text": "m = enable mouse camera drive\nmouse = camera drive\n\nw = forward (z in FR)\ns = backwards\nd =  right\na = left (q in FR)\n\nq = run (a in FR)\nspace bar = jump\n\n1 = third person camera\n2 = first person camera\n3 = cenital camera\n4 = face closeup camera\n\nesc = score fullscreen toggle\nv = score visible\n\ne = pick object toggle\nr = voice UI and record\n\nk = toggle keyboard\np = beep\nu = play expression\n\nf = facetracking\n\ni = destroy object\n\n\n\n\n"
+                                    "presentation_linecount": 34,
+                                    "presentation_rect": [ 2.0, 22.0, 405.0, 731.0 ],
+                                    "text": "m = enable mouse camera drive\nmouse = camera drive\n\nw = forward (z in FR)\ns = backwards\nd =  right\na = left (q in FR)\n\nq = run (a in FR)\nspace bar = jump\n\n1 = third person camera\n2 = first person camera\n3 = cenital camera\n4 = face closeup camera\nc = change/iterate cameras fast\n\nesc = score fullscreen toggle\nv = score visible\n\ne = pick object toggle\nr = voice UI and record\n\nk = toggle keyboard\np = beep\nu = play expression\n\nf = facetracking\n\ni = destroy object\n\n\n\n\n"
                                 }
                             },
                             {
@@ -11967,7 +12128,7 @@
                     "maxclass": "comment",
                     "numinlets": 1,
                     "numoutlets": 0,
-                    "patching_rect": [ 632.7241314649582, 916.0, 150.0, 48.0 ],
+                    "patching_rect": [ 1020.0, 430.9393393397331, 150.0, 48.0 ],
                     "text": "Efficient sends. Only changes are sent. Safe here."
                 }
             },
@@ -14759,6 +14920,13 @@
                     "destination": [ "obj-46", 1 ],
                     "order": 0,
                     "source": [ "obj-215", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-135", 0 ],
+                    "midpoints": [ 68.53614675998688, 705.0, 375.0, 705.0, 375.0, 888.0, 397.5, 888.0 ],
+                    "source": [ "obj-216", 0 ]
                 }
             },
             {
