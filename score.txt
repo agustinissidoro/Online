@@ -49,28 +49,33 @@ liveSync cue Soprano enter
 
 CUE 2 SOPRANO-ENTER
 
+
+clock 0
+clock 1
 liveSync play
 
 CUE 3 SOPRANO-JOIN
 
 liveSync cue Start. Soprano Join Video.
 
-clock 0
-clock 1
-
 liveSync play
 
-CUE 4 FIND-SOPRANO-1
+CUE 4 TENOR-JOIN
+
+liveSync cue Tenor intro video
+liveSync play
+
+CUE 5 FIND-SOPRANO-1
 
 liveSync cue UI set
 liveSync play
 
-CUE 5 TENOR-DIES-1
+CUE 6 TENOR-DIES-1
 
 liveSync cue Tenor dies
 liveSync play
 
-CUE 6 FIND-SOPRANO-2
+CUE 7 FIND-SOPRANO-2
 
 liveSync cue UI set 2
 liveSync play
