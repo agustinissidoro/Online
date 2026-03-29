@@ -9,9 +9,43 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1690.0, 1062.0 ],
+        "rect": [ 34.0, 87.0, 1693.0, 1062.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-559",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 834.0, 4767.0, 247.0, 22.0 ],
+                    "presentation_linecount": 2,
+                    "text": "/UI/player3/juicy/grow/text/value perfect pitch"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-558",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 834.0, 4804.0, 139.0, 22.0 ],
+                    "text": "/UI/player3/juicy//value 1"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-550",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 834.0, 4725.0, 212.0, 22.0 ],
+                    "text": "/UI/player3/juicy/default/visible/value 1"
+                }
+            },
             {
                 "box": {
                     "id": "obj-557",
@@ -367,7 +401,7 @@
                 "box": {
                     "autopopulate": 1,
                     "id": "obj-541",
-                    "items": [ "alto_joined.wav", ",", "alto_rescue_soprano_01.wav", ",", "bass_joined.wav", ",", "beep.wav", ",", "door_close_01.wav", ",", "door_forbiden_01.wav", ",", "door_open_01.wav", ",", "megaphone_01.wav", ",", "microphone_forbidden_01.wav", ",", "microphone_forbidden_02.wav", ",", "microphone_forbidden_03.wav", ",", "microphone_forbidden_04.wav", ",", "microphone_forbidden_05.wav", ",", "microphone_forbidden_06.wav", ",", "piano_allowed_01.wav", ",", "piano_forbidden_01.wav", ",", "piano_forbidden_02.wav", ",", "piano_forbidden_03.wav", ",", "piano_forbidden_04.wav", ",", "piano_forbidden_05.wav", ",", "piano_forbidden_06.wav", ",", "recorded_soprano_01.wav", ",", "soprano_about_to_change.wav", ",", "soprano_about_to_change_2.wav", ",", "soprano_curse_01.wav", ",", "soprano_grab_mic.wav", ",", "soprano_joined.wav", ",", "soprano_sing_01.wav", ",", "soprano_something_strange.wav", ",", "tenor_died_01.wav", ",", "tenor_find_soprano.wav", ",", "tenor_find_soprano_01.wav", ",", "tenor_find_soprano_02.wav", ",", "tenor_joined.wav", ",", "tenor_rescue_soprano.wav", ",", "tenor_take_risk.wav", ",", "tuning_fork_01.wav", ",", "UI_voice_off.wav", ",", "UI_voice_on.wav", ",", "video_intro.wav", ",", "video_join_soprano.wav", ",", "video_join_tenor.wav" ],
+                    "items": [ "alto_joined.wav", ",", "alto_rescue_soprano_01.wav", ",", "bass_joined.wav", ",", "beep.wav", ",", "door_close_01.wav", ",", "door_forbiden_01.wav", ",", "door_open_01.wav", ",", "megaphone_01.wav", ",", "microphone_forbidden_01.wav", ",", "microphone_forbidden_02.wav", ",", "microphone_forbidden_03.wav", ",", "microphone_forbidden_04.wav", ",", "microphone_forbidden_05.wav", ",", "microphone_forbidden_06.wav", ",", "piano_allowed_01.wav", ",", "piano_forbidden_01.wav", ",", "piano_forbidden_02.wav", ",", "piano_forbidden_03.wav", ",", "piano_forbidden_04.wav", ",", "piano_forbidden_05.wav", ",", "piano_forbidden_06.wav", ",", "recorded_soprano_01.wav", ",", "soprano_about_to_change.wav", ",", "soprano_about_to_change_2.wav", ",", "soprano_curse_01.wav", ",", "soprano_grab_mic.wav", ",", "soprano_joined.wav", ",", "soprano_jump.wav", ",", "soprano_land.wav", ",", "soprano_sing_01.wav", ",", "soprano_something_strange.wav", ",", "tenor_died_01.wav", ",", "tenor_find_soprano.wav", ",", "tenor_find_soprano_01.wav", ",", "tenor_find_soprano_02.wav", ",", "tenor_joined.wav", ",", "tenor_rescue_soprano.wav", ",", "tenor_take_risk.wav", ",", "tuning_fork_01.wav", ",", "UI_voice_off.wav", ",", "UI_voice_on.wav", ",", "video_intro.wav", ",", "video_join_soprano.wav", ",", "video_join_tenor.wav" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -1121,7 +1155,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-593",
-                    "items": "video_intro.wav",
+                    "items": "<empty>",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -1515,7 +1549,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-587",
-                    "items": "video_intro.wav",
+                    "items": "<empty>",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -1577,7 +1611,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-583",
-                    "items": "video_intro.wav",
+                    "items": "<empty>",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -2337,7 +2371,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-556",
-                    "items": "video_intro.wav",
+                    "items": "<empty>",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -2367,7 +2401,7 @@
                     "fontname": "Arial",
                     "fontsize": 12.0,
                     "id": "obj-533",
-                    "items": "roomtone_01.wav",
+                    "items": "<empty>",
                     "maxclass": "chooser",
                     "numinlets": 1,
                     "numoutlets": 6,
@@ -4236,7 +4270,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-378",
-                    "items": [ "None", ",", "System Device: Volt 4", ",", "Volt 4", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
+                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4332,7 +4366,7 @@
                     "patching_rect": [ 2473.0, 3337.0, 428.0, 51.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1169.0000001266599, 212.0, 169.0, 51.0 ],
-                    "text": "05:42",
+                    "text": "01:24",
                     "textjustification": 1
                 }
             },
@@ -4712,7 +4746,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-345",
-                    "items": [ "INIT", ",", "Soprano enter", ",", "Start. Soprano Join Video.", ",", "Soprano in room", ",", "Soprano to desk", ",", "Soprano to piano", ",", "Soprano to door", ",", "What is this shit?", ",", "Door 2", ",", "Hello...?", ",", "Tenor intro video", ",", "Tenor in room", ",", "Tenor to radio", ",", "Soprano to mic; Tenor out", ",", "UI set", ",", "Find soprano1", ",", "Tenor opens door", ",", "Tenor dies", ",", "Tenor plays again", ",", "UI set 2", ",", "Find Soprano 02", ",", "Tenor Opens Door 2", ",", "Alto Joins", ",", "Alto in room" ],
+                    "items": [ "INIT", ",", "Soprano enter", ",", "Start. Soprano Join Video.", ",", "Soprano in room", ",", "Soprano to desk", ",", "Soprano to piano", ",", "Soprano to door", ",", "What is this shit?", ",", "Door 2", ",", "Hello...?", ",", "Tenor intro video", ",", "Tenor in room", ",", "Tenor to radio", ",", "Soprano to mic; Tenor out", ",", "UI set", ",", "Find soprano1", ",", "Tenor opens door", ",", "Tenor dies", ",", "Tenor plays again", ",", "UI set 2", ",", "Find Soprano 02", ",", "Tenor Opens Door 2", ",", "Alto Joins", ",", "Alto in room", ",", "Alto to Radio", ",", "Alto to Endless Runner Position", ",", "Your voice is your most powerful weapon", ",", "Alto Endless Runner 1" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4853,7 +4887,7 @@
             {
                 "box": {
                     "id": "obj-458",
-                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
+                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "TENOR-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4896,7 +4930,7 @@
                     "patching_rect": [ 3399.5, 741.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 719.0, 262.0, 357.0, 29.0 ],
-                    "text": "SOPRANO-ENTER",
+                    "text": "FIND-SOPRANO-1",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -4952,7 +4986,7 @@
                     "patching_rect": [ 3329.0, 844.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 217.0, 356.0, 40.0 ],
-                    "text": "ENTRANCE",
+                    "text": "TENOR-JOIN",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -5273,7 +5307,7 @@
             {
                 "box": {
                     "id": "obj-414",
-                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
+                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "TENOR-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5317,7 +5351,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-411",
-                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
+                    "items": [ "RESET", ",", "INIT", ",", "ENTRANCE", ",", "SOPRANO-ENTER", ",", "SOPRANO-JOIN", ",", "TENOR-JOIN", ",", "FIND-SOPRANO-1", ",", "TENOR-DIES-1", ",", "FIND-SOPRANO-2" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5551,7 +5585,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 2 ],
+                    "restore": [ 4 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5605,7 +5639,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2315.0, 3870.0, 82.0, 22.0 ],
-                    "restore": [ 1 ],
+                    "restore": [ 0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5636,7 +5670,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-376",
-                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "Volt 4", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
+                    "items": [ "None", ",", "System Device: Volt+BlackHole", ",", "Preference: Volt 4, Current: Volt+BlackHole", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "BlackHole 64ch", ",", "Micro MacBook Pro", ",", "Microphone de « iPhone de Agustín Issidoro »", ",", "VB-Cable", ",", "ZoomAudioDevice", ",", "Volt+BlackHole" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5827,7 +5861,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-364",
-                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000 ],
+                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -14916,6 +14950,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-550", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-555", 0 ],
                     "source": [ "obj-551", 0 ]
                 }
@@ -14954,6 +14994,12 @@
                 "patchline": {
                     "destination": [ "obj-14", 0 ],
                     "source": [ "obj-557", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-559", 0 ]
                 }
             },
             {
@@ -15624,14 +15670,6 @@
             "obj-1.4::obj-27": [ "mc.live.gain~[13]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[7]", "full player", 0 ],
             "obj-536": [ "live.toggle", "live.toggle", 0 ],
-            "parameterbanks": {
-                "0": {
-                    "index": 0,
-                    "name": "",
-                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
-                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-                }
-            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[8]"
