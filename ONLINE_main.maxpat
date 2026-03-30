@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1693.0, 1062.0 ],
+        "rect": [ 34.0, 87.0, 1980.0, 1062.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -20,7 +20,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 834.0, 4767.0, 247.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "/UI/player3/juicy/grow/text/value perfect pitch"
                 }
             },
@@ -401,7 +400,7 @@
                 "box": {
                     "autopopulate": 1,
                     "id": "obj-541",
-                    "items": [ "alto_joined.wav", ",", "alto_rescue_soprano_01.wav", ",", "bass_joined.wav", ",", "beep.wav", ",", "door_close_01.wav", ",", "door_forbiden_01.wav", ",", "door_open_01.wav", ",", "megaphone_01.wav", ",", "microphone_forbidden_01.wav", ",", "microphone_forbidden_02.wav", ",", "microphone_forbidden_03.wav", ",", "microphone_forbidden_04.wav", ",", "microphone_forbidden_05.wav", ",", "microphone_forbidden_06.wav", ",", "piano_allowed_01.wav", ",", "piano_forbidden_01.wav", ",", "piano_forbidden_02.wav", ",", "piano_forbidden_03.wav", ",", "piano_forbidden_04.wav", ",", "piano_forbidden_05.wav", ",", "piano_forbidden_06.wav", ",", "recorded_soprano_01.wav", ",", "soprano_about_to_change.wav", ",", "soprano_about_to_change_2.wav", ",", "soprano_curse_01.wav", ",", "soprano_grab_mic.wav", ",", "soprano_joined.wav", ",", "soprano_jump.wav", ",", "soprano_land.wav", ",", "soprano_sing_01.wav", ",", "soprano_something_strange.wav", ",", "tenor_died_01.wav", ",", "tenor_find_soprano.wav", ",", "tenor_find_soprano_01.wav", ",", "tenor_find_soprano_02.wav", ",", "tenor_joined.wav", ",", "tenor_rescue_soprano.wav", ",", "tenor_take_risk.wav", ",", "tuning_fork_01.wav", ",", "UI_voice_off.wav", ",", "UI_voice_on.wav", ",", "video_intro.wav", ",", "video_join_soprano.wav", ",", "video_join_tenor.wav" ],
+                    "items": [ "alto_joined.wav", ",", "alto_rescue_soprano_01.wav", ",", "bass_joined.wav", ",", "beep.wav", ",", "door_close_01.wav", ",", "door_forbiden_01.wav", ",", "door_open_01.wav", ",", "megaphone_01.wav", ",", "microphone_forbidden_01.wav", ",", "microphone_forbidden_02.wav", ",", "microphone_forbidden_03.wav", ",", "microphone_forbidden_04.wav", ",", "microphone_forbidden_05.wav", ",", "microphone_forbidden_06.wav", ",", "piano_allowed_01.wav", ",", "piano_forbidden_01.wav", ",", "piano_forbidden_02.wav", ",", "piano_forbidden_03.wav", ",", "piano_forbidden_04.wav", ",", "piano_forbidden_05.wav", ",", "piano_forbidden_06.wav", ",", "recorded_soprano_01.wav", ",", "soprano_about_to_change.wav", ",", "soprano_about_to_change_2.wav", ",", "soprano_curse_01.wav", ",", "soprano_grab_mic.wav", ",", "soprano_joined.wav", ",", "soprano_jump.wav", ",", "soprano_land.wav", ",", "soprano_sing_01.wav", ",", "soprano_something_strange.wav", ",", "tenor_died_01.wav", ",", "tenor_find_soprano.wav", ",", "tenor_find_soprano_01.wav", ",", "tenor_find_soprano_02.wav", ",", "tenor_joined.wav", ",", "tenor_rescue_soprano.wav", ",", "tenor_take_risk.wav", ",", "tuning_fork_01.wav", ",", "UI_fullscreen.wav", ",", "UI_fullscreen_2.wav", ",", "UI_voice_off.wav", ",", "UI_voice_on.wav", ",", "video_intro.wav", ",", "video_join_soprano.wav", ",", "video_join_tenor.wav" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -4366,7 +4365,7 @@
                     "patching_rect": [ 2473.0, 3337.0, 428.0, 51.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1169.0000001266599, 212.0, 169.0, 51.0 ],
-                    "text": "01:24",
+                    "text": "00:00",
                     "textjustification": 1
                 }
             },
@@ -4930,7 +4929,6 @@
                     "patching_rect": [ 3399.5, 741.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 719.0, 262.0, 357.0, 29.0 ],
-                    "text": "FIND-SOPRANO-1",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -4986,7 +4984,6 @@
                     "patching_rect": [ 3329.0, 844.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 217.0, 356.0, 40.0 ],
-                    "text": "TENOR-JOIN",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -5585,7 +5582,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 4 ],
+                    "restore": [ 2 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5639,7 +5636,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2315.0, 3870.0, 82.0, 22.0 ],
-                    "restore": [ 0 ],
+                    "restore": [ 1 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -5861,7 +5858,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-364",
-                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+                    "items": [ 8000, ",", 16000, ",", 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000, ",", 352800, ",", 384000, ",", 705600, ",", 768000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -15670,6 +15667,14 @@
             "obj-1.4::obj-27": [ "mc.live.gain~[13]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[7]", "full player", 0 ],
             "obj-536": [ "live.toggle", "live.toggle", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[8]"

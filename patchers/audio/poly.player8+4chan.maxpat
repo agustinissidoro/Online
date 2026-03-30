@@ -116,6 +116,7 @@
             },
             {
                 "box": {
+                    "domain": [ 20.0, 16000.0 ],
                     "fontface": 0,
                     "id": "obj-5",
                     "maxclass": "filtergraph~",
@@ -226,10 +227,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1110.0, 125.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 4"
                 }
             },
@@ -241,10 +238,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 1025.0, 125.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 3"
                 }
             },
@@ -256,10 +249,6 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 940.0, 125.0, 28.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "in 2"
                 }
             },
@@ -271,6 +260,10 @@
                     "numoutlets": 1,
                     "outlettype": [ "" ],
                     "patching_rect": [ 855.0, 125.0, 28.0, 22.0 ],
+                    "saved_object_attributes": {
+                        "attr_comment": "",
+                        "c": ""
+                    },
                     "text": "in 1"
                 }
             },
@@ -316,10 +309,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 852.0, 629.0, 35.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "out 2"
                 }
             },
@@ -433,10 +422,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 1809.0, 1081.0, 35.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "out 1"
                 }
             },
@@ -448,10 +433,6 @@
                     "numinlets": 1,
                     "numoutlets": 0,
                     "patching_rect": [ 770.0, 1225.0, 116.0, 22.0 ],
-                    "saved_object_attributes": {
-                        "attr_comment": "",
-                        "c": ""
-                    },
                     "text": "mc.out~ @chans 12"
                 }
             },
