@@ -9,9 +9,31 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1863.0, 1062.0 ],
+        "rect": [ 34.0, 87.0, 1704.0, 1062.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-567",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 834.0, 4686.0, 212.0, 22.0 ],
+                    "text": "/UI/player3/juicy/default/visible/value 0"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-27",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 834.0, 4876.0, 202.0, 22.0 ],
+                    "text": "/UI/player3/juicy/grow/visible/value 0"
+                }
+            },
             {
                 "box": {
                     "id": "obj-560",
@@ -28,8 +50,8 @@
                     "numinlets": 2,
                     "numoutlets": 1,
                     "outlettype": [ "" ],
-                    "patching_rect": [ 834.0, 4767.0, 413.0, 22.0 ],
-                    "text": "/UI/player3/juicy/grow/text/value YEAH MOTHER FUCKER I AM WRAPPED"
+                    "patching_rect": [ 834.0, 4767.0, 317.0, 22.0 ],
+                    "text": "/UI/player3/juicy/grow/text/value SPOOKY KEY CHANGE!"
                 }
             },
             {
@@ -9049,7 +9071,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 796.0, 100.0, 190.0, 60.0 ],
                     "text": "ONLINE",
-                    "textcolor": [ 0.0, 1.0, 0.0, 1.0 ]
+                    "textcolor": [ 1.0, 0.0, 0.0, 1.0 ]
                 }
             },
             {
@@ -13283,6 +13305,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-27", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-278", 0 ],
                     "source": [ "obj-274", 1 ]
                 }
@@ -15035,6 +15063,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-14", 0 ],
+                    "source": [ "obj-567", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-570", 0 ],
                     "source": [ "obj-568", 0 ]
                 }
@@ -15677,6 +15711,14 @@
             "obj-1.4::obj-27": [ "mc.live.gain~[13]", "footsteps", 0 ],
             "obj-1.4::obj-36": [ "mc.live.gain~[7]", "full player", 0 ],
             "obj-536": [ "live.toggle", "live.toggle", 0 ],
+            "parameterbanks": {
+                "0": {
+                    "index": 0,
+                    "name": "",
+                    "parameters": [ "-", "-", "-", "-", "-", "-", "-", "-" ],
+                    "buttons": [ "-", "-", "-", "-", "-", "-", "-", "-" ]
+                }
+            },
             "parameter_overrides": {
                 "obj-1.1::obj-16": {
                     "parameter_longname": "mc.live.gain~[8]"
