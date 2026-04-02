@@ -1,5 +1,6 @@
 CUE 0 INIT
 
+liveSync stop
 clock 0
 liveSync loop 0
 liveSync cue INIT
