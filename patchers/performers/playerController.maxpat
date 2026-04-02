@@ -173,7 +173,6 @@
                         ]
                     },
                     "patching_rect": [ 59.03614675998688, 666.2831305265427, 105.0, 22.0 ],
-                    "presentation_linecount": 2,
                     "text": "p camera_change"
                 }
             },
@@ -9973,7 +9972,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 258.0, 216.0, 1226.0, 848.0 ],
+                        "rect": [ 255.0, 101.0, 1226.0, 887.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -10426,6 +10425,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-15", 0 ],
+                                    "disabled": 1,
                                     "source": [ "obj-11", 0 ]
                                 }
                             },
@@ -10551,6 +10551,7 @@
                             {
                                 "patchline": {
                                     "destination": [ "obj-10", 0 ],
+                                    "disabled": 1,
                                     "midpoints": [ 704.5, 825.0, 341.5, 825.0 ],
                                     "source": [ "obj-20", 0 ]
                                 }
@@ -15930,6 +15931,7 @@
                 }
             }
         ],
-        "autosave": 0
+        "autosave": 0,
+        "oscreceiveudpport": 0
     }
 }
