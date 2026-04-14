@@ -3076,14 +3076,13 @@
             {
                 "box": {
                     "id": "obj-318",
-                    "linecount": 3,
                     "maxclass": "textedit",
                     "numinlets": 1,
                     "numoutlets": 4,
                     "outlettype": [ "", "int", "", "" ],
                     "parameter_enable": 0,
                     "patching_rect": [ 3219.0, 1302.0, 100.0, 50.0 ],
-                    "text": "BLTH Bluetooth-Incoming-Port",
+                    "text": "BLTH",
                     "varname": "textedit[2]"
                 }
             },
@@ -3096,7 +3095,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 3183.0, 1245.0, 91.0, 22.0 ],
-                    "restore": [ "BLTH Bluetooth-Incoming-Port" ],
+                    "restore": [ "BLTH" ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -3913,8 +3912,8 @@
                                     "numinlets": 1,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 183.6134374141693, 137.815123796463, 91.0, 22.0 ],
-                                    "text": "sprintf player%i"
+                                    "patching_rect": [ 183.6134374141693, 137.815123796463, 94.0, 22.0 ],
+                                    "text": "sprintf /player%i"
                                 }
                             },
                             {
