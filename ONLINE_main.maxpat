@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 87.0, 1980.0, 1062.0 ],
+        "rect": [ 34.0, 87.0, 1620.0, 1062.0 ],
         "openinpresentation": 1,
         "boxes": [
             {
@@ -4488,7 +4488,7 @@
                     "patching_rect": [ 2473.0, 3337.0, 428.0, 51.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1169.0000001266599, 212.0, 169.0, 51.0 ],
-                    "text": "09:14",
+                    "text": "00:03",
                     "textjustification": 1
                 }
             },
@@ -5052,7 +5052,7 @@
                     "patching_rect": [ 3399.5, 741.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 719.0, 262.0, 357.0, 29.0 ],
-                    "text": "TENOR-DIES-1",
+                    "text": "ENTRANCE",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -5108,7 +5108,7 @@
                     "patching_rect": [ 3329.0, 844.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 217.0, 356.0, 40.0 ],
-                    "text": "FIND-SOPRANO-2",
+                    "text": "INIT",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -7201,7 +7201,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 865.0, 3009.0, 146.0, 22.0 ],
-                    "restore": [ 12.0 ],
+                    "restore": [ 6.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7397,7 +7397,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 566.0, 3010.0, 146.0, 22.0 ],
-                    "restore": [ 12.0 ],
+                    "restore": [ 6.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7641,7 +7641,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 54.0, 3308.0, 146.0, 22.0 ],
-                    "restore": [ 12.0 ],
+                    "restore": [ 6.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -7837,7 +7837,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 36.0, 3010.0, 146.0, 22.0 ],
-                    "restore": [ 12.0 ],
+                    "restore": [ 6.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -9168,7 +9168,7 @@
                     "presentation": 1,
                     "presentation_rect": [ 796.0, 100.0, 190.0, 60.0 ],
                     "text": "ONLINE",
-                    "textcolor": [ 1.0, 0.0, 0.0, 1.0 ]
+                    "textcolor": [ 0.0, 1.0, 0.0, 1.0 ]
                 }
             },
             {
