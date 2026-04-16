@@ -57,6 +57,8 @@ liveSync play
 
 CUE 3 SOPRANO-JOIN
 
+
+liveSync stop
 liveSync cue Start. Soprano Join Video.
 
 liveSync play
@@ -68,16 +70,21 @@ liveSync play
 
 CUE 5 FIND-SOPRANO-1
 
+liveSync stop
 liveSync cue UI set
 liveSync play
 
 CUE 6 TENOR-DIES-1
 
+
+liveSync stop
 liveSync cue Tenor dies
 liveSync play
 
 CUE 7 FIND-SOPRANO-2
 
+
+liveSync stop
 liveSync cue UI set 2
 liveSync play
 
