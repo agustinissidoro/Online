@@ -9,9 +9,68 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 34.0, 95.0, 1444.0, 853.0 ],
+        "rect": [ 34.0, 92.0, 1852.0, 954.0 ],
         "openinpresentation": 1,
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-656",
+                    "maxclass": "message",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 280.0, 706.0, 45.0, 22.0 ],
+                    "text": "open 3"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-659",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 1236.0, 53.0, 150.0, 20.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 1206.0, 28.00000125169754, 65.0, 20.0 ],
+                    "text": "debug udp"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-650",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 206.0, 272.258816242218, 94.0, 22.0 ],
+                    "text": "print udpreceive"
+                }
+            },
+            {
+                "box": {
+                    "bgcolor": [ 0.2, 0.2, 0.2, 0.0 ],
+                    "id": "obj-644",
+                    "maxclass": "toggle",
+                    "numinlets": 1,
+                    "numoutlets": 1,
+                    "outlettype": [ "int" ],
+                    "parameter_enable": 0,
+                    "patching_rect": [ 206.0, 122.5, 24.0, 24.0 ],
+                    "presentation": 1,
+                    "presentation_rect": [ 1206.0, 48.54061770439148, 24.0, 24.0 ],
+                    "varname": "toggle[4]"
+                }
+            },
+            {
+                "box": {
+                    "id": "obj-640",
+                    "maxclass": "newobj",
+                    "numinlets": 2,
+                    "numoutlets": 1,
+                    "outlettype": [ "" ],
+                    "patching_rect": [ 206.0, 205.0, 32.0, 22.0 ],
+                    "text": "gate"
+                }
+            },
             {
                 "box": {
                     "fontsize": 8.0,
@@ -5169,7 +5228,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-378",
-                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: Volt 4", ",", "CB272 (1)", ",", "CB272 (2)", ",", "Volt 4", ",", "BlackHole 16ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "ZoomAudioDevice" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5265,7 +5324,7 @@
                     "patching_rect": [ 2473.0, 3337.0, 428.0, 51.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 1169.0000001266599, 212.0, 169.0, 51.0 ],
-                    "text": "01:18",
+                    "text": "00:00",
                     "textjustification": 1
                 }
             },
@@ -5645,7 +5704,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-345",
-                    "items": [ "INIT", ",", "Soprano enter", ",", "Start. Soprano Join Video.", ",", "Soprano in room", ",", "Soprano to desk", ",", "Soprano to piano", ",", "Soprano to door", ",", "What is this shit?", ",", "Door 2", ",", "Hello...?", ",", "Tenor intro video", ",", "Tenor in room", ",", "Tenor to radio", ",", "Soprano to mic; Tenor out", ",", "UI set", ",", "Find soprano1", ",", "Perfect Pitch!", ",", "Modulation Pro!", ",", "Sustain Master!", ",", "Whole Tone", ",", "Where are you LadySop?", ",", "I can't hear you LadySop", ",", "Impressive endurance!", ",", "Tenor opens door and dies", ",", "Tenor dies UI", ",", "LadySop and Tenor Respawned", ",", "UI set 2", ",", "Find Soprano 02", ",", "Not a happy melody", ",", "Try again1", ",", "Who am I waiting for in here?", ",", "Too much silence1", ",", "Try again2", ",", "I'm really getting tired", ",", "Don't be afraid and try", ",", "All right, that's it", ",", "I'm done", ",", "Too much silence2", ",", "Alto enters", ",", "Bass enters", ",", "Try again3", ",", "Out of tune!", ",", "Tenor Opens Door 2", ",", "Alto Joins", ",", "Bass Joins", ",", "Alto in room", ",", "Bass in room", ",", "Alto to Radio", ",", "Endless Instructions", ",", "UI Endless", ",", "Endless Runner Game", ",", "WhiteCorridor1", ",", "Dungeon2", ",", "WhiteCorridor2", ",", "Dungeon3", ",", "WhiteCorridor3", ",", "Dungeon4", ",", "WhiteCorridor4", ",", "Dungeon5", ",", "AyBass1", ",", "AyAltGwrl1", ",", "AvatarsSpeaking", ",", "NiceWords1", ",", "BeginSinging", ",", "Enter Soprano", ",", "AyAltGwrl2", ",", "AvatarsSpeaking2", ",", "AyAltGwrl3", ",", "Fall - All Red" ],
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -5829,7 +5888,6 @@
                     "patching_rect": [ 3399.5, 741.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 719.0, 262.0, 357.0, 29.0 ],
-                    "text": "ENTRANCE",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -5885,7 +5943,6 @@
                     "patching_rect": [ 3329.0, 844.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 720.0, 217.0, 356.0, 40.0 ],
-                    "text": "INIT",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -6005,7 +6062,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 116.0, 217.0, 64.0, 22.0 ],
-                                    "text": "107"
+                                    "text": "127"
                                 }
                             },
                             {
@@ -6513,7 +6570,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2592.0, 4317.0, 130.0, 22.0 ],
-                    "restore": [ 3 ],
+                    "restore": [ 5 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6567,7 +6624,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2315.0, 3870.0, 82.0, 22.0 ],
-                    "restore": [ 1 ],
+                    "restore": [ 3 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -6598,7 +6655,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-376",
-                    "items": [ "None", ",", "System Device: Micro MacBook Pro", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "Micro MacBook Pro", ",", "Micro de « iPhone de Agustín Issidoro »", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: Micro MacBook Pro", ",", "Volt 4", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "Micro MacBook Pro", ",", "Micro de « iPhone de Agustín Issidoro »", ",", "ZoomAudioDevice" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -6791,7 +6848,7 @@
                     "bgfillcolor_type": "color",
                     "blanksym": "",
                     "id": "obj-364",
-                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
+                    "items": [ 8000, ",", 16000, ",", 44100, ",", 48000, ",", 88200, ",", 96000, ",", 176400, ",", 192000, ",", 352800, ",", 384000, ",", 705600, ",", 768000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -14565,6 +14622,13 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-640", 1 ],
+                    "order": 2,
+                    "source": [ "obj-3", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-7", 0 ],
                     "order": 1,
                     "source": [ "obj-3", 0 ]
@@ -16636,6 +16700,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-650", 0 ],
+                    "source": [ "obj-640", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-639", 0 ],
                     "source": [ "obj-641", 0 ]
                 }
@@ -16654,6 +16724,12 @@
             },
             {
                 "patchline": {
+                    "destination": [ "obj-640", 0 ],
+                    "source": [ "obj-644", 0 ]
+                }
+            },
+            {
+                "patchline": {
                     "destination": [ "obj-643", 0 ],
                     "source": [ "obj-645", 0 ]
                 }
@@ -16668,6 +16744,12 @@
                 "patchline": {
                     "destination": [ "obj-648", 0 ],
                     "source": [ "obj-647", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "source": [ "obj-656", 0 ]
                 }
             },
             {
