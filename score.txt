@@ -1,5 +1,6 @@
 CUE 0 INIT
 
+
 liveSync stop
 clock 0
 liveSync loop 0
@@ -87,5 +88,9 @@ CUE 7 FIND-SOPRANO-2
 liveSync stop
 liveSync cue UI set 2
 liveSync play
+
+CUE 8 PEPe
+
+
 
 

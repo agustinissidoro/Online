@@ -4,13 +4,23 @@
         "appversion": {
             "major": 9,
             "minor": 1,
-            "revision": 0,
+            "revision": 4,
             "architecture": "x64",
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 70.0, 87.0, 1562.0, 1061.0 ],
+        "rect": [ 34.0, 95.0, 1444.0, 853.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-14",
+                    "maxclass": "newobj",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 722.0, 395.0, 116.0, 22.0 ],
+                    "text": "print to_compositing"
+                }
+            },
             {
                 "box": {
                     "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
