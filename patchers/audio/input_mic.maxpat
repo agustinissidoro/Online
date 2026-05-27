@@ -9,8 +9,17 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 134.0, 95.0, 1314.0, 853.0 ],
+        "rect": [ 99.0, 95.0, 1314.0, 853.0 ],
         "boxes": [
+            {
+                "box": {
+                    "id": "obj-5",
+                    "maxclass": "comment",
+                    "numinlets": 1,
+                    "numoutlets": 0,
+                    "patching_rect": [ 130.0, 598.0, 150.0, 20.0 ]
+                }
+            },
             {
                 "box": {
                     "id": "obj-10",
@@ -86,7 +95,6 @@
                         },
                         "classnamespace": "box",
                         "rect": [ 121.0, 95.0, 1248.0, 853.0 ],
-                        "visible": 1,
                         "boxes": [
                             {
                                 "box": {
@@ -106,7 +114,6 @@
                                         },
                                         "classnamespace": "box",
                                         "rect": [ 34.0, 95.0, 1444.0, 853.0 ],
-                                        "visible": 1,
                                         "boxes": [
                                             {
                                                 "box": {

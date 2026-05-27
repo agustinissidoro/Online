@@ -14,9 +14,6 @@ unreal /UI/player2/video/display/value 0
 unreal /UI/player3/video/display/value 0
 unreal /UI/player4/video/display/value 0
 
-unreal /game/player1/relocate/value Soprano_0
-unreal /game/player3/relocate/value Tenor_0
-
 player_controller_test bang
 
 
