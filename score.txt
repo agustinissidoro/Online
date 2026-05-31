@@ -1,5 +1,4 @@
-CUE 0 INIT
-
+CUE 0 INIT-NO-SOUND
 
 liveSync stop
 clock 0
@@ -38,32 +37,35 @@ unreal /UI/player4/video/load/value waitingvideo_bass
 unreal /UI/player4/video/display/value 1
 unreal /UI/player4/video/play/value 0 0
 
-audio /audio/player1/2D/play video_intro.wav 1 1 0 0 -12 0 0
-audio /audio/player2/2D/play video_intro.wav 1 1 0 0 -12 0 500
-audio /audio/player3/2D/play video_intro.wav 1 1 0 0 -12 0 1000
-audio /audio/player4/2D/play video_intro.wav 1 1 0 0 -12 0 1500
+/// audio /audio/player1/2D/play video_intro.wav 1 1 0 0 -12 0 0
+/// audio /audio/player2/2D/play video_intro.wav 1 1 0 0 -12 0 500
+/// audio /audio/player3/2D/play video_intro.wav 1 1 0 0 -12 0 1000
+/// audio /audio/player4/2D/play video_intro.wav 1 1 0 0 -12 0 1500
+
+audio /audio/simple_player/play intro_supersound.wav 1 1 0 100 0 1 0
+
+liveSync cue INIT
 
 
-liveSync cue Soprano enter
+CUE 2 SOPRANO-STAGE
 
-CUE 2 SOPRANO-ENTER
-
+audio /audio/simple_player/play intro_supersound.wav 0 1 0 20000 0 1 0
 
 clock 0
 clock 1
+liveSync cue Soprano enter
 liveSync play
 
-CUE 3 SOPRANO-JOIN
+CUE 3 SOPRANO-JOIN-GAME
 
-
-liveSync stop
-liveSync cue Start. Soprano Join Video.
+///liveSync stop
+liveSync cue Cue soprano join game
 
 liveSync play
 
-CUE 4 TENOR-JOIN
+CUE 4 TENOR-JOIN-GAME
 
-liveSync cue Tenor intro video
+liveSync cue Count in tenor join
 liveSync play
 
 CUE 5 FIND-SOPRANO-1
@@ -72,22 +74,88 @@ liveSync stop
 liveSync cue UI set
 liveSync play
 
-CUE 6 TENOR-DIES-1
+CUE 6 FIRST-DEATH
 
 
 liveSync stop
-liveSync cue Tenor dies
+liveSync cue First Death
 liveSync play
 
-CUE 7 FIND-SOPRANO-2
+CUE 7 RESPAWN1
+
+liveSync cue Respawn1
+liveSync play
+
+
+CUE 8 FIND-SOPRANO-2
 
 
 liveSync stop
 liveSync cue UI set 2
 liveSync play
 
-CUE 8 PEPe
+CUE 9 TENOR-LOCKED
 
+unreal /game/cue/name tenor_locked
+
+CUE 10 ENDLESS-INSTRUCTIONS
+
+liveSync cue Endless Instructions
+liveSync play
+
+CUE 11 SCREENS-FADE-OUT
+
+unreal /game/cue/name fade_to_black
+
+CUE 12 VOCAL-FRY-FADE-OUT
+
+liveSync cue Cue fade out impro
+liveSync play
+
+CUE 13 VOCAL-FRY-END
+
+liveSync cue Out of impro
+liveSync play
+
+CUE 14 LIVES-VIDEO
+
+liveSync cue Lives video
+liveSync play
+
+CUE 15 RESPAWN3
+
+liveSync cue Cue respawn3
+liveSync play
+
+CUE 16 FINAL-MAZE
+
+liveSync cue Cue final maze
+liveSync play
+
+CUE 17 GAMEOVER
+
+liveSync cue END
+liveSync play
+
+CUE 18 JOIN-SCREEN
+
+liveSync stop
+
+clock 0
+
+unreal /UI/player1/video/load/value waitingvideo_soprano
+unreal /UI/player1/video/play/value 0 0
+
+unreal /UI/player2/video/load/value waitingvideo_alto
+unreal /UI/player2/video/play/value 0 0
+
+unreal /UI/player3/video/load/value waitingvideo_tenor
+unreal /UI/player3/video/play/value 0 0
+
+unreal /UI/player4/video/load/value waitingvideo_bass
+unreal /UI/player4/video/play/value 0 0
+
+audio /audio/simple_player/play intro_supersound.wav 1 1 0 100 0 1 50
 
 
 

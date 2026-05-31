@@ -11,7 +11,7 @@
                     "score_size": [ 0.647 ],
                     "text_pos_x": [ 1.304 ],
                     "text_pos_y": [ 0.636 ],
-                    "mouse_sensibility": [ 0.04 ],
+                    "mouse_sensibility": [ 0.08 ],
                     "video_pos_x": [ 1340 ],
                     "video_pos_y": [ -360 ],
                     "video_scale": [ 0.4 ],
@@ -23,9 +23,10 @@
                     "headpose_pitch": [ 0.0 ],
                     "bar_pos_x": [ 0.84 ],
                     "bar_pos_y": [ 0.58 ],
-                    "rate": [ 60 ],
+                    "rate": [ 30 ],
                     "light_msg_delay_enable": [ 1 ],
-                    "mic_mix_ip": [ "192.168.100.2 9000" ]
+                    "mic_mix_ip": [ "192.168.100.2 9000" ],
+                    "cut_mic_beep": []
                 }
             }
         }
