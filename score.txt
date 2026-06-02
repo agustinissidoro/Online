@@ -42,14 +42,15 @@ unreal /UI/player4/video/play/value 0 0
 /// audio /audio/player3/2D/play video_intro.wav 1 1 0 0 -12 0 1000
 /// audio /audio/player4/2D/play video_intro.wav 1 1 0 0 -12 0 1500
 
-audio /audio/simple_player/play intro_supersound.wav 1 1 0 100 0 1 0
+audio /audio/simple_player/play intro_supersound.wav 1 1 0 100 -18 1 0
 
 liveSync cue INIT
 
 
 CUE 2 SOPRANO-STAGE
 
-audio /audio/simple_player/play intro_supersound.wav 0 1 0 20000 0 1 0
+audio /audio/simple_player/play intro_supersound.wav 0 1 0 5000 0 1 0
+audio /audio/simple_player/play intro_supersound_fade_out.wav 1 0 0 2500 -18 1 0
 
 clock 0
 clock 1
@@ -98,46 +99,53 @@ CUE 9 TENOR-LOCKED
 
 unreal /game/cue/name tenor_locked
 
-CUE 10 ENDLESS-INSTRUCTIONS
+CUE 10 ALTO-JOINS
+
+liveSync stop
+
+liveSync cue Cue alto bass join game
+liveSync play
+
+CUE 11 ENDLESS-INSTRUCTIONS
 
 liveSync cue Endless Instructions
 liveSync play
 
-CUE 11 SCREENS-FADE-OUT
+CUE 12 SCREENS-FADE-OUT
 
 unreal /game/cue/name fade_to_black
 
-CUE 12 VOCAL-FRY-FADE-OUT
+CUE 13 VOCAL-FRY-FADE-OUT
 
 liveSync cue Cue fade out impro
 liveSync play
 
-CUE 13 VOCAL-FRY-END
+CUE 14 VOCAL-FRY-END
 
 liveSync cue Out of impro
 liveSync play
 
-CUE 14 LIVES-VIDEO
+CUE 15 LIVES-VIDEO
 
 liveSync cue Lives video
 liveSync play
 
-CUE 15 RESPAWN3
+CUE 16 RESPAWN3
 
 liveSync cue Cue respawn3
 liveSync play
 
-CUE 16 FINAL-MAZE
+CUE 17 FINAL-MAZE
 
 liveSync cue Cue final maze
 liveSync play
 
-CUE 17 GAMEOVER
+CUE 18 GAMEOVER
 
 liveSync cue END
 liveSync play
 
-CUE 18 JOIN-SCREEN
+CUE 19 JOIN-SCREEN
 
 liveSync stop
 
