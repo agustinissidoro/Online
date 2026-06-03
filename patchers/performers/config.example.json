@@ -26,7 +26,7 @@
                     "rate": [ 30 ],
                     "light_msg_delay_enable": [ 1 ],
                     "mic_mix_ip": [ "192.168.100.2 9000" ],
-                    "cut_mic_beep": []
+                    "cut_mic_beep": [ 1 ]
                 }
             }
         }
