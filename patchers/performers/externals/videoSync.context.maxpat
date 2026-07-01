@@ -13,16 +13,6 @@
         "boxes": [
             {
                 "box": {
-                    "id": "obj-14",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 722.0, 395.0, 116.0, 22.0 ],
-                    "text": "print to_compositing"
-                }
-            },
-            {
-                "box": {
                     "color": [ 0.113725490196078, 1.0, 0.0, 1.0 ],
                     "id": "obj-11",
                     "maxclass": "newobj",
@@ -30,16 +20,6 @@
                     "numoutlets": 0,
                     "patching_rect": [ 242.0, 323.0, 129.0, 22.0 ],
                     "text": "s sync.ProjectionMode"
-                }
-            },
-            {
-                "box": {
-                    "id": "obj-17",
-                    "maxclass": "newobj",
-                    "numinlets": 1,
-                    "numoutlets": 0,
-                    "patching_rect": [ 960.0, 341.0, 91.0, 22.0 ],
-                    "text": "print videoSync"
                 }
             },
             {
@@ -160,8 +140,8 @@
                     "numinlets": 1,
                     "numoutlets": 2,
                     "outlettype": [ "", "" ],
-                    "patching_rect": [ 314.0596103668213, 92.5, 665.0, 35.0 ],
-                    "text": "patcherargs @context NONE @enable 0 @visible 0 @size 640 480 @fps @erase_color 0. 0. 0. 1 @preserve_aspect 0 @floating 0 @displaylink 0 @projectionMode 0 @fsaa 1 @fsmenubar 0 @border 1"
+                    "patching_rect": [ 314.0, 92.5, 664.931116104126, 35.0 ],
+                    "text": "patcherargs @enable 0 @visible 0 @size 640 480 @fps @erase_color 0. 0. 0. 1 @preserve_aspect 0 @floating 0 @displaylink 0 @projectionMode 0 @fsaa 1 @fsmenubar 0 @border 1"
                 }
             },
             {
@@ -255,6 +235,13 @@
                 "patchline": {
                     "destination": [ "obj-3", 0 ],
                     "source": [ "obj-13", 0 ]
+                }
+            },
+            {
+                "patchline": {
+                    "destination": [ "obj-1", 0 ],
+                    "midpoints": [ 585.5092067718506, 462.0, 321.5, 462.0 ],
+                    "source": [ "obj-15", 0 ]
                 }
             },
             {

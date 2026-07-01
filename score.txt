@@ -8,44 +8,78 @@ unreal /game/cue/name INIT
 lights /light reset
 audio /audio/all stop
 
-unreal /UI/player1/video/display/value 0
-unreal /UI/player2/video/display/value 0
-unreal /UI/player3/video/display/value 0
-unreal /UI/player4/video/display/value 0
+
+lights_from_unreal /spots/player1/color white
+lights_from_unreal /spots/player2/color white
+lights_from_unreal /spots/player3/color white
+lights_from_unreal /spots/player4/color white
+
+lights_from_unreal /spots/player1/dim/duche 100
+lights_from_unreal /spots/player2/dim/duche 100
+lights_from_unreal /spots/player3/dim/duche 100
+lights_from_unreal /spots/player4/dim/duche 100
+
+
+audio /audio/player1/footstep/gainout 0.
+audio /audio/player2/footstep/gainout 0.
+audio /audio/player3/footstep/gainout 0.
+audio /audio/player4/footstep/gainout 0.
 
 player_controller_test bang
 
+to_all_player_controller /player_controller/player2/cover/enable 1
+to_all_player_controller /player_controller/player2/cover/black
+
+
+/// SET VIGNETTE FOR MFS, TAKE OUT FOR LATER!!!
+
+unreal /player_controller/player1/camera/postprocessing/vignette/enable/value 1
+unreal /player_controller/player1/camera/postprocessing/depth/enable/value 1
 
 CUE 1 ENTRANCE
 
 clock 0
 clock 1
 
-unreal /UI/player1/video/load/value waitingvideo_soprano
+unreal /UI/player1/video/display/value 0
+unreal /UI/player2/video/display/value 0
+unreal /UI/player3/video/display/value 0
+unreal /UI/player4/video/display/value 0
+
+/// TRANSPARENT VIDEOS FOR MFS HFMT
+
+unreal /UI/player1/video/load/value waitingSoprano_transparent
+unreal /UI/player2/video/load/value waitingAlto_transparent
+unreal /UI/player3/video/load/value waitingTenor_transparent
+unreal /UI/player4/video/load/value waitingBass_transparent
+
+/// UNCOMMENT FOR OTHER PERFORMANCES!
+
+///unreal /UI/player1/video/load/value waitingSoprano_seemless
+///unreal /UI/player2/video/load/value waitingAlto_seemless
+///unreal /UI/player3/video/load/value waitingTenor_seemless
+///unreal /UI/player4/video/load/value waitingBass_seemless
+
 unreal /UI/player1/video/display/value 1
 unreal /UI/player1/video/play/value 0 0
 
-unreal /UI/player2/video/load/value waitingvideo_alto
 unreal /UI/player2/video/display/value 1
 unreal /UI/player2/video/play/value 0 0
 
-unreal /UI/player3/video/load/value waitingvideo_tenor
 unreal /UI/player3/video/display/value 1
 unreal /UI/player3/video/play/value 0 0
 
-unreal /UI/player4/video/load/value waitingvideo_bass
 unreal /UI/player4/video/display/value 1
 unreal /UI/player4/video/play/value 0 0
 
-/// audio /audio/player1/2D/play video_intro.wav 1 1 0 0 -12 0 0
-/// audio /audio/player2/2D/play video_intro.wav 1 1 0 0 -12 0 500
-/// audio /audio/player3/2D/play video_intro.wav 1 1 0 0 -12 0 1000
-/// audio /audio/player4/2D/play video_intro.wav 1 1 0 0 -12 0 1500
 
 audio /audio/simple_player/play intro_supersound.wav 1 1 0 100 -18 1 0
 
 liveSync cue INIT
 
+/// HIDE SCREEN OF ALTO!!
+
+///to_all_player_controller /player_controller/player2/cover/video
 
 CUE 2 SOPRANO-STAGE
 
@@ -64,106 +98,113 @@ liveSync cue Cue soprano join game
 
 liveSync play
 
-CUE 4 TENOR-JOIN-GAME
 
-liveSync cue Count in tenor join
-liveSync play
-
-CUE 5 FIND-SOPRANO-1
-
-liveSync stop
-liveSync cue UI set
-liveSync play
-
-CUE 6 FIRST-DEATH
-
+CUE 4 FIRST-DEATH
 
 liveSync stop
 liveSync cue First Death
 liveSync play
 
-CUE 7 RESPAWN1
+CUE 5 RESPAWN1
 
-liveSync cue Respawn1
+liveSync cue Cue to Respawn1
 liveSync play
 
-
-CUE 8 FIND-SOPRANO-2
-
-
-liveSync stop
-liveSync cue UI set 2
-liveSync play
-
-CUE 9 TENOR-LOCKED
+CUE 6 TENOR-LOCKED
 
 unreal /game/cue/name tenor_locked
 
-CUE 10 ALTO-JOINS
+CUE 7 ALTO-BASS-JOIN
 
 liveSync stop
 
 liveSync cue Cue alto bass join game
 liveSync play
 
-CUE 11 ENDLESS-INSTRUCTIONS
+CUE 8 ENDLESS-INSTRUCTIONS
 
 liveSync cue Endless Instructions
 liveSync play
 
-CUE 12 SCREENS-FADE-OUT
+CUE 9 SCREENS-FADE-OUT
 
 unreal /game/cue/name fade_to_black
 
-CUE 13 VOCAL-FRY-FADE-OUT
-
-liveSync cue Cue fade out impro
-liveSync play
-
-CUE 14 VOCAL-FRY-END
-
-liveSync cue Out of impro
-liveSync play
-
-CUE 15 LIVES-VIDEO
-
-liveSync cue Lives video
-liveSync play
-
-CUE 16 RESPAWN3
+CUE 10 RESPAWN3
 
 liveSync cue Cue respawn3
 liveSync play
 
-CUE 17 FINAL-MAZE
+CUE 11 FINAL-MAZE
 
 liveSync cue Cue final maze
 liveSync play
 
-CUE 18 GAMEOVER
+CUE 12 BASS-DEATH-GAMEOVER
 
-liveSync cue END
+liveSync cue Bass Death
 liveSync play
 
-CUE 19 JOIN-SCREEN
+CUE 13 BLACK
 
-liveSync stop
+unreal /game/cue/name black_final
 
-clock 0
+unreal /UI/player1/video/display/value 0
+unreal /UI/player2/video/display/value 0
+unreal /UI/player3/video/display/value 0
+unreal /UI/player4/video/display/value 0
 
-unreal /UI/player1/video/load/value waitingvideo_soprano
+
+audio /audio/player1/2D/play soprano_gameover.wav 0 0 0 0 0 0 0
+audio /audio/player2/2D/play alto_gameover.wav 0 0 0 0 0 0 0
+audio /audio/player3/2D/play tenor_gameover.wav 0 0 0 0 0 0 0
+audio /audio/player4/2D/play bass_gameover.wav 0 0 0 0 0 0 0
+
+/// TRANSPARENT VIDEOS FOR MFS IN HFMT!!
+
+unreal /UI/player1/video/load/value waiting_transparent_all
+unreal /UI/player2/video/load/value waiting_transparent_all
+unreal /UI/player3/video/load/value waiting_transparent_all
+unreal /UI/player4/video/load/value waiting_transparent_all
+
+/// UNCOMMENT FOR OTHER PERFORMANCE!!!!
+
+///unreal /UI/player1/video/load/value waitingvideo_soprano
+///unreal /UI/player2/video/load/value waitingvideo_alto
+///unreal /UI/player3/video/load/value waitingvideo_tenor
+///unreal /UI/player4/video/load/value waitingvideo_bass
+
+
+CUE 14 JOIN-SCREEN
+
 unreal /UI/player1/video/play/value 0 0
-
-unreal /UI/player2/video/load/value waitingvideo_alto
 unreal /UI/player2/video/play/value 0 0
-
-unreal /UI/player3/video/load/value waitingvideo_tenor
 unreal /UI/player3/video/play/value 0 0
-
-unreal /UI/player4/video/load/value waitingvideo_bass
 unreal /UI/player4/video/play/value 0 0
 
-audio /audio/simple_player/play intro_supersound.wav 1 1 0 100 0 1 50
+unreal /UI/player1/video/display/value 1
+unreal /UI/player2/video/display/value 1
+unreal /UI/player3/video/display/value 1
+unreal /UI/player4/video/display/value 1
+
+audio /audio/simple_player/play intro_supersound.wav 1 1 0 0 -18 1 0
+
+lights_from_unreal /lights/spots/player4/color red
+lights_from_unreal /lights/spots/player3/color red
+lights_from_unreal /lights/spots/player2/color red
+lights_from_unreal /lights/spots/player1/color red
+
+lights_from_unreal /lights/spots/player1/dim 100
+lights_from_unreal /lights/spots/player2/dim 100
+lights_from_unreal /lights/spots/player3/dim 100
+lights_from_unreal /lights/spots/player4/dim 100
+
+CUE 15 END
+
+liveSync stop
+clock 0
+
+
 
 
 
