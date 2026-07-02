@@ -84,7 +84,7 @@
                     "profiler4_green_r[1]": [ 0.0 ],
                     "profiler4_green_g[1]": [ 1.0 ],
                     "profiler4_green_b[1]": [ 0.0 ],
-                    "beep_delay": [ 75 ],
+                    "beep_delay": [ 0 ],
                     "profiler1_yellow_r": [ 1.0 ],
                     "profiler1_yellow_g": [ 0.9999050498008728 ],
                     "profiler1_yellow_b": [ 0.0 ],
