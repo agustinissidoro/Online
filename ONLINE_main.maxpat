@@ -9,7 +9,7 @@
             "modernui": 1
         },
         "classnamespace": "box",
-        "rect": [ 0.0, 61.0, 1228.0, 921.0 ],
+        "rect": [ 0.0, 61.0, 1512.0, 921.0 ],
         "bglocked": 1,
         "openinpresentation": 1,
         "toolbarvisible": 0,
@@ -704,7 +704,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 532.0, 469.0, 197.0, 35.0 ],
-                                    "text": ";\rlights /spots/player4/duche/dim 100"
+                                    "text": ";\rlights /spots/player4/dim/duche 100"
                                 }
                             },
                             {
@@ -955,7 +955,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 532.0, 469.0, 197.0, 35.0 ],
-                                    "text": ";\rlights /spots/player3/duche/dim 100"
+                                    "text": ";\rlights /spots/player3/dim/duche 100"
                                 }
                             },
                             {
@@ -1206,7 +1206,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 532.0, 515.0, 197.0, 35.0 ],
-                                    "text": ";\rlights /spots/player2/duche/dim 100"
+                                    "text": ";\rlights /spots/player2/dim/duche 100"
                                 }
                             },
                             {
@@ -1446,7 +1446,7 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 218.0, 168.0, 1122.0, 780.0 ],
+                        "rect": [ 204.0, 223.0, 1122.0, 780.0 ],
                         "boxes": [
                             {
                                 "box": {
@@ -1457,7 +1457,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 532.0, 469.0, 197.0, 35.0 ],
-                                    "text": ";\rlights /spots/player1/duche/dim 100"
+                                    "text": ";\rlights /spots/player1/dim/duche 100"
                                 }
                             },
                             {
@@ -8269,7 +8269,7 @@
                     "parameter_enable": 0,
                     "patching_rect": [ 4512.0, 4140.653025627136, 37.0, 17.0 ],
                     "presentation": 1,
-                    "presentation_rect": [ 1453.4663832187653, 989.405003786087, 19.577799946069717, 17.0 ],
+                    "presentation_rect": [ 1453.723393857479, 989.405003786087, 22.872340261936188, 17.0 ],
                     "triangle": 0,
                     "tricolor": [ 0.501961, 0.501961, 0.501961, 0.0 ]
                 }
@@ -8564,7 +8564,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 4414.0, 3992.6530256271362, 135.0, 22.0 ],
-                    "restore": [ 0.07508874216745066 ],
+                    "restore": [ 0.028577114260473917 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -11819,13 +11819,23 @@
                             "modernui": 1
                         },
                         "classnamespace": "box",
-                        "rect": [ 522.0, 251.0, 495.0, 399.0 ],
+                        "rect": [ 0.0, 61.0, 1512.0, 921.0 ],
                         "openinpresentation": 1,
                         "toolbarvisible": 0,
                         "enablehscroll": 0,
                         "enablevscroll": 0,
-                        "visible": 1,
                         "boxes": [
+                            {
+                                "box": {
+                                    "id": "obj-7",
+                                    "maxclass": "newobj",
+                                    "numinlets": 1,
+                                    "numoutlets": 1,
+                                    "outlettype": [ "" ],
+                                    "patching_rect": [ 29.0, 54.0, 54.0, 22.0 ],
+                                    "text": "deferlow"
+                                }
+                            },
                             {
                                 "box": {
                                     "id": "obj-5",
@@ -11833,7 +11843,7 @@
                                     "numinlets": 2,
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
-                                    "patching_rect": [ 29.0, 53.0, 61.0, 22.0 ],
+                                    "patching_rect": [ 149.0, 68.0, 61.0, 22.0 ],
                                     "text": "pipe 1000"
                                 }
                             },
@@ -12092,7 +12102,7 @@
                                     "maxclass": "outlet",
                                     "numinlets": 1,
                                     "numoutlets": 0,
-                                    "patching_rect": [ 292.0, 443.0, 30.0, 30.0 ]
+                                    "patching_rect": [ 292.0, 493.0, 30.0, 30.0 ]
                                 }
                             },
                             {
@@ -12144,14 +12154,14 @@
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-4", 0 ],
-                                    "source": [ "obj-5", 0 ]
+                                    "destination": [ "obj-7", 0 ],
+                                    "source": [ "obj-6", 0 ]
                                 }
                             },
                             {
                                 "patchline": {
-                                    "destination": [ "obj-5", 0 ],
-                                    "source": [ "obj-6", 0 ]
+                                    "destination": [ "obj-4", 0 ],
+                                    "source": [ "obj-7", 0 ]
                                 }
                             }
                         ]
@@ -14935,7 +14945,7 @@
                     "patching_rect": [ 1794.0, 4657.265004456043, 339.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 603.0, 355.0, 138.0, 40.0 ],
-                    "text": "bar 73",
+                    "text": "bar 0",
                     "textjustification": 1
                 }
             },
@@ -19609,7 +19619,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2287.7192764282227, 4094.7368030548096, 123.0, 22.0 ],
-                    "restore": [ 6 ],
+                    "restore": [ 0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -19640,7 +19650,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-378",
-                    "items": [ "None", ",", "System Device: Volt 4", ",", "Volt 4", ",", "BlackHole 16ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: Haut-parleurs MacBook Pro", ",", "BlackHole 16ch", ",", "Haut-parleurs MacBook Pro", ",", "NDI Audio", ",", "ZoomAudioDevice" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -20102,7 +20112,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-345",
-                    "items": [ "INIT", ",", "Soprano enter", ",", "Cue soprano join game", ",", "Start. Soprano Join Video.", ",", "Soprano in room", ",", "Soprano to desk", ",", "Soprano to piano", ",", "Soprano to door", ",", "What is this shit?", ",", "Door 2", ",", "Hello...?", ",", "Count in tenor join", ",", "Tenor intro video", ",", "Tenor in room", ",", "Tenor to radio", ",", "Soprano to mic; Tenor out", ",", "UI set", ",", "Find soprano1", ",", "Perfect Pitch!", ",", "Modulation Pro!", ",", "Sustain Master!", ",", "Whole Tone", ",", "Where are you LadySop?", ",", "I can't hear you LadySop", ",", "Impressive endurance!", ",", "Tenor opens door and dies", ",", "Anim End", ",", "First Death", ",", "Cue to Respawn1", ",", "Respawn1", ",", "UI set 2", ",", "Find Soprano 02", ",", "Not a happy melody", ",", "Try again1", ",", "Who am I waiting for in here?", ",", "Too much silence1", ",", "Try again2", ",", "I'm really getting tired", ",", "Don't be afraid and try", ",", "All right, that's it", ",", "I'm done", ",", "Too much silence2", ",", "Alto enters", ",", "Bass enters", ",", "Try again3", ",", "Out of tune!", ",", "Tenor Opens Door 2", ",", "Cue alto bass join game", ",", "Alto Joins", ",", "Bass Joins", ",", "Alto in room", ",", "Bass in room", ",", "Alto to Radio", ",", "Endless Instructions", ",", "Yes, I'm ready", ",", "Endless Runner Game", ",", "Dungeon2", ",", "WhiteCorridor2", ",", "Dungeon3", ",", "Dungeon4", ",", "WhiteCorridor4", ",", "Dungeon5", ",", "AyBass1", ",", "AyAltGwrl1", ",", "AvatarsSpeaking", ",", "NiceWords1", ",", "BeginSinging", ",", "Enter Soprano", ",", "AyAltGwrl2", ",", "Back to Rhythm", ",", "AvatarsSpeaking2", ",", "Nice Word2+Soprano", ",", "Start Singing", ",", "AyBass2+UI", ",", "BackToRhythm", ",", "AyAltGwrl3+UI", ",", "Freefall - All Red", ",", "N", ",", "O", ",", "All in impro", ",", "Fade out video", ",", "Cue fade out impro", ",", "Fade out impro", ",", "Cue out of impro", ",", "Lives video", ",", "Cue respawn3", ",", "Respawn3", ",", "Once upon a time", ",", "The house was made", ",", "And the three little piggies were happy", ",", "But in the woods lived a woolf", ",", "And he envied so much", ",", "The woolf knew he was the strongest", ",", "So he decided to throw down", ",", "I will blow and blow", ",", "Until all the polygons", ",", "Bass to clock", ",", "Cue final maze", ",", "Final Maze", ",", "No matter how hard the wolf", ",", "No matter how hard he blew", ",", "He would never break", ",", "So the three little piggies laughed", ",", "Laughs", ",", "And as the wolf got lost", ",", "The three little piggies sang", ",", "You cannot win this game", ",", "Out you cannot win this game", ",", "Bass to Final Door", ",", "Cue bass question", ",", "Bass Death", ",", "GameOver", ",", "Join screen" ],
+                    "items": "<empty>",
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -20282,7 +20292,6 @@
                     "patching_rect": [ 3780.0, 841.0, 225.0, 29.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 330.0, 245.0, 357.0, 29.0 ],
-                    "text": "ENTRANCE",
                     "textcolor": [ 0.35294117647058826, 0.35294117647058826, 0.35294117647058826, 1.0 ],
                     "textjustification": 1
                 }
@@ -20338,7 +20347,6 @@
                     "patching_rect": [ 3710.0, 944.0, 356.0, 40.0 ],
                     "presentation": 1,
                     "presentation_rect": [ 331.0, 200.0, 356.0, 40.0 ],
-                    "text": "INIT-NO-SOUND",
                     "textcolor": [ 0.5294117647058824, 0.5294117647058824, 0.5294117647058824, 1.0 ],
                     "textjustification": 1
                 }
@@ -20458,7 +20466,7 @@
                                     "numoutlets": 1,
                                     "outlettype": [ "" ],
                                     "patching_rect": [ 116.0, 217.0, 64.0, 22.0 ],
-                                    "text": "127"
+                                    "text": "110"
                                 }
                             },
                             {
@@ -20967,7 +20975,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 2273.6841888427734, 4254.385924339294, 130.0, 22.0 ],
-                    "restore": [ 5 ],
+                    "restore": [ 3 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -21021,7 +21029,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1996.4912090301514, 3807.0175075531006, 82.0, 22.0 ],
-                    "restore": [ 0 ],
+                    "restore": [ 1 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -21052,7 +21060,7 @@
                     "bgfillcolor_proportion": 0.5,
                     "bgfillcolor_type": "color",
                     "id": "obj-376",
-                    "items": [ "None", ",", "System Device: Micro MacBook Pro", ",", "Volt 4", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "Micro MacBook Pro", ",", "Micro de « iPhone de Agustín Issidoro »", ",", "ZoomAudioDevice" ],
+                    "items": [ "None", ",", "System Device: Micro MacBook Pro", ",", "NDI Audio", ",", "BlackHole 16ch", ",", "Micro MacBook Pro", ",", "Micro de « iPhone de Agustín Issidoro »", ",", "ZoomAudioDevice" ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -21245,7 +21253,7 @@
                     "bgfillcolor_type": "color",
                     "blanksym": "",
                     "id": "obj-364",
-                    "items": 48000,
+                    "items": [ 44100, ",", 48000, ",", 88200, ",", 96000 ],
                     "maxclass": "umenu",
                     "numinlets": 1,
                     "numoutlets": 3,
@@ -21624,7 +21632,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 1108.3635317087173, 1624.0, 102.0, 22.0 ],
-                    "restore": [ 108 ],
+                    "restore": [ 128 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -22385,7 +22393,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 858.0, 3152.0, 160.0, 22.0 ],
-                    "restore": [ -70.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -22601,7 +22609,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 558.0, 3152.0, 160.0, 22.0 ],
-                    "restore": [ -8.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0
@@ -22845,7 +22853,7 @@
                     "numoutlets": 3,
                     "outlettype": [ "", "", "" ],
                     "patching_rect": [ 48.5, 3484.0, 160.0, 22.0 ],
-                    "restore": [ -70.0 ],
+                    "restore": [ 0.0 ],
                     "saved_object_attributes": {
                         "parameter_enable": 0,
                         "parameter_mappable": 0

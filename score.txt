@@ -196,15 +196,15 @@ unreal /UI/player4/video/display/value 1
 
 audio /audio/simple_player/play intro_supersound.wav 1 1 0 0 -18 1 0
 
-lights_from_unreal /lights/spots/player4/color red
-lights_from_unreal /lights/spots/player3/color red
-lights_from_unreal /lights/spots/player2/color red
-lights_from_unreal /lights/spots/player1/color red
+lights /spots/player4/color red
+lights /spots/player3/color red
+lights /spots/player2/color red
+lights /spots/player1/color red
 
-lights_from_unreal /lights/spots/player1/dim 100
-lights_from_unreal /lights/spots/player2/dim 100
-lights_from_unreal /lights/spots/player3/dim 100
-lights_from_unreal /lights/spots/player4/dim 100
+lights /spots/player1/dim/duche 100
+lights /spots/player2/dim/duche 100
+lights /spots/player3/dim/duche 100
+lights /spots/player4/dim/duche 100
 
 CUE 16 END
 
