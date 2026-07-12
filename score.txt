@@ -1,13 +1,13 @@
 CUE 0 INIT-NO-SOUND
 
 liveSync stop
+click_test 0
 clock 0
 liveSync loop 0
 liveSync cue INIT
 unreal /game/cue/name INIT
 lights /light reset
 audio /audio/all stop
-
 
 lights_from_unreal /spots/player1/color white
 lights_from_unreal /spots/player2/color white
@@ -19,17 +19,12 @@ lights_from_unreal /spots/player2/dim/duche 100
 lights_from_unreal /spots/player3/dim/duche 100
 lights_from_unreal /spots/player4/dim/duche 100
 
-
 audio /audio/player1/footstep/gainout 0.
 audio /audio/player2/footstep/gainout 0.
 audio /audio/player3/footstep/gainout 0.
 audio /audio/player4/footstep/gainout 0.
 
 player_controller_test bang
-
-to_all_player_controller /player_controller/player2/cover/enable 1
-to_all_player_controller /player_controller/player2/cover/black
-
 
 /// SET VIGNETTE FOR MFS, TAKE OUT FOR LATER!!!
 
@@ -132,6 +127,7 @@ CUE 9 ENDLESS-INSTRUCTIONS
 
 liveSync cue Endless Instructions
 liveSync play
+audio /audio/player3/2D/gainout -12
 
 CUE 10 SCREENS-FADE-OUT
 
@@ -139,6 +135,7 @@ unreal /game/cue/name fade_to_black
 
 CUE 11 RESPAWN3
 
+audio /audio/player3/2D/gainout 0
 liveSync cue Cue respawn3
 liveSync play
 
@@ -151,6 +148,7 @@ CUE 13 BASS-DEATH-GAMEOVER
 
 liveSync cue Bass Death
 liveSync play
+audio /audio/player4/spatial/play clock_01.wav 0 0 0 3000 0 0 0
 
 CUE 14 BLACK
 
